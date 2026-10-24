@@ -1,0 +1,16 @@
+{
+  "firstTrain": "06:00",
+  "lastTrain": "22:00",
+  "peakHeadwayMin": 10,
+  "offPeakHeadwayMin": 15,
+  "avgInterStationTimeMin": 2.0,
+  "interchangeTimeMin": 5.0,
+  "fareSlabs": [
+    { "minKm": 0, "maxKm": 2, "fare": 10 },
+    { "minKm": 2, "maxKm": 4, "fare": 15 },
+    { "minKm": 4, "maxKm": 8, "fare": 20 },
+    { "minKm": 8, "maxKm": 12, "fare": 25 },
+    { "minKm": 12, "maxKm": 16, "fare": 30 },
+    { "minKm": 16, "maxKm": 999, "fare": 35 }
+  ]
+}

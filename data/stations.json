@@ -1,0 +1,229 @@
+[
+  {
+    "id": "metro_vanaz",
+    "name": "Vanaz",
+    "line": "Aqua",
+    "lat": 18.5065,
+    "lng": 73.7997,
+    "order": 1,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_anand_nagar",
+    "name": "Anand Nagar",
+    "line": "Aqua",
+    "lat": 18.5042,
+    "lng": 73.8080,
+    "order": 2,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_ideal_colony",
+    "name": "Ideal Colony",
+    "line": "Aqua",
+    "lat": 18.5034,
+    "lng": 73.8161,
+    "order": 3,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_nal_stop",
+    "name": "Nal Stop",
+    "line": "Aqua",
+    "lat": 18.5058,
+    "lng": 73.8277,
+    "order": 4,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_garware_college",
+    "name": "Garware College",
+    "line": "Aqua",
+    "lat": 18.5113,
+    "lng": 73.8360,
+    "order": 5,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_deccan_gymkhana",
+    "name": "Deccan Gymkhana",
+    "line": "Aqua",
+    "lat": 18.5168,
+    "lng": 73.8436,
+    "order": 6,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_sambhaji_udyan",
+    "name": "Chhatrapati Sambhaji Udyan",
+    "line": "Aqua",
+    "lat": 18.5218,
+    "lng": 73.8490,
+    "order": 7,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_pmc",
+    "name": "PMC",
+    "line": "Aqua",
+    "lat": 18.5264,
+    "lng": 73.8532,
+    "order": 8,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_district_court",
+    "name": "District Court (Civil Court)",
+    "line": "Aqua",
+    "lat": 18.5283,
+    "lng": 73.8566,
+    "order": 9,
+    "isInterchange": true,
+    "interchangeWith": ["Purple"]
+  },
+  {
+    "id": "metro_mangalwar_peth",
+    "name": "Mangalwar Peth",
+    "line": "Aqua",
+    "lat": 18.5285,
+    "lng": 73.8643,
+    "order": 10,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_pune_station",
+    "name": "Pune Railway Station",
+    "line": "Aqua",
+    "lat": 18.5279,
+    "lng": 73.8736,
+    "order": 11,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_ruby_hall",
+    "name": "Ruby Hall Clinic",
+    "line": "Aqua",
+    "lat": 18.5323,
+    "lng": 73.8824,
+    "order": 12,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_bund_garden",
+    "name": "Bund Garden",
+    "line": "Aqua",
+    "lat": 18.5361,
+    "lng": 73.8887,
+    "order": 13,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_yerwada",
+    "name": "Yerwada",
+    "line": "Aqua",
+    "lat": 18.5482,
+    "lng": 73.8906,
+    "order": 14,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_kalyani_nagar",
+    "name": "Kalyani Nagar",
+    "line": "Aqua",
+    "lat": 18.5493,
+    "lng": 73.9029,
+    "order": 15,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_ramwadi",
+    "name": "Ramwadi",
+    "line": "Aqua",
+    "lat": 18.5524,
+    "lng": 73.9189,
+    "order": 16,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_pcmc",
+    "name": "PCMC",
+    "line": "Purple",
+    "lat": 18.6277,
+    "lng": 73.8016,
+    "order": 1,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_bhosari",
+    "name": "Bhosari (Nashik Phata)",
+    "line": "Purple",
+    "lat": 18.6083,
+    "lng": 73.8242,
+    "order": 2,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_dapodi",
+    "name": "Dapodi",
+    "line": "Purple",
+    "lat": 18.5746,
+    "lng": 73.8336,
+    "order": 3,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_khadki",
+    "name": "Khadki",
+    "line": "Purple",
+    "lat": 18.5539,
+    "lng": 73.8427,
+    "order": 4,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_shivaji_nagar",
+    "name": "Shivaji Nagar",
+    "line": "Purple",
+    "lat": 18.5324,
+    "lng": 73.8524,
+    "order": 5,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_district_court_purple",
+    "name": "District Court (Civil Court)",
+    "line": "Purple",
+    "lat": 18.5283,
+    "lng": 73.8566,
+    "order": 6,
+    "isInterchange": true,
+    "interchangeWith": ["Aqua"]
+  },
+  {
+    "id": "metro_budhwar_peth",
+    "name": "Budhwar Peth",
+    "line": "Purple",
+    "lat": 18.5186,
+    "lng": 73.8557,
+    "order": 7,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_mandai",
+    "name": "Mandai",
+    "line": "Purple",
+    "lat": 18.5125,
+    "lng": 73.8562,
+    "order": 8,
+    "isInterchange": false
+  },
+  {
+    "id": "metro_swargate",
+    "name": "Swargate",
+    "line": "Purple",
+    "lat": 18.5019,
+    "lng": 73.8587,
+    "order": 9,
+    "isInterchange": false
+  }
+]

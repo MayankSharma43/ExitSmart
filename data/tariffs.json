@@ -1,0 +1,41 @@
+{
+  "auto": {
+    "baseFareInr": 25.0,
+    "firstKmIncluded": 1.5,
+    "perKmRateInr": 17.0,
+    "nightSurchargePercent": 25,
+    "nightStartHour": 0,
+    "nightEndHour": 5,
+    "negotiateBufferPercent": 20,
+    "confidence": "Formula",
+    "source": "Maharashtra RTO Pune Auto Tariff Revision"
+  },
+  "cab": {
+    "baseFareInr": 50.0,
+    "baseKmIncluded": 2.0,
+    "perKmRateInr": 18.0,
+    "perMinuteRateInr": 2.0,
+    "nightMultiplier": 1.25,
+    "confidence": "Estimated",
+    "source": "Pune App Cab Industry Model (Non-surge average)"
+  },
+  "sharedAuto": {
+    "baseSeatFareInr": 20.0,
+    "perKmRateInr": 6.0,
+    "detourMultiplier": 1.2,
+    "confidence": "Estimated",
+    "source": "Pune Corridor Shared Auto Spot Estimates"
+  },
+  "walk": {
+    "speedKmH": 4.5,
+    "confidence": "Estimated",
+    "source": "Standard Pedestrian Speed"
+  },
+  "bus": {
+    "avgSpeedDayKmH": 18.0,
+    "avgSpeedPeakKmH": 14.0,
+    "avgSpeedNightKmH": 22.0,
+    "confidence": "Estimated",
+    "source": "PMPML Urban Corridor Speed Estimates"
+  }
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "lm_eon_kharadi",
+    "name": "EON IT Park, Kharadi",
+    "lat": 18.5516,
+    "lng": 73.9515,
+    "area": "Kharadi",
+    "category": "Tech Park"
+  },
+  {
+    "id": "lm_viman_nagar",
+    "name": "Viman Nagar (Datta Mandir Chowk)",
+    "lat": 18.5645,
+    "lng": 73.9145,
+    "area": "Viman Nagar",
+    "category": "Commercial & Residential"
+  },
+  {
+    "id": "lm_phoenix_marketcity",
+    "name": "Phoenix Marketcity, Viman Nagar",
+    "lat": 18.5601,
+    "lng": 73.9168,
+    "area": "Viman Nagar",
+    "category": "Mall & Entertainment"
+  },
+  {
+    "id": "lm_baner",
+    "name": "Baner (Balewadi Phata)",
+    "lat": 18.5640,
+    "lng": 73.7740,
+    "area": "Baner",
+    "category": "Commercial & Residential"
+  },
+  {
+    "id": "lm_hinjewadi_p1",
+    "name": "Hinjewadi Phase 1 (Shivaji Chowk)",
+    "lat": 18.5910,
+    "lng": 73.7380,
+    "area": "Hinjewadi",
+    "category": "Tech Park"
+  },
+  {
+    "id": "lm_pune_station",
+    "name": "Pune Railway Station",
+    "lat": 18.5284,
+    "lng": 73.8742,
+    "area": "Central Pune",
+    "category": "Transit Hub"
+  },
+  {
+    "id": "lm_swargate",
+    "name": "Swargate Bus Terminal",
+    "lat": 18.5015,
+    "lng": 73.8580,
+    "area": "Swargate",
+    "category": "Transit Hub"
+  },
+  {
+    "id": "lm_koregaon_park",
+    "name": "Koregaon Park (North Main Road)",
+    "lat": 18.5362,
+    "lng": 73.8940,
+    "area": "Koregaon Park",
+    "category": "Commercial & Residential"
+  },
+  {
+    "id": "lm_aundh",
+    "name": "Aundh (Bremen Chowk)",
+    "lat": 18.5615,
+    "lng": 73.8055,
+    "area": "Aundh",
+    "category": "Commercial & Residential"
+  },
+  {
+    "id": "lm_hadapsar",
+    "name": "Hadapsar (Magarpatta City)",
+    "lat": 18.5140,
+    "lng": 73.9320,
+    "area": "Hadapsar",
+    "category": "Tech Park"
+  },
+  {
+    "id": "lm_fc_road",
+    "name": "FC Road (Fergusson College)",
+    "lat": 18.5204,
+    "lng": 73.8415,
+    "area": "Shivajinagar",
+    "category": "Commercial & College"
+  },
+  {
+    "id": "lm_kalyani_nagar",
+    "name": "Kalyani Nagar (Cerebrum IT Park)",
+    "lat": 18.5465,
+    "lng": 73.9048,
+    "area": "Kalyani Nagar",
+    "category": "Tech Park"
+  },
+  {
+    "id": "lm_ramwadi_metro",
+    "name": "Ramwadi Metro Station",
+    "lat": 18.5524,
+    "lng": 73.9189,
+    "area": "Ramwadi",
+    "category": "Transit Hub"
+  },
+  {
+    "id": "lm_nal_stop",
+    "name": "Nal Stop (Karve Road)",
+    "lat": 18.5058,
+    "lng": 73.8277,
+    "area": "Erandwane",
+    "category": "Transit Hub"
+  },
+  {
+    "id": "lm_kothrud_stand",
+    "name": "Kothrud (Chandani Chowk)",
+    "lat": 18.5075,
+    "lng": 73.7845,
+    "area": "Kothrud",
+    "category": "Commercial & Residential"
+  },
+  {
+    "id": "lm_shivaji_nagar",
+    "name": "Shivaji Nagar Metro / Bus Station",
+    "lat": 18.5324,
+    "lng": 73.8524,
+    "area": "Shivajinagar",
+    "category": "Transit Hub"
+  }
+]

@@ -1,0 +1,2260 @@
+{
+  "ref_1_ramwadi_kharadi": {
+    "name": "Ramwadi Metro to Kharadi (EON IT Park)",
+    "origin": {
+      "lat": 18.5524,
+      "lng": 73.9189,
+      "label": "Ramwadi Metro Station"
+    },
+    "destination": {
+      "lat": 18.5516,
+      "lng": 73.9515,
+      "label": "EON IT Park, Kharadi"
+    },
+    "balanced": {
+      "exitSmart": null,
+      "options": [
+        {
+          "id": "opt_metro_ramwadi_stop_eon_it_park_0",
+          "label": "Cheapest",
+          "tag": null,
+          "entryStopId": "metro_ramwadi",
+          "entryStopName": "Ramwadi Metro",
+          "exitStopId": "stop_eon_it_park",
+          "exitStopName": "EON IT Park Phase 1 Gate",
+          "segments": [
+            {
+              "type": "walk",
+              "from": "Ramwadi Metro Station",
+              "to": "Ramwadi Metro",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "minutes": 1,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 0,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5524,
+                  73.9189
+                ]
+              ],
+              "details": "Walk to transit stop"
+            },
+            {
+              "type": "bus",
+              "from": "Ramwadi Metro",
+              "to": "EON IT Park Phase 1 Gate",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515
+              },
+              "minutes": 20,
+              "inrMin": 15,
+              "inrMax": 15,
+              "meters": 6000,
+              "route": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park)",
+              "confidence": "Real",
+              "fareConfidence": "Real",
+              "timeConfidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park) (6.0 km)"
+            },
+            {
+              "type": "walk",
+              "from": "EON IT Park Phase 1 Gate",
+              "to": "EON IT Park, Kharadi",
+              "fromCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515,
+                "label": "EON IT Park, Kharadi"
+              },
+              "minutes": 1,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 0,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5516,
+                  73.9515
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "Walk to destination"
+            }
+          ],
+          "totalMin": 27,
+          "totalInrMin": 15,
+          "totalInrMax": 15,
+          "waitMin": 6,
+          "transfers": 1,
+          "walkM": 0,
+          "confidence": "Medium"
+        },
+        {
+          "id": "direct_auto",
+          "label": "Fastest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Ramwadi Metro Station",
+          "exitStopId": "door_dest",
+          "exitStopName": "EON IT Park, Kharadi",
+          "segments": [
+            {
+              "type": "auto",
+              "from": "Ramwadi Metro Station",
+              "to": "EON IT Park, Kharadi",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515,
+                "label": "EON IT Park, Kharadi"
+              },
+              "minutes": 16,
+              "inrMin": 78,
+              "inrMax": 86,
+              "meters": 4641,
+              "confidence": "Formula",
+              "fareConfidence": "Formula",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "RTO Base ₹25 (first 1.5 km) + ₹17/km (3.1 km: ₹53)"
+            }
+          ],
+          "totalMin": 19,
+          "totalInrMin": 78,
+          "totalInrMax": 86,
+          "waitMin": 3,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "High"
+        },
+        {
+          "id": "opt_metro_ramwadi_stop_ashoka_nagar_1",
+          "label": "Most Convenient",
+          "tag": "Next best",
+          "entryStopId": "metro_ramwadi",
+          "entryStopName": "Ramwadi Metro",
+          "exitStopId": "stop_ashoka_nagar",
+          "exitStopName": "Ashoka Nagar Kharadi",
+          "segments": [
+            {
+              "type": "walk",
+              "from": "Ramwadi Metro Station",
+              "to": "Ramwadi Metro",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "minutes": 1,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 0,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5524,
+                  73.9189
+                ]
+              ],
+              "details": "Walk to transit stop"
+            },
+            {
+              "type": "bus",
+              "from": "Ramwadi Metro",
+              "to": "Ashoka Nagar Kharadi",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "toCoords": {
+                "lat": 18.553,
+                "lng": 73.952
+              },
+              "minutes": 16,
+              "inrMin": 15,
+              "inrMax": 15,
+              "meters": 4800,
+              "route": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park)",
+              "confidence": "Real",
+              "fareConfidence": "Real",
+              "timeConfidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.553,
+                  73.952
+                ]
+              ],
+              "details": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park) (4.8 km)"
+            },
+            {
+              "type": "walk",
+              "from": "Ashoka Nagar Kharadi",
+              "to": "EON IT Park, Kharadi",
+              "fromCoords": {
+                "lat": 18.553,
+                "lng": 73.952
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515,
+                "label": "EON IT Park, Kharadi"
+              },
+              "minutes": 3,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 205,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.553,
+                  73.952
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "Walk to destination"
+            }
+          ],
+          "totalMin": 25,
+          "totalInrMin": 15,
+          "totalInrMax": 15,
+          "waitMin": 6,
+          "transfers": 1,
+          "walkM": 205,
+          "confidence": "Medium"
+        }
+      ],
+      "assumptions": [
+        {
+          "item": "Pune Metro Timings & Fares",
+          "formula": "Maha Metro Slabs: ₹10 (0-2 km), ₹15 (2-4 km), ₹20 (4-8 km), ₹25 (8-12 km), ₹30 (12-16 km), ₹35 (>16 km). Avg travel: 2 min/station, 5 min interchange.",
+          "source": "Maha Metro Official Tariff Card (Pune Metro Rail)",
+          "confidence": "Real"
+        },
+        {
+          "item": "PMPML Bus Fares",
+          "formula": "Official Stages: ₹5 (0-2 km), ₹10 (2-4 km), ₹15 (4-8 km), ₹20 (8-12 km), ₹25 (12-16 km), ₹30 (>16 km). Headways 10-20 min.",
+          "source": "PMPML Official Tariff (pmpml.org)",
+          "confidence": "Real"
+        },
+        {
+          "item": "Auto Rickshaw Fare Meter",
+          "formula": "Maharashtra RTO Pune: Base ₹25 (first 1.5 km) + ₹17/km. Night surcharge: +25% (00:00 - 05:00). Negotiate ceiling: +20% buffer.",
+          "source": "Maharashtra Regional Transport Authority Pune Official Revision",
+          "confidence": "Formula"
+        },
+        {
+          "item": "Transfer Buffer",
+          "formula": "5 minutes added per modal interchange (station access, ticketing, and platform transfer).",
+          "source": "ExitSmart Multimodal Transit Buffer Standard",
+          "confidence": "Formula"
+        },
+        {
+          "item": "App Cab Fare Estimate",
+          "formula": "Industry estimate: Base ₹50 (incl 2 km) + ₹18/km + ₹2/min. Night multiplier: 1.25x. No live aggregator API.",
+          "source": "Pune App Cab Non-Surge Standard Industry Model",
+          "confidence": "Estimated"
+        },
+        {
+          "item": "Walking Speed",
+          "formula": "4.5 km/h (75 meters per minute). Detour multiplier: 1.25x straight-line when offline.",
+          "source": "Standard Pedestrian Speed Heuristic",
+          "confidence": "Estimated"
+        }
+      ],
+      "cabDirectEstimate": {
+        "minInr": 119,
+        "maxInr": 144,
+        "minutes": 14,
+        "meters": 4641
+      },
+      "baseline": {
+        "id": "opt_metro_ramwadi_stop_eon_it_park_0",
+        "label": "Cheapest",
+        "tag": null,
+        "entryStopId": "metro_ramwadi",
+        "entryStopName": "Ramwadi Metro",
+        "exitStopId": "stop_eon_it_park",
+        "exitStopName": "EON IT Park Phase 1 Gate",
+        "segments": [
+          {
+            "type": "walk",
+            "from": "Ramwadi Metro Station",
+            "to": "Ramwadi Metro",
+            "fromCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189,
+              "label": "Ramwadi Metro Station"
+            },
+            "toCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189
+            },
+            "minutes": 1,
+            "inrMin": 0,
+            "inrMax": 0,
+            "meters": 0,
+            "confidence": "Real",
+            "polyline": [
+              [
+                18.5524,
+                73.9189
+              ],
+              [
+                18.5524,
+                73.9189
+              ]
+            ],
+            "details": "Walk to transit stop"
+          },
+          {
+            "type": "bus",
+            "from": "Ramwadi Metro",
+            "to": "EON IT Park Phase 1 Gate",
+            "fromCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189
+            },
+            "toCoords": {
+              "lat": 18.5516,
+              "lng": 73.9515
+            },
+            "minutes": 20,
+            "inrMin": 15,
+            "inrMax": 15,
+            "meters": 6000,
+            "route": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park)",
+            "confidence": "Real",
+            "fareConfidence": "Real",
+            "timeConfidence": "Real",
+            "polyline": [
+              [
+                18.5524,
+                73.9189
+              ],
+              [
+                18.5516,
+                73.9515
+              ]
+            ],
+            "details": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park) (6.0 km)"
+          },
+          {
+            "type": "walk",
+            "from": "EON IT Park Phase 1 Gate",
+            "to": "EON IT Park, Kharadi",
+            "fromCoords": {
+              "lat": 18.5516,
+              "lng": 73.9515
+            },
+            "toCoords": {
+              "lat": 18.5516,
+              "lng": 73.9515,
+              "label": "EON IT Park, Kharadi"
+            },
+            "minutes": 1,
+            "inrMin": 0,
+            "inrMax": 0,
+            "meters": 0,
+            "confidence": "Real",
+            "polyline": [
+              [
+                18.5516,
+                73.9515
+              ],
+              [
+                18.5516,
+                73.9515
+              ]
+            ],
+            "details": "Walk to destination"
+          }
+        ],
+        "totalMin": 27,
+        "totalInrMin": 15,
+        "totalInrMax": 15,
+        "waitMin": 6,
+        "transfers": 1,
+        "walkM": 0,
+        "confidence": "Medium"
+      }
+    },
+    "rain": {
+      "exitSmart": null,
+      "options": [
+        {
+          "id": "opt_metro_ramwadi_stop_eon_it_park_0",
+          "label": "Cheapest",
+          "tag": null,
+          "entryStopId": "metro_ramwadi",
+          "entryStopName": "Ramwadi Metro",
+          "exitStopId": "stop_eon_it_park",
+          "exitStopName": "EON IT Park Phase 1 Gate",
+          "segments": [
+            {
+              "type": "walk",
+              "from": "Ramwadi Metro Station",
+              "to": "Ramwadi Metro",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "minutes": 1,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 0,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5524,
+                  73.9189
+                ]
+              ],
+              "details": "Walk to transit stop"
+            },
+            {
+              "type": "bus",
+              "from": "Ramwadi Metro",
+              "to": "EON IT Park Phase 1 Gate",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515
+              },
+              "minutes": 20,
+              "inrMin": 15,
+              "inrMax": 15,
+              "meters": 6000,
+              "route": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park)",
+              "confidence": "Real",
+              "fareConfidence": "Real",
+              "timeConfidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park) (6.0 km)"
+            },
+            {
+              "type": "walk",
+              "from": "EON IT Park Phase 1 Gate",
+              "to": "EON IT Park, Kharadi",
+              "fromCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515,
+                "label": "EON IT Park, Kharadi"
+              },
+              "minutes": 1,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 0,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5516,
+                  73.9515
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "Walk to destination"
+            }
+          ],
+          "totalMin": 27,
+          "totalInrMin": 15,
+          "totalInrMax": 15,
+          "waitMin": 6,
+          "transfers": 1,
+          "walkM": 0,
+          "confidence": "Medium"
+        },
+        {
+          "id": "direct_auto",
+          "label": "Fastest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Ramwadi Metro Station",
+          "exitStopId": "door_dest",
+          "exitStopName": "EON IT Park, Kharadi",
+          "segments": [
+            {
+              "type": "auto",
+              "from": "Ramwadi Metro Station",
+              "to": "EON IT Park, Kharadi",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515,
+                "label": "EON IT Park, Kharadi"
+              },
+              "minutes": 16,
+              "inrMin": 78,
+              "inrMax": 86,
+              "meters": 4641,
+              "confidence": "Formula",
+              "fareConfidence": "Formula",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "RTO Base ₹25 (first 1.5 km) + ₹17/km (3.1 km: ₹53)"
+            }
+          ],
+          "totalMin": 19,
+          "totalInrMin": 78,
+          "totalInrMax": 86,
+          "waitMin": 3,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "High"
+        },
+        {
+          "id": "opt_metro_ramwadi_stop_ashoka_nagar_1",
+          "label": "Most Convenient",
+          "tag": "Next best",
+          "entryStopId": "metro_ramwadi",
+          "entryStopName": "Ramwadi Metro",
+          "exitStopId": "stop_ashoka_nagar",
+          "exitStopName": "Ashoka Nagar Kharadi",
+          "segments": [
+            {
+              "type": "walk",
+              "from": "Ramwadi Metro Station",
+              "to": "Ramwadi Metro",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "minutes": 1,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 0,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5524,
+                  73.9189
+                ]
+              ],
+              "details": "Walk to transit stop"
+            },
+            {
+              "type": "bus",
+              "from": "Ramwadi Metro",
+              "to": "Ashoka Nagar Kharadi",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "toCoords": {
+                "lat": 18.553,
+                "lng": 73.952
+              },
+              "minutes": 16,
+              "inrMin": 15,
+              "inrMax": 15,
+              "meters": 4800,
+              "route": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park)",
+              "confidence": "Real",
+              "fareConfidence": "Real",
+              "timeConfidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.553,
+                  73.952
+                ]
+              ],
+              "details": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park) (4.8 km)"
+            },
+            {
+              "type": "walk",
+              "from": "Ashoka Nagar Kharadi",
+              "to": "EON IT Park, Kharadi",
+              "fromCoords": {
+                "lat": 18.553,
+                "lng": 73.952
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515,
+                "label": "EON IT Park, Kharadi"
+              },
+              "minutes": 3,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 205,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.553,
+                  73.952
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "Walk to destination"
+            }
+          ],
+          "totalMin": 25,
+          "totalInrMin": 15,
+          "totalInrMax": 15,
+          "waitMin": 6,
+          "transfers": 1,
+          "walkM": 205,
+          "confidence": "Medium"
+        }
+      ],
+      "assumptions": [
+        {
+          "item": "Pune Metro Timings & Fares",
+          "formula": "Maha Metro Slabs: ₹10 (0-2 km), ₹15 (2-4 km), ₹20 (4-8 km), ₹25 (8-12 km), ₹30 (12-16 km), ₹35 (>16 km). Avg travel: 2 min/station, 5 min interchange.",
+          "source": "Maha Metro Official Tariff Card (Pune Metro Rail)",
+          "confidence": "Real"
+        },
+        {
+          "item": "PMPML Bus Fares",
+          "formula": "Official Stages: ₹5 (0-2 km), ₹10 (2-4 km), ₹15 (4-8 km), ₹20 (8-12 km), ₹25 (12-16 km), ₹30 (>16 km). Headways 10-20 min.",
+          "source": "PMPML Official Tariff (pmpml.org)",
+          "confidence": "Real"
+        },
+        {
+          "item": "Auto Rickshaw Fare Meter",
+          "formula": "Maharashtra RTO Pune: Base ₹25 (first 1.5 km) + ₹17/km. Night surcharge: +25% (00:00 - 05:00). Negotiate ceiling: +20% buffer.",
+          "source": "Maharashtra Regional Transport Authority Pune Official Revision",
+          "confidence": "Formula"
+        },
+        {
+          "item": "Transfer Buffer",
+          "formula": "5 minutes added per modal interchange (station access, ticketing, and platform transfer).",
+          "source": "ExitSmart Multimodal Transit Buffer Standard",
+          "confidence": "Formula"
+        },
+        {
+          "item": "App Cab Fare Estimate",
+          "formula": "Industry estimate: Base ₹50 (incl 2 km) + ₹18/km + ₹2/min. Night multiplier: 1.25x. No live aggregator API.",
+          "source": "Pune App Cab Non-Surge Standard Industry Model",
+          "confidence": "Estimated"
+        },
+        {
+          "item": "Walking Speed",
+          "formula": "4.5 km/h (75 meters per minute). Detour multiplier: 1.25x straight-line when offline.",
+          "source": "Standard Pedestrian Speed Heuristic",
+          "confidence": "Estimated"
+        }
+      ],
+      "cabDirectEstimate": {
+        "minInr": 119,
+        "maxInr": 144,
+        "minutes": 14,
+        "meters": 4641
+      },
+      "baseline": {
+        "id": "opt_metro_ramwadi_stop_eon_it_park_0",
+        "label": "Cheapest",
+        "tag": null,
+        "entryStopId": "metro_ramwadi",
+        "entryStopName": "Ramwadi Metro",
+        "exitStopId": "stop_eon_it_park",
+        "exitStopName": "EON IT Park Phase 1 Gate",
+        "segments": [
+          {
+            "type": "walk",
+            "from": "Ramwadi Metro Station",
+            "to": "Ramwadi Metro",
+            "fromCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189,
+              "label": "Ramwadi Metro Station"
+            },
+            "toCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189
+            },
+            "minutes": 1,
+            "inrMin": 0,
+            "inrMax": 0,
+            "meters": 0,
+            "confidence": "Real",
+            "polyline": [
+              [
+                18.5524,
+                73.9189
+              ],
+              [
+                18.5524,
+                73.9189
+              ]
+            ],
+            "details": "Walk to transit stop"
+          },
+          {
+            "type": "bus",
+            "from": "Ramwadi Metro",
+            "to": "EON IT Park Phase 1 Gate",
+            "fromCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189
+            },
+            "toCoords": {
+              "lat": 18.5516,
+              "lng": 73.9515
+            },
+            "minutes": 20,
+            "inrMin": 15,
+            "inrMax": 15,
+            "meters": 6000,
+            "route": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park)",
+            "confidence": "Real",
+            "fareConfidence": "Real",
+            "timeConfidence": "Real",
+            "polyline": [
+              [
+                18.5524,
+                73.9189
+              ],
+              [
+                18.5516,
+                73.9515
+              ]
+            ],
+            "details": "PMPML Bus 165 (Ramwadi Metro - Kharadi EON IT Park) (6.0 km)"
+          },
+          {
+            "type": "walk",
+            "from": "EON IT Park Phase 1 Gate",
+            "to": "EON IT Park, Kharadi",
+            "fromCoords": {
+              "lat": 18.5516,
+              "lng": 73.9515
+            },
+            "toCoords": {
+              "lat": 18.5516,
+              "lng": 73.9515,
+              "label": "EON IT Park, Kharadi"
+            },
+            "minutes": 1,
+            "inrMin": 0,
+            "inrMax": 0,
+            "meters": 0,
+            "confidence": "Real",
+            "polyline": [
+              [
+                18.5516,
+                73.9515
+              ],
+              [
+                18.5516,
+                73.9515
+              ]
+            ],
+            "details": "Walk to destination"
+          }
+        ],
+        "totalMin": 27,
+        "totalInrMin": 15,
+        "totalInrMax": 15,
+        "waitMin": 6,
+        "transfers": 1,
+        "walkM": 0,
+        "confidence": "Medium"
+      }
+    }
+  },
+  "ref_2_ramwadi_viman_nagar": {
+    "name": "Ramwadi Metro to Viman Nagar",
+    "origin": {
+      "lat": 18.5524,
+      "lng": 73.9189,
+      "label": "Ramwadi Metro Station"
+    },
+    "destination": {
+      "lat": 18.5645,
+      "lng": 73.9145,
+      "label": "Viman Nagar (Datta Mandir)"
+    },
+    "balanced": {
+      "exitSmart": null,
+      "options": [
+        {
+          "id": "direct_walk",
+          "label": "Cheapest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Ramwadi Metro Station",
+          "exitStopId": "door_dest",
+          "exitStopName": "Viman Nagar (Datta Mandir)",
+          "segments": [
+            {
+              "type": "walk",
+              "from": "Ramwadi Metro Station",
+              "to": "Viman Nagar (Datta Mandir)",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5645,
+                "lng": 73.9145,
+                "label": "Viman Nagar (Datta Mandir)"
+              },
+              "minutes": 24,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 1779,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5645,
+                  73.9145
+                ]
+              ],
+              "details": "Direct pedestrian route"
+            }
+          ],
+          "totalMin": 24,
+          "totalInrMin": 0,
+          "totalInrMax": 0,
+          "waitMin": 0,
+          "transfers": 0,
+          "walkM": 1779,
+          "confidence": "High"
+        },
+        {
+          "id": "direct_auto",
+          "label": "Fastest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Ramwadi Metro Station",
+          "exitStopId": "door_dest",
+          "exitStopName": "Viman Nagar (Datta Mandir)",
+          "segments": [
+            {
+              "type": "auto",
+              "from": "Ramwadi Metro Station",
+              "to": "Viman Nagar (Datta Mandir)",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5645,
+                "lng": 73.9145,
+                "label": "Viman Nagar (Datta Mandir)"
+              },
+              "minutes": 8,
+              "inrMin": 32,
+              "inrMax": 35,
+              "meters": 1921,
+              "confidence": "Formula",
+              "fareConfidence": "Formula",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5645,
+                  73.9145
+                ]
+              ],
+              "details": "RTO Base ₹25 (first 1.5 km) + ₹17/km (0.4 km: ₹7)"
+            }
+          ],
+          "totalMin": 11,
+          "totalInrMin": 32,
+          "totalInrMax": 35,
+          "waitMin": 3,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "High"
+        },
+        {
+          "id": "opt_metro_ramwadi_stop_datta_mandir_viman_nagar_0",
+          "label": "Most Convenient",
+          "tag": "Next best",
+          "entryStopId": "metro_ramwadi",
+          "entryStopName": "Ramwadi Metro",
+          "exitStopId": "stop_datta_mandir_viman_nagar",
+          "exitStopName": "Datta Mandir Viman Nagar",
+          "segments": [
+            {
+              "type": "walk",
+              "from": "Ramwadi Metro Station",
+              "to": "Ramwadi Metro",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "minutes": 1,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 0,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5524,
+                  73.9189
+                ]
+              ],
+              "details": "Walk to transit stop"
+            },
+            {
+              "type": "bus",
+              "from": "Ramwadi Metro",
+              "to": "Datta Mandir Viman Nagar",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "toCoords": {
+                "lat": 18.5645,
+                "lng": 73.9145
+              },
+              "minutes": 12,
+              "inrMin": 10,
+              "inrMax": 10,
+              "meters": 3600,
+              "route": "PMPML Bus 162 (Ramwadi Metro - Viman Nagar / Symbiosis)",
+              "confidence": "Real",
+              "fareConfidence": "Real",
+              "timeConfidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5645,
+                  73.9145
+                ]
+              ],
+              "details": "PMPML Bus 162 (Ramwadi Metro - Viman Nagar / Symbiosis) (3.6 km)"
+            },
+            {
+              "type": "walk",
+              "from": "Datta Mandir Viman Nagar",
+              "to": "Viman Nagar (Datta Mandir)",
+              "fromCoords": {
+                "lat": 18.5645,
+                "lng": 73.9145
+              },
+              "toCoords": {
+                "lat": 18.5645,
+                "lng": 73.9145,
+                "label": "Viman Nagar (Datta Mandir)"
+              },
+              "minutes": 1,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 0,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5645,
+                  73.9145
+                ],
+                [
+                  18.5645,
+                  73.9145
+                ]
+              ],
+              "details": "Walk to destination"
+            }
+          ],
+          "totalMin": 19,
+          "totalInrMin": 10,
+          "totalInrMax": 10,
+          "waitMin": 5,
+          "transfers": 1,
+          "walkM": 0,
+          "confidence": "Medium"
+        }
+      ],
+      "assumptions": [
+        {
+          "item": "Pune Metro Timings & Fares",
+          "formula": "Maha Metro Slabs: ₹10 (0-2 km), ₹15 (2-4 km), ₹20 (4-8 km), ₹25 (8-12 km), ₹30 (12-16 km), ₹35 (>16 km). Avg travel: 2 min/station, 5 min interchange.",
+          "source": "Maha Metro Official Tariff Card (Pune Metro Rail)",
+          "confidence": "Real"
+        },
+        {
+          "item": "PMPML Bus Fares",
+          "formula": "Official Stages: ₹5 (0-2 km), ₹10 (2-4 km), ₹15 (4-8 km), ₹20 (8-12 km), ₹25 (12-16 km), ₹30 (>16 km). Headways 10-20 min.",
+          "source": "PMPML Official Tariff (pmpml.org)",
+          "confidence": "Real"
+        },
+        {
+          "item": "Auto Rickshaw Fare Meter",
+          "formula": "Maharashtra RTO Pune: Base ₹25 (first 1.5 km) + ₹17/km. Night surcharge: +25% (00:00 - 05:00). Negotiate ceiling: +20% buffer.",
+          "source": "Maharashtra Regional Transport Authority Pune Official Revision",
+          "confidence": "Formula"
+        },
+        {
+          "item": "Transfer Buffer",
+          "formula": "5 minutes added per modal interchange (station access, ticketing, and platform transfer).",
+          "source": "ExitSmart Multimodal Transit Buffer Standard",
+          "confidence": "Formula"
+        },
+        {
+          "item": "App Cab Fare Estimate",
+          "formula": "Industry estimate: Base ₹50 (incl 2 km) + ₹18/km + ₹2/min. Night multiplier: 1.25x. No live aggregator API.",
+          "source": "Pune App Cab Non-Surge Standard Industry Model",
+          "confidence": "Estimated"
+        },
+        {
+          "item": "Walking Speed",
+          "formula": "4.5 km/h (75 meters per minute). Detour multiplier: 1.25x straight-line when offline.",
+          "source": "Standard Pedestrian Speed Heuristic",
+          "confidence": "Estimated"
+        }
+      ],
+      "cabDirectEstimate": {
+        "minInr": 59,
+        "maxInr": 71,
+        "minutes": 6,
+        "meters": 1921
+      },
+      "baseline": {
+        "id": "opt_metro_ramwadi_stop_datta_mandir_viman_nagar_0",
+        "label": "Cheapest",
+        "tag": null,
+        "entryStopId": "metro_ramwadi",
+        "entryStopName": "Ramwadi Metro",
+        "exitStopId": "stop_datta_mandir_viman_nagar",
+        "exitStopName": "Datta Mandir Viman Nagar",
+        "segments": [
+          {
+            "type": "walk",
+            "from": "Ramwadi Metro Station",
+            "to": "Ramwadi Metro",
+            "fromCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189,
+              "label": "Ramwadi Metro Station"
+            },
+            "toCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189
+            },
+            "minutes": 1,
+            "inrMin": 0,
+            "inrMax": 0,
+            "meters": 0,
+            "confidence": "Real",
+            "polyline": [
+              [
+                18.5524,
+                73.9189
+              ],
+              [
+                18.5524,
+                73.9189
+              ]
+            ],
+            "details": "Walk to transit stop"
+          },
+          {
+            "type": "bus",
+            "from": "Ramwadi Metro",
+            "to": "Datta Mandir Viman Nagar",
+            "fromCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189
+            },
+            "toCoords": {
+              "lat": 18.5645,
+              "lng": 73.9145
+            },
+            "minutes": 12,
+            "inrMin": 10,
+            "inrMax": 10,
+            "meters": 3600,
+            "route": "PMPML Bus 162 (Ramwadi Metro - Viman Nagar / Symbiosis)",
+            "confidence": "Real",
+            "fareConfidence": "Real",
+            "timeConfidence": "Real",
+            "polyline": [
+              [
+                18.5524,
+                73.9189
+              ],
+              [
+                18.5645,
+                73.9145
+              ]
+            ],
+            "details": "PMPML Bus 162 (Ramwadi Metro - Viman Nagar / Symbiosis) (3.6 km)"
+          },
+          {
+            "type": "walk",
+            "from": "Datta Mandir Viman Nagar",
+            "to": "Viman Nagar (Datta Mandir)",
+            "fromCoords": {
+              "lat": 18.5645,
+              "lng": 73.9145
+            },
+            "toCoords": {
+              "lat": 18.5645,
+              "lng": 73.9145,
+              "label": "Viman Nagar (Datta Mandir)"
+            },
+            "minutes": 1,
+            "inrMin": 0,
+            "inrMax": 0,
+            "meters": 0,
+            "confidence": "Real",
+            "polyline": [
+              [
+                18.5645,
+                73.9145
+              ],
+              [
+                18.5645,
+                73.9145
+              ]
+            ],
+            "details": "Walk to destination"
+          }
+        ],
+        "totalMin": 19,
+        "totalInrMin": 10,
+        "totalInrMax": 10,
+        "waitMin": 5,
+        "transfers": 1,
+        "walkM": 0,
+        "confidence": "Medium"
+      }
+    },
+    "rain": {
+      "exitSmart": null,
+      "options": [
+        {
+          "id": "direct_walk",
+          "label": "Cheapest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Ramwadi Metro Station",
+          "exitStopId": "door_dest",
+          "exitStopName": "Viman Nagar (Datta Mandir)",
+          "segments": [
+            {
+              "type": "walk",
+              "from": "Ramwadi Metro Station",
+              "to": "Viman Nagar (Datta Mandir)",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5645,
+                "lng": 73.9145,
+                "label": "Viman Nagar (Datta Mandir)"
+              },
+              "minutes": 24,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 1779,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5645,
+                  73.9145
+                ]
+              ],
+              "details": "Direct pedestrian route"
+            }
+          ],
+          "totalMin": 24,
+          "totalInrMin": 0,
+          "totalInrMax": 0,
+          "waitMin": 0,
+          "transfers": 0,
+          "walkM": 1779,
+          "confidence": "High"
+        },
+        {
+          "id": "direct_auto",
+          "label": "Fastest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Ramwadi Metro Station",
+          "exitStopId": "door_dest",
+          "exitStopName": "Viman Nagar (Datta Mandir)",
+          "segments": [
+            {
+              "type": "auto",
+              "from": "Ramwadi Metro Station",
+              "to": "Viman Nagar (Datta Mandir)",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5645,
+                "lng": 73.9145,
+                "label": "Viman Nagar (Datta Mandir)"
+              },
+              "minutes": 8,
+              "inrMin": 32,
+              "inrMax": 35,
+              "meters": 1921,
+              "confidence": "Formula",
+              "fareConfidence": "Formula",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5645,
+                  73.9145
+                ]
+              ],
+              "details": "RTO Base ₹25 (first 1.5 km) + ₹17/km (0.4 km: ₹7)"
+            }
+          ],
+          "totalMin": 11,
+          "totalInrMin": 32,
+          "totalInrMax": 35,
+          "waitMin": 3,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "High"
+        },
+        {
+          "id": "opt_metro_ramwadi_stop_datta_mandir_viman_nagar_0",
+          "label": "Most Convenient",
+          "tag": "Next best",
+          "entryStopId": "metro_ramwadi",
+          "entryStopName": "Ramwadi Metro",
+          "exitStopId": "stop_datta_mandir_viman_nagar",
+          "exitStopName": "Datta Mandir Viman Nagar",
+          "segments": [
+            {
+              "type": "walk",
+              "from": "Ramwadi Metro Station",
+              "to": "Ramwadi Metro",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "minutes": 1,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 0,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5524,
+                  73.9189
+                ]
+              ],
+              "details": "Walk to transit stop"
+            },
+            {
+              "type": "bus",
+              "from": "Ramwadi Metro",
+              "to": "Datta Mandir Viman Nagar",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189
+              },
+              "toCoords": {
+                "lat": 18.5645,
+                "lng": 73.9145
+              },
+              "minutes": 12,
+              "inrMin": 10,
+              "inrMax": 10,
+              "meters": 3600,
+              "route": "PMPML Bus 162 (Ramwadi Metro - Viman Nagar / Symbiosis)",
+              "confidence": "Real",
+              "fareConfidence": "Real",
+              "timeConfidence": "Real",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.5645,
+                  73.9145
+                ]
+              ],
+              "details": "PMPML Bus 162 (Ramwadi Metro - Viman Nagar / Symbiosis) (3.6 km)"
+            },
+            {
+              "type": "walk",
+              "from": "Datta Mandir Viman Nagar",
+              "to": "Viman Nagar (Datta Mandir)",
+              "fromCoords": {
+                "lat": 18.5645,
+                "lng": 73.9145
+              },
+              "toCoords": {
+                "lat": 18.5645,
+                "lng": 73.9145,
+                "label": "Viman Nagar (Datta Mandir)"
+              },
+              "minutes": 1,
+              "inrMin": 0,
+              "inrMax": 0,
+              "meters": 0,
+              "confidence": "Real",
+              "polyline": [
+                [
+                  18.5645,
+                  73.9145
+                ],
+                [
+                  18.5645,
+                  73.9145
+                ]
+              ],
+              "details": "Walk to destination"
+            }
+          ],
+          "totalMin": 19,
+          "totalInrMin": 10,
+          "totalInrMax": 10,
+          "waitMin": 5,
+          "transfers": 1,
+          "walkM": 0,
+          "confidence": "Medium"
+        }
+      ],
+      "assumptions": [
+        {
+          "item": "Pune Metro Timings & Fares",
+          "formula": "Maha Metro Slabs: ₹10 (0-2 km), ₹15 (2-4 km), ₹20 (4-8 km), ₹25 (8-12 km), ₹30 (12-16 km), ₹35 (>16 km). Avg travel: 2 min/station, 5 min interchange.",
+          "source": "Maha Metro Official Tariff Card (Pune Metro Rail)",
+          "confidence": "Real"
+        },
+        {
+          "item": "PMPML Bus Fares",
+          "formula": "Official Stages: ₹5 (0-2 km), ₹10 (2-4 km), ₹15 (4-8 km), ₹20 (8-12 km), ₹25 (12-16 km), ₹30 (>16 km). Headways 10-20 min.",
+          "source": "PMPML Official Tariff (pmpml.org)",
+          "confidence": "Real"
+        },
+        {
+          "item": "Auto Rickshaw Fare Meter",
+          "formula": "Maharashtra RTO Pune: Base ₹25 (first 1.5 km) + ₹17/km. Night surcharge: +25% (00:00 - 05:00). Negotiate ceiling: +20% buffer.",
+          "source": "Maharashtra Regional Transport Authority Pune Official Revision",
+          "confidence": "Formula"
+        },
+        {
+          "item": "Transfer Buffer",
+          "formula": "5 minutes added per modal interchange (station access, ticketing, and platform transfer).",
+          "source": "ExitSmart Multimodal Transit Buffer Standard",
+          "confidence": "Formula"
+        },
+        {
+          "item": "App Cab Fare Estimate",
+          "formula": "Industry estimate: Base ₹50 (incl 2 km) + ₹18/km + ₹2/min. Night multiplier: 1.25x. No live aggregator API.",
+          "source": "Pune App Cab Non-Surge Standard Industry Model",
+          "confidence": "Estimated"
+        },
+        {
+          "item": "Walking Speed",
+          "formula": "4.5 km/h (75 meters per minute). Detour multiplier: 1.25x straight-line when offline.",
+          "source": "Standard Pedestrian Speed Heuristic",
+          "confidence": "Estimated"
+        }
+      ],
+      "cabDirectEstimate": {
+        "minInr": 59,
+        "maxInr": 71,
+        "minutes": 6,
+        "meters": 1921
+      },
+      "baseline": {
+        "id": "opt_metro_ramwadi_stop_datta_mandir_viman_nagar_0",
+        "label": "Cheapest",
+        "tag": null,
+        "entryStopId": "metro_ramwadi",
+        "entryStopName": "Ramwadi Metro",
+        "exitStopId": "stop_datta_mandir_viman_nagar",
+        "exitStopName": "Datta Mandir Viman Nagar",
+        "segments": [
+          {
+            "type": "walk",
+            "from": "Ramwadi Metro Station",
+            "to": "Ramwadi Metro",
+            "fromCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189,
+              "label": "Ramwadi Metro Station"
+            },
+            "toCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189
+            },
+            "minutes": 1,
+            "inrMin": 0,
+            "inrMax": 0,
+            "meters": 0,
+            "confidence": "Real",
+            "polyline": [
+              [
+                18.5524,
+                73.9189
+              ],
+              [
+                18.5524,
+                73.9189
+              ]
+            ],
+            "details": "Walk to transit stop"
+          },
+          {
+            "type": "bus",
+            "from": "Ramwadi Metro",
+            "to": "Datta Mandir Viman Nagar",
+            "fromCoords": {
+              "lat": 18.5524,
+              "lng": 73.9189
+            },
+            "toCoords": {
+              "lat": 18.5645,
+              "lng": 73.9145
+            },
+            "minutes": 12,
+            "inrMin": 10,
+            "inrMax": 10,
+            "meters": 3600,
+            "route": "PMPML Bus 162 (Ramwadi Metro - Viman Nagar / Symbiosis)",
+            "confidence": "Real",
+            "fareConfidence": "Real",
+            "timeConfidence": "Real",
+            "polyline": [
+              [
+                18.5524,
+                73.9189
+              ],
+              [
+                18.5645,
+                73.9145
+              ]
+            ],
+            "details": "PMPML Bus 162 (Ramwadi Metro - Viman Nagar / Symbiosis) (3.6 km)"
+          },
+          {
+            "type": "walk",
+            "from": "Datta Mandir Viman Nagar",
+            "to": "Viman Nagar (Datta Mandir)",
+            "fromCoords": {
+              "lat": 18.5645,
+              "lng": 73.9145
+            },
+            "toCoords": {
+              "lat": 18.5645,
+              "lng": 73.9145,
+              "label": "Viman Nagar (Datta Mandir)"
+            },
+            "minutes": 1,
+            "inrMin": 0,
+            "inrMax": 0,
+            "meters": 0,
+            "confidence": "Real",
+            "polyline": [
+              [
+                18.5645,
+                73.9145
+              ],
+              [
+                18.5645,
+                73.9145
+              ]
+            ],
+            "details": "Walk to destination"
+          }
+        ],
+        "totalMin": 19,
+        "totalInrMin": 10,
+        "totalInrMax": 10,
+        "waitMin": 5,
+        "transfers": 1,
+        "walkM": 0,
+        "confidence": "Medium"
+      }
+    }
+  },
+  "ref_3_ramwadi_baner": {
+    "name": "Ramwadi Metro to Baner",
+    "origin": {
+      "lat": 18.5524,
+      "lng": 73.9189,
+      "label": "Ramwadi Metro Station"
+    },
+    "destination": {
+      "lat": 18.564,
+      "lng": 73.774,
+      "label": "Baner (Balewadi Phata)"
+    },
+    "balanced": {
+      "exitSmart": null,
+      "options": [
+        {
+          "id": "direct_cab",
+          "label": "Cheapest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Ramwadi Metro Station",
+          "exitStopId": "door_dest",
+          "exitStopName": "Baner (Balewadi Phata)",
+          "segments": [
+            {
+              "type": "cab",
+              "from": "Ramwadi Metro Station",
+              "to": "Baner (Balewadi Phata)",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.564,
+                "lng": 73.774,
+                "label": "Baner (Balewadi Phata)"
+              },
+              "minutes": 63,
+              "inrMin": 487,
+              "inrMax": 589,
+              "meters": 20694,
+              "confidence": "Estimated",
+              "fareConfidence": "Estimated",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.564,
+                  73.774
+                ]
+              ],
+              "details": "Base ₹50 + ₹18/km (18.7 km) + ₹2/min (63 min)"
+            }
+          ],
+          "totalMin": 68,
+          "totalInrMin": 487,
+          "totalInrMax": 589,
+          "waitMin": 5,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "Medium"
+        },
+        {
+          "id": "direct_auto",
+          "label": "Fastest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Ramwadi Metro Station",
+          "exitStopId": "door_dest",
+          "exitStopName": "Baner (Balewadi Phata)",
+          "segments": [
+            {
+              "type": "auto",
+              "from": "Ramwadi Metro Station",
+              "to": "Baner (Balewadi Phata)",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.564,
+                "lng": 73.774,
+                "label": "Baner (Balewadi Phata)"
+              },
+              "minutes": 65,
+              "inrMin": 351,
+              "inrMax": 386,
+              "meters": 20694,
+              "confidence": "Formula",
+              "fareConfidence": "Formula",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.564,
+                  73.774
+                ]
+              ],
+              "details": "RTO Base ₹25 (first 1.5 km) + ₹17/km (19.2 km: ₹326)"
+            }
+          ],
+          "totalMin": 68,
+          "totalInrMin": 351,
+          "totalInrMax": 386,
+          "waitMin": 3,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "High"
+        }
+      ],
+      "assumptions": [
+        {
+          "item": "Pune Metro Timings & Fares",
+          "formula": "Maha Metro Slabs: ₹10 (0-2 km), ₹15 (2-4 km), ₹20 (4-8 km), ₹25 (8-12 km), ₹30 (12-16 km), ₹35 (>16 km). Avg travel: 2 min/station, 5 min interchange.",
+          "source": "Maha Metro Official Tariff Card (Pune Metro Rail)",
+          "confidence": "Real"
+        },
+        {
+          "item": "PMPML Bus Fares",
+          "formula": "Official Stages: ₹5 (0-2 km), ₹10 (2-4 km), ₹15 (4-8 km), ₹20 (8-12 km), ₹25 (12-16 km), ₹30 (>16 km). Headways 10-20 min.",
+          "source": "PMPML Official Tariff (pmpml.org)",
+          "confidence": "Real"
+        },
+        {
+          "item": "Auto Rickshaw Fare Meter",
+          "formula": "Maharashtra RTO Pune: Base ₹25 (first 1.5 km) + ₹17/km. Night surcharge: +25% (00:00 - 05:00). Negotiate ceiling: +20% buffer.",
+          "source": "Maharashtra Regional Transport Authority Pune Official Revision",
+          "confidence": "Formula"
+        },
+        {
+          "item": "Transfer Buffer",
+          "formula": "5 minutes added per modal interchange (station access, ticketing, and platform transfer).",
+          "source": "ExitSmart Multimodal Transit Buffer Standard",
+          "confidence": "Formula"
+        },
+        {
+          "item": "App Cab Fare Estimate",
+          "formula": "Industry estimate: Base ₹50 (incl 2 km) + ₹18/km + ₹2/min. Night multiplier: 1.25x. No live aggregator API.",
+          "source": "Pune App Cab Non-Surge Standard Industry Model",
+          "confidence": "Estimated"
+        },
+        {
+          "item": "Walking Speed",
+          "formula": "4.5 km/h (75 meters per minute). Detour multiplier: 1.25x straight-line when offline.",
+          "source": "Standard Pedestrian Speed Heuristic",
+          "confidence": "Estimated"
+        }
+      ],
+      "cabDirectEstimate": {
+        "minInr": 487,
+        "maxInr": 589,
+        "minutes": 63,
+        "meters": 20694
+      },
+      "baseline": null
+    },
+    "rain": {
+      "exitSmart": null,
+      "options": [
+        {
+          "id": "direct_cab",
+          "label": "Cheapest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Ramwadi Metro Station",
+          "exitStopId": "door_dest",
+          "exitStopName": "Baner (Balewadi Phata)",
+          "segments": [
+            {
+              "type": "cab",
+              "from": "Ramwadi Metro Station",
+              "to": "Baner (Balewadi Phata)",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.564,
+                "lng": 73.774,
+                "label": "Baner (Balewadi Phata)"
+              },
+              "minutes": 63,
+              "inrMin": 487,
+              "inrMax": 589,
+              "meters": 20694,
+              "confidence": "Estimated",
+              "fareConfidence": "Estimated",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.564,
+                  73.774
+                ]
+              ],
+              "details": "Base ₹50 + ₹18/km (18.7 km) + ₹2/min (63 min)"
+            }
+          ],
+          "totalMin": 68,
+          "totalInrMin": 487,
+          "totalInrMax": 589,
+          "waitMin": 5,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "Medium"
+        },
+        {
+          "id": "direct_auto",
+          "label": "Fastest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Ramwadi Metro Station",
+          "exitStopId": "door_dest",
+          "exitStopName": "Baner (Balewadi Phata)",
+          "segments": [
+            {
+              "type": "auto",
+              "from": "Ramwadi Metro Station",
+              "to": "Baner (Balewadi Phata)",
+              "fromCoords": {
+                "lat": 18.5524,
+                "lng": 73.9189,
+                "label": "Ramwadi Metro Station"
+              },
+              "toCoords": {
+                "lat": 18.564,
+                "lng": 73.774,
+                "label": "Baner (Balewadi Phata)"
+              },
+              "minutes": 65,
+              "inrMin": 351,
+              "inrMax": 386,
+              "meters": 20694,
+              "confidence": "Formula",
+              "fareConfidence": "Formula",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5524,
+                  73.9189
+                ],
+                [
+                  18.564,
+                  73.774
+                ]
+              ],
+              "details": "RTO Base ₹25 (first 1.5 km) + ₹17/km (19.2 km: ₹326)"
+            }
+          ],
+          "totalMin": 68,
+          "totalInrMin": 351,
+          "totalInrMax": 386,
+          "waitMin": 3,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "High"
+        }
+      ],
+      "assumptions": [
+        {
+          "item": "Pune Metro Timings & Fares",
+          "formula": "Maha Metro Slabs: ₹10 (0-2 km), ₹15 (2-4 km), ₹20 (4-8 km), ₹25 (8-12 km), ₹30 (12-16 km), ₹35 (>16 km). Avg travel: 2 min/station, 5 min interchange.",
+          "source": "Maha Metro Official Tariff Card (Pune Metro Rail)",
+          "confidence": "Real"
+        },
+        {
+          "item": "PMPML Bus Fares",
+          "formula": "Official Stages: ₹5 (0-2 km), ₹10 (2-4 km), ₹15 (4-8 km), ₹20 (8-12 km), ₹25 (12-16 km), ₹30 (>16 km). Headways 10-20 min.",
+          "source": "PMPML Official Tariff (pmpml.org)",
+          "confidence": "Real"
+        },
+        {
+          "item": "Auto Rickshaw Fare Meter",
+          "formula": "Maharashtra RTO Pune: Base ₹25 (first 1.5 km) + ₹17/km. Night surcharge: +25% (00:00 - 05:00). Negotiate ceiling: +20% buffer.",
+          "source": "Maharashtra Regional Transport Authority Pune Official Revision",
+          "confidence": "Formula"
+        },
+        {
+          "item": "Transfer Buffer",
+          "formula": "5 minutes added per modal interchange (station access, ticketing, and platform transfer).",
+          "source": "ExitSmart Multimodal Transit Buffer Standard",
+          "confidence": "Formula"
+        },
+        {
+          "item": "App Cab Fare Estimate",
+          "formula": "Industry estimate: Base ₹50 (incl 2 km) + ₹18/km + ₹2/min. Night multiplier: 1.25x. No live aggregator API.",
+          "source": "Pune App Cab Non-Surge Standard Industry Model",
+          "confidence": "Estimated"
+        },
+        {
+          "item": "Walking Speed",
+          "formula": "4.5 km/h (75 meters per minute). Detour multiplier: 1.25x straight-line when offline.",
+          "source": "Standard Pedestrian Speed Heuristic",
+          "confidence": "Estimated"
+        }
+      ],
+      "cabDirectEstimate": {
+        "minInr": 487,
+        "maxInr": 589,
+        "minutes": 63,
+        "meters": 20694
+      },
+      "baseline": null
+    }
+  },
+  "ref_4_kothrud_kharadi": {
+    "name": "Kothrud (Chandani Chowk) to Kharadi",
+    "origin": {
+      "lat": 18.5075,
+      "lng": 73.7845,
+      "label": "Kothrud (Chandani Chowk)"
+    },
+    "destination": {
+      "lat": 18.5516,
+      "lng": 73.9515,
+      "label": "EON IT Park, Kharadi"
+    },
+    "balanced": {
+      "exitSmart": null,
+      "options": [
+        {
+          "id": "direct_cab",
+          "label": "Cheapest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Kothrud (Chandani Chowk)",
+          "exitStopId": "door_dest",
+          "exitStopName": "EON IT Park, Kharadi",
+          "segments": [
+            {
+              "type": "cab",
+              "from": "Kothrud (Chandani Chowk)",
+              "to": "EON IT Park, Kharadi",
+              "fromCoords": {
+                "lat": 18.5075,
+                "lng": 73.7845,
+                "label": "Kothrud (Chandani Chowk)"
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515,
+                "label": "EON IT Park, Kharadi"
+              },
+              "minutes": 75,
+              "inrMin": 578,
+              "inrMax": 699,
+              "meters": 24674,
+              "confidence": "Estimated",
+              "fareConfidence": "Estimated",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5075,
+                  73.7845
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "Base ₹50 + ₹18/km (22.7 km) + ₹2/min (75 min)"
+            }
+          ],
+          "totalMin": 80,
+          "totalInrMin": 578,
+          "totalInrMax": 699,
+          "waitMin": 5,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "Medium"
+        },
+        {
+          "id": "direct_auto",
+          "label": "Fastest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Kothrud (Chandani Chowk)",
+          "exitStopId": "door_dest",
+          "exitStopName": "EON IT Park, Kharadi",
+          "segments": [
+            {
+              "type": "auto",
+              "from": "Kothrud (Chandani Chowk)",
+              "to": "EON IT Park, Kharadi",
+              "fromCoords": {
+                "lat": 18.5075,
+                "lng": 73.7845,
+                "label": "Kothrud (Chandani Chowk)"
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515,
+                "label": "EON IT Park, Kharadi"
+              },
+              "minutes": 77,
+              "inrMin": 419,
+              "inrMax": 461,
+              "meters": 24674,
+              "confidence": "Formula",
+              "fareConfidence": "Formula",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5075,
+                  73.7845
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "RTO Base ₹25 (first 1.5 km) + ₹17/km (23.2 km: ₹394)"
+            }
+          ],
+          "totalMin": 80,
+          "totalInrMin": 419,
+          "totalInrMax": 461,
+          "waitMin": 3,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "High"
+        }
+      ],
+      "assumptions": [
+        {
+          "item": "Pune Metro Timings & Fares",
+          "formula": "Maha Metro Slabs: ₹10 (0-2 km), ₹15 (2-4 km), ₹20 (4-8 km), ₹25 (8-12 km), ₹30 (12-16 km), ₹35 (>16 km). Avg travel: 2 min/station, 5 min interchange.",
+          "source": "Maha Metro Official Tariff Card (Pune Metro Rail)",
+          "confidence": "Real"
+        },
+        {
+          "item": "PMPML Bus Fares",
+          "formula": "Official Stages: ₹5 (0-2 km), ₹10 (2-4 km), ₹15 (4-8 km), ₹20 (8-12 km), ₹25 (12-16 km), ₹30 (>16 km). Headways 10-20 min.",
+          "source": "PMPML Official Tariff (pmpml.org)",
+          "confidence": "Real"
+        },
+        {
+          "item": "Auto Rickshaw Fare Meter",
+          "formula": "Maharashtra RTO Pune: Base ₹25 (first 1.5 km) + ₹17/km. Night surcharge: +25% (00:00 - 05:00). Negotiate ceiling: +20% buffer.",
+          "source": "Maharashtra Regional Transport Authority Pune Official Revision",
+          "confidence": "Formula"
+        },
+        {
+          "item": "Transfer Buffer",
+          "formula": "5 minutes added per modal interchange (station access, ticketing, and platform transfer).",
+          "source": "ExitSmart Multimodal Transit Buffer Standard",
+          "confidence": "Formula"
+        },
+        {
+          "item": "App Cab Fare Estimate",
+          "formula": "Industry estimate: Base ₹50 (incl 2 km) + ₹18/km + ₹2/min. Night multiplier: 1.25x. No live aggregator API.",
+          "source": "Pune App Cab Non-Surge Standard Industry Model",
+          "confidence": "Estimated"
+        },
+        {
+          "item": "Walking Speed",
+          "formula": "4.5 km/h (75 meters per minute). Detour multiplier: 1.25x straight-line when offline.",
+          "source": "Standard Pedestrian Speed Heuristic",
+          "confidence": "Estimated"
+        }
+      ],
+      "cabDirectEstimate": {
+        "minInr": 578,
+        "maxInr": 699,
+        "minutes": 75,
+        "meters": 24674
+      },
+      "baseline": null
+    },
+    "rain": {
+      "exitSmart": null,
+      "options": [
+        {
+          "id": "direct_cab",
+          "label": "Cheapest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Kothrud (Chandani Chowk)",
+          "exitStopId": "door_dest",
+          "exitStopName": "EON IT Park, Kharadi",
+          "segments": [
+            {
+              "type": "cab",
+              "from": "Kothrud (Chandani Chowk)",
+              "to": "EON IT Park, Kharadi",
+              "fromCoords": {
+                "lat": 18.5075,
+                "lng": 73.7845,
+                "label": "Kothrud (Chandani Chowk)"
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515,
+                "label": "EON IT Park, Kharadi"
+              },
+              "minutes": 75,
+              "inrMin": 578,
+              "inrMax": 699,
+              "meters": 24674,
+              "confidence": "Estimated",
+              "fareConfidence": "Estimated",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5075,
+                  73.7845
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "Base ₹50 + ₹18/km (22.7 km) + ₹2/min (75 min)"
+            }
+          ],
+          "totalMin": 80,
+          "totalInrMin": 578,
+          "totalInrMax": 699,
+          "waitMin": 5,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "Medium"
+        },
+        {
+          "id": "direct_auto",
+          "label": "Fastest",
+          "tag": null,
+          "entryStopId": "door_origin",
+          "entryStopName": "Kothrud (Chandani Chowk)",
+          "exitStopId": "door_dest",
+          "exitStopName": "EON IT Park, Kharadi",
+          "segments": [
+            {
+              "type": "auto",
+              "from": "Kothrud (Chandani Chowk)",
+              "to": "EON IT Park, Kharadi",
+              "fromCoords": {
+                "lat": 18.5075,
+                "lng": 73.7845,
+                "label": "Kothrud (Chandani Chowk)"
+              },
+              "toCoords": {
+                "lat": 18.5516,
+                "lng": 73.9515,
+                "label": "EON IT Park, Kharadi"
+              },
+              "minutes": 77,
+              "inrMin": 419,
+              "inrMax": 461,
+              "meters": 24674,
+              "confidence": "Formula",
+              "fareConfidence": "Formula",
+              "timeConfidence": "Estimated",
+              "polyline": [
+                [
+                  18.5075,
+                  73.7845
+                ],
+                [
+                  18.5516,
+                  73.9515
+                ]
+              ],
+              "details": "RTO Base ₹25 (first 1.5 km) + ₹17/km (23.2 km: ₹394)"
+            }
+          ],
+          "totalMin": 80,
+          "totalInrMin": 419,
+          "totalInrMax": 461,
+          "waitMin": 3,
+          "transfers": 0,
+          "walkM": 50,
+          "confidence": "High"
+        }
+      ],
+      "assumptions": [
+        {
+          "item": "Pune Metro Timings & Fares",
+          "formula": "Maha Metro Slabs: ₹10 (0-2 km), ₹15 (2-4 km), ₹20 (4-8 km), ₹25 (8-12 km), ₹30 (12-16 km), ₹35 (>16 km). Avg travel: 2 min/station, 5 min interchange.",
+          "source": "Maha Metro Official Tariff Card (Pune Metro Rail)",
+          "confidence": "Real"
+        },
+        {
+          "item": "PMPML Bus Fares",
+          "formula": "Official Stages: ₹5 (0-2 km), ₹10 (2-4 km), ₹15 (4-8 km), ₹20 (8-12 km), ₹25 (12-16 km), ₹30 (>16 km). Headways 10-20 min.",
+          "source": "PMPML Official Tariff (pmpml.org)",
+          "confidence": "Real"
+        },
+        {
+          "item": "Auto Rickshaw Fare Meter",
+          "formula": "Maharashtra RTO Pune: Base ₹25 (first 1.5 km) + ₹17/km. Night surcharge: +25% (00:00 - 05:00). Negotiate ceiling: +20% buffer.",
+          "source": "Maharashtra Regional Transport Authority Pune Official Revision",
+          "confidence": "Formula"
+        },
+        {
+          "item": "Transfer Buffer",
+          "formula": "5 minutes added per modal interchange (station access, ticketing, and platform transfer).",
+          "source": "ExitSmart Multimodal Transit Buffer Standard",
+          "confidence": "Formula"
+        },
+        {
+          "item": "App Cab Fare Estimate",
+          "formula": "Industry estimate: Base ₹50 (incl 2 km) + ₹18/km + ₹2/min. Night multiplier: 1.25x. No live aggregator API.",
+          "source": "Pune App Cab Non-Surge Standard Industry Model",
+          "confidence": "Estimated"
+        },
+        {
+          "item": "Walking Speed",
+          "formula": "4.5 km/h (75 meters per minute). Detour multiplier: 1.25x straight-line when offline.",
+          "source": "Standard Pedestrian Speed Heuristic",
+          "confidence": "Estimated"
+        }
+      ],
+      "cabDirectEstimate": {
+        "minInr": 578,
+        "maxInr": 699,
+        "minutes": 75,
+        "meters": 24674
+      },
+      "baseline": null
+    }
+  }
+}

@@ -1,0 +1,56 @@
+[
+  { "id": "stop_ramwadi_metro", "name": "Ramwadi Metro Bus Stop", "lat": 18.5526, "lng": 73.9192, "type": "bus_stop" },
+  { "id": "stand_ramwadi_metro", "name": "Ramwadi Metro Auto Stand", "lat": 18.5522, "lng": 73.9185, "type": "auto_stand" },
+  { "id": "stop_somnath_nagar", "name": "Somnath Nagar", "lat": 18.5540, "lng": 73.9270, "type": "bus_stop" },
+  { "id": "stop_chandan_nagar", "name": "Chandan Nagar Water Tank", "lat": 18.5552, "lng": 73.9360, "type": "bus_stop" },
+  { "id": "stand_chandan_nagar", "name": "Chandan Nagar Auto Stand", "lat": 18.5555, "lng": 73.9355, "type": "auto_stand" },
+  { "id": "stop_kharadi_bypass", "name": "Kharadi Bypass", "lat": 18.5548, "lng": 73.9442, "type": "bus_stop" },
+  { "id": "stand_kharadi_bypass", "name": "Kharadi Bypass Auto Stand", "lat": 18.5545, "lng": 73.9440, "type": "auto_stand" },
+  { "id": "stop_ashoka_nagar", "name": "Ashoka Nagar Kharadi", "lat": 18.5530, "lng": 73.9520, "type": "bus_stop" },
+  { "id": "stop_eon_it_park", "name": "EON IT Park Phase 1 Gate", "lat": 18.5516, "lng": 73.9515, "type": "bus_stop" },
+  { "id": "stand_eon_it_park", "name": "EON IT Park Auto Stand", "lat": 18.5512, "lng": 73.9518, "type": "auto_stand" },
+  { "id": "stop_wipro_kharadi", "name": "Wipro Circle Kharadi", "lat": 18.5505, "lng": 73.9490, "type": "bus_stop" },
+  
+  { "id": "stop_viman_nagar_corner", "name": "Viman Nagar Corner", "lat": 18.5558, "lng": 73.9125, "type": "bus_stop" },
+  { "id": "stand_viman_nagar_corner", "name": "Viman Nagar Corner Auto Stand", "lat": 18.5555, "lng": 73.9120, "type": "auto_stand" },
+  { "id": "stop_phoenix_marketcity", "name": "Phoenix Marketcity", "lat": 18.5601, "lng": 73.9168, "type": "bus_stop" },
+  { "id": "stand_phoenix_marketcity", "name": "Phoenix Marketcity Auto Stand", "lat": 18.5605, "lng": 73.9172, "type": "auto_stand" },
+  { "id": "stop_datta_mandir_viman_nagar", "name": "Datta Mandir Viman Nagar", "lat": 18.5645, "lng": 73.9145, "type": "bus_stop" },
+  { "id": "stop_symbiosis_viman_nagar", "name": "Symbiosis Law School Viman Nagar", "lat": 18.5710, "lng": 73.9120, "type": "bus_stop" },
+  { "id": "stand_symbiosis_viman_nagar", "name": "Symbiosis Auto Stand", "lat": 18.5712, "lng": 73.9125, "type": "auto_stand" },
+  
+  { "id": "stop_kalyani_nagar_metro", "name": "Kalyani Nagar Metro Stop", "lat": 18.5495, "lng": 73.9032, "type": "bus_stop" },
+  { "id": "stand_kalyani_nagar_metro", "name": "Kalyani Nagar Metro Auto Stand", "lat": 18.5491, "lng": 73.9025, "type": "auto_stand" },
+  { "id": "stop_shastri_nagar", "name": "Shastri Nagar Yerwada", "lat": 18.5510, "lng": 73.8960, "type": "bus_stop" },
+  { "id": "stop_yerwada_gunjan", "name": "Gunjan Talkies Yerwada", "lat": 18.5501, "lng": 73.8860, "type": "bus_stop" },
+  
+  { "id": "stop_pune_station", "name": "Pune Station Bus Depot", "lat": 18.5284, "lng": 73.8742, "type": "bus_stop" },
+  { "id": "stand_pune_station", "name": "Pune Station Main Auto Stand", "lat": 18.5280, "lng": 73.8730, "type": "auto_stand" },
+  
+  { "id": "stop_shivaji_nagar_bus_stand", "name": "Shivaji Nagar Bus Stand", "lat": 18.5320, "lng": 73.8520, "type": "bus_stop" },
+  { "id": "stand_shivaji_nagar", "name": "Shivaji Nagar Auto Stand", "lat": 18.5315, "lng": 73.8515, "type": "auto_stand" },
+  { "id": "stop_university_circle", "name": "Savitribai Phule Pune University", "lat": 18.5535, "lng": 73.8245, "type": "bus_stop" },
+  { "id": "stop_sanjivani_hospital", "name": "Sanjivani Hospital Aundh", "lat": 18.5605, "lng": 73.8090, "type": "bus_stop" },
+  { "id": "stop_aundh_gaon", "name": "Aundh Gaon", "lat": 18.5615, "lng": 73.8055, "type": "bus_stop" },
+  { "id": "stand_aundh_gaon", "name": "Aundh Gaon Auto Stand", "lat": 18.5610, "lng": 73.8050, "type": "auto_stand" },
+  { "id": "stop_baner_phata", "name": "Baner Phata", "lat": 18.5580, "lng": 73.7930, "type": "bus_stop" },
+  { "id": "stand_baner_phata", "name": "Baner Phata Auto Stand", "lat": 18.5578, "lng": 73.7925, "type": "auto_stand" },
+  { "id": "stop_baner_road", "name": "Baner Road (Syngenta)", "lat": 18.5595, "lng": 73.7840, "type": "bus_stop" },
+  { "id": "stop_baner_balewadi_phata", "name": "Balewadi Phata Baner", "lat": 18.5640, "lng": 73.7740, "type": "bus_stop" },
+  { "id": "stand_baner_balewadi_phata", "name": "Balewadi Phata Auto Stand", "lat": 18.5638, "lng": 73.7735, "type": "auto_stand" },
+  
+  { "id": "stop_swargate_depot", "name": "Swargate Bus Depot", "lat": 18.5015, "lng": 73.8580, "type": "bus_stop" },
+  { "id": "stand_swargate", "name": "Swargate Auto Stand", "lat": 18.5022, "lng": 73.8590, "type": "auto_stand" },
+  { "id": "stop_nal_stop_bus", "name": "Nal Stop Karve Road", "lat": 18.5060, "lng": 73.8275, "type": "bus_stop" },
+  { "id": "stand_nal_stop", "name": "Nal Stop Auto Stand", "lat": 18.5055, "lng": 73.8280, "type": "auto_stand" },
+  { "id": "stop_deccan_corner", "name": "Deccan Gymkhana Corner", "lat": 18.5170, "lng": 73.8430, "type": "bus_stop" },
+  { "id": "stand_deccan", "name": "Deccan Gymkhana Auto Stand", "lat": 18.5165, "lng": 73.8440, "type": "auto_stand" },
+  
+  { "id": "stop_magarpatta_south_gate", "name": "Magarpatta South Gate", "lat": 18.5115, "lng": 73.9290, "type": "bus_stop" },
+  { "id": "stand_magarpatta", "name": "Magarpatta Cybercity Stand", "lat": 18.5140, "lng": 73.9320, "type": "auto_stand" },
+  { "id": "stop_hadapsar_gadital", "name": "Hadapsar Gadital", "lat": 18.5020, "lng": 73.9310, "type": "bus_stop" },
+  
+  { "id": "stop_hinjewadi_phase1", "name": "Hinjewadi Shivaji Chowk Phase 1", "lat": 18.5910, "lng": 73.7380, "type": "bus_stop" },
+  { "id": "stand_hinjewadi_phase1", "name": "Hinjewadi Phase 1 Auto Stand", "lat": 18.5905, "lng": 73.7385, "type": "auto_stand" },
+  { "id": "stop_wakad_bridge", "name": "Wakad Bridge Chowk", "lat": 18.5985, "lng": 73.7620, "type": "bus_stop" }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "id": "pmpml_165",
+    "routeNumber": "165",
+    "name": "Ramwadi Metro - Kharadi EON IT Park",
+    "headwayMin": 12,
+    "firstBus": "05:45",
+    "lastBus": "22:30",
+    "stops": [
+      "stop_ramwadi_metro",
+      "stop_somnath_nagar",
+      "stop_chandan_nagar",
+      "stop_kharadi_bypass",
+      "stop_ashoka_nagar",
+      "stop_eon_it_park"
+    ],
+    "fareSlabs": [
+      { "minKm": 0, "maxKm": 2, "fare": 5 },
+      { "minKm": 2, "maxKm": 4, "fare": 10 },
+      { "minKm": 4, "maxKm": 8, "fare": 15 },
+      { "minKm": 8, "maxKm": 12, "fare": 20 },
+      { "minKm": 12, "maxKm": 16, "fare": 25 },
+      { "minKm": 16, "maxKm": 999, "fare": 30 }
+    ]
+  },
+  {
+    "id": "pmpml_162",
+    "routeNumber": "162",
+    "name": "Ramwadi Metro - Viman Nagar / Symbiosis",
+    "headwayMin": 10,
+    "firstBus": "06:00",
+    "lastBus": "22:45",
+    "stops": [
+      "stop_ramwadi_metro",
+      "stop_viman_nagar_corner",
+      "stop_phoenix_marketcity",
+      "stop_datta_mandir_viman_nagar",
+      "stop_symbiosis_viman_nagar"
+    ],
+    "fareSlabs": [
+      { "minKm": 0, "maxKm": 2, "fare": 5 },
+      { "minKm": 2, "maxKm": 4, "fare": 10 },
+      { "minKm": 4, "maxKm": 8, "fare": 15 },
+      { "minKm": 8, "maxKm": 12, "fare": 20 }
+    ]
+  },
+  {
+    "id": "pmpml_258",
+    "routeNumber": "258",
+    "name": "Shivaji Nagar Metro - Baner / Balewadi",
+    "headwayMin": 15,
+    "firstBus": "06:00",
+    "lastBus": "22:00",
+    "stops": [
+      "stop_shivaji_nagar_bus_stand",
+      "stop_university_circle",
+      "stop_sanjivani_hospital",
+      "stop_aundh_gaon",
+      "stop_baner_phata",
+      "stop_baner_road",
+      "stop_baner_balewadi_phata"
+    ],
+    "fareSlabs": [
+      { "minKm": 0, "maxKm": 2, "fare": 5 },
+      { "minKm": 2, "maxKm": 4, "fare": 10 },
+      { "minKm": 4, "maxKm": 8, "fare": 15 },
+      { "minKm": 8, "maxKm": 12, "fare": 20 },
+      { "minKm": 12, "maxKm": 16, "fare": 25 }
+    ]
+  },
+  {
+    "id": "pmpml_187",
+    "routeNumber": "187",
+    "name": "Pune Station Metro - Magarpatta City",
+    "headwayMin": 15,
+    "firstBus": "06:15",
+    "lastBus": "22:15",
+    "stops": [
+      "stop_pune_station",
+      "stop_magarpatta_south_gate",
+      "stop_hadapsar_gadital"
+    ],
+    "fareSlabs": [
+      { "minKm": 0, "maxKm": 2, "fare": 5 },
+      { "minKm": 2, "maxKm": 4, "fare": 10 },
+      { "minKm": 4, "maxKm": 8, "fare": 15 },
+      { "minKm": 8, "maxKm": 12, "fare": 20 }
+    ]
+  },
+  {
+    "id": "pmpml_381",
+    "routeNumber": "381",
+    "name": "Shivaji Nagar Metro - Hinjewadi Phase 1",
+    "headwayMin": 20,
+    "firstBus": "06:30",
+    "lastBus": "21:45",
+    "stops": [
+      "stop_shivaji_nagar_bus_stand",
+      "stop_university_circle",
+      "stop_aundh_gaon",
+      "stop_wakad_bridge",
+      "stop_hinjewadi_phase1"
+    ],
+    "fareSlabs": [
+      { "minKm": 0, "maxKm": 2, "fare": 5 },
+      { "minKm": 2, "maxKm": 4, "fare": 10 },
+      { "minKm": 4, "maxKm": 8, "fare": 15 },
+      { "minKm": 8, "maxKm": 12, "fare": 20 },
+      { "minKm": 12, "maxKm": 18, "fare": 25 },
+      { "minKm": 18, "maxKm": 999, "fare": 30 }
+    ]
+  }
+]
