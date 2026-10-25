@@ -1,35 +1,73 @@
 [
   {
+    "id": "lm_pune_airport",
+    "name": "Pune International Airport (PNQ)",
+    "lat": 18.5822,
+    "lng": 73.9197,
+    "area": "Lohegaon",
+    "category": "Airport",
+    "tags": ["airport", "flight", "terminal", "lohegaon", "aerodrome", "pnq"],
+    "aliases": ["pune airport", "lohegaon airport", "pnq", "terminal 1", "terminal 2", "new airport terminal"]
+  },
+  {
+    "id": "lm_pune_station",
+    "name": "Pune Junction Railway Station",
+    "lat": 18.5284,
+    "lng": 73.8742,
+    "area": "Central Pune",
+    "category": "Transit Hub",
+    "tags": ["railway", "train", "station", "junction", "central"],
+    "aliases": ["pune station", "pune jn", "railway station", "pune railway station"]
+  },
+  {
+    "id": "lm_shivaji_nagar_station",
+    "name": "Shivaji Nagar Railway & Bus Terminal",
+    "lat": 18.5324,
+    "lng": 73.8524,
+    "area": "Shivajinagar",
+    "category": "Transit Hub",
+    "tags": ["railway", "train", "bus stand", "metro", "shivajinagar"],
+    "aliases": ["shivaji nagar", "shivajinagar station", "shivajinagar bus stand", "shivaji nagar metro"]
+  },
+  {
+    "id": "lm_swargate",
+    "name": "Swargate Bus Terminal & Metro",
+    "lat": 18.5015,
+    "lng": 73.8580,
+    "area": "Swargate",
+    "category": "Transit Hub",
+    "tags": ["bus", "terminal", "st stand", "swargate", "metro"],
+    "aliases": ["swargate", "swar gate", "swargate bus stand", "swargate depot", "swargate metro"]
+  },
+  {
     "id": "lm_eon_kharadi",
-    "name": "EON IT Park, Kharadi",
+    "name": "EON IT Park (Phase 1 & 2), Kharadi",
     "lat": 18.5516,
     "lng": 73.9515,
     "area": "Kharadi",
-    "category": "Tech Park"
+    "category": "Tech Park",
+    "tags": ["tech park", "it park", "kharadi", "eon", "corporate", "office"],
+    "aliases": ["eon", "eon it park", "eon kharadi", "eon phase 1", "eon phase 2", "kharadi it park"]
   },
   {
-    "id": "lm_viman_nagar",
-    "name": "Viman Nagar (Datta Mandir Chowk)",
-    "lat": 18.5645,
-    "lng": 73.9145,
-    "area": "Viman Nagar",
-    "category": "Commercial & Residential"
+    "id": "lm_wtc_kharadi",
+    "name": "World Trade Center (WTC), Kharadi",
+    "lat": 18.5538,
+    "lng": 73.9482,
+    "area": "Kharadi",
+    "category": "Tech Park",
+    "tags": ["wtc", "world trade center", "kharadi", "corporate", "offices"],
+    "aliases": ["wtc", "world trade center pune", "wtc kharadi", "tower 1", "tower 2"]
   },
   {
-    "id": "lm_phoenix_marketcity",
-    "name": "Phoenix Marketcity, Viman Nagar",
-    "lat": 18.5601,
-    "lng": 73.9168,
-    "area": "Viman Nagar",
-    "category": "Mall & Entertainment"
-  },
-  {
-    "id": "lm_baner",
-    "name": "Baner (Balewadi Phata)",
-    "lat": 18.5640,
-    "lng": 73.7740,
-    "area": "Baner",
-    "category": "Commercial & Residential"
+    "id": "lm_magarpatta_cybercity",
+    "name": "Magarpatta Cybercity, Hadapsar",
+    "lat": 18.5140,
+    "lng": 73.9320,
+    "area": "Hadapsar",
+    "category": "Tech Park",
+    "tags": ["tech park", "cybercity", "magarpatta", "hadapsar", "it park"],
+    "aliases": ["magarpatta", "magarpatta city", "cybercity", "hadapsar it park", "tower 4", "tower 7"]
   },
   {
     "id": "lm_hinjewadi_p1",
@@ -37,94 +75,1048 @@
     "lat": 18.5910,
     "lng": 73.7380,
     "area": "Hinjewadi",
-    "category": "Tech Park"
+    "category": "Tech Park",
+    "tags": ["tech park", "it park", "hinjewadi", "hinjawadi", "phase 1", "shivaji chowk"],
+    "aliases": ["hinjewadi phase 1", "hinjawadi phase 1", "hinjewadi chowk", "rgip phase 1", "tcs hinjewadi"]
   },
   {
-    "id": "lm_pune_station",
-    "name": "Pune Railway Station",
-    "lat": 18.5284,
-    "lng": 73.8742,
-    "area": "Central Pune",
-    "category": "Transit Hub"
+    "id": "lm_hinjewadi_p2",
+    "name": "Hinjewadi Phase 2 (Wipro Circle)",
+    "lat": 18.5888,
+    "lng": 73.7195,
+    "area": "Hinjewadi",
+    "category": "Tech Park",
+    "tags": ["tech park", "it park", "hinjewadi", "hinjawadi", "phase 2", "wipro circle"],
+    "aliases": ["hinjewadi phase 2", "hinjawadi phase 2", "wipro circle", "infosys phase 2", "tcs phase 2"]
   },
   {
-    "id": "lm_swargate",
-    "name": "Swargate Bus Terminal",
-    "lat": 18.5015,
-    "lng": 73.8580,
-    "area": "Swargate",
-    "category": "Transit Hub"
+    "id": "lm_hinjewadi_p3",
+    "name": "Hinjewadi Phase 3 (Megapolis & Embassy TechZone)",
+    "lat": 18.5830,
+    "lng": 73.6980,
+    "area": "Hinjewadi",
+    "category": "Tech Park",
+    "tags": ["tech park", "it park", "hinjewadi", "hinjawadi", "phase 3", "megapolis", "embassy"],
+    "aliases": ["hinjewadi phase 3", "hinjawadi phase 3", "megapolis", "embassy techzone", "tcs sahyadri"]
   },
   {
-    "id": "lm_koregaon_park",
-    "name": "Koregaon Park (North Main Road)",
-    "lat": 18.5362,
-    "lng": 73.8940,
-    "area": "Koregaon Park",
-    "category": "Commercial & Residential"
-  },
-  {
-    "id": "lm_aundh",
-    "name": "Aundh (Bremen Chowk)",
-    "lat": 18.5615,
-    "lng": 73.8055,
-    "area": "Aundh",
-    "category": "Commercial & Residential"
-  },
-  {
-    "id": "lm_hadapsar",
-    "name": "Hadapsar (Magarpatta City)",
-    "lat": 18.5140,
-    "lng": 73.9320,
-    "area": "Hadapsar",
-    "category": "Tech Park"
-  },
-  {
-    "id": "lm_fc_road",
-    "name": "FC Road (Fergusson College)",
-    "lat": 18.5204,
-    "lng": 73.8415,
-    "area": "Shivajinagar",
-    "category": "Commercial & College"
-  },
-  {
-    "id": "lm_kalyani_nagar",
-    "name": "Kalyani Nagar (Cerebrum IT Park)",
+    "id": "lm_cerebrum_it_park",
+    "name": "Cerebrum IT Park, Kalyani Nagar",
     "lat": 18.5465,
     "lng": 73.9048,
     "area": "Kalyani Nagar",
-    "category": "Tech Park"
+    "category": "Tech Park",
+    "tags": ["tech park", "kalyani nagar", "cerebrum", "corporate"],
+    "aliases": ["cerebrum", "cerebrum it park", "kalyani nagar it park", "d-mart kalyani nagar"]
   },
   {
-    "id": "lm_ramwadi_metro",
-    "name": "Ramwadi Metro Station",
-    "lat": 18.5524,
-    "lng": 73.9189,
-    "area": "Ramwadi",
-    "category": "Transit Hub"
+    "id": "lm_commerzone_yerawada",
+    "name": "Commerzone IT Park, Yerawada",
+    "lat": 18.5630,
+    "lng": 73.8820,
+    "area": "Yerawada",
+    "category": "Tech Park",
+    "tags": ["tech park", "commerzone", "yerawada", "jail road"],
+    "aliases": ["commerzone", "yerawada commerzone", "jail road it park"]
   },
   {
-    "id": "lm_nal_stop",
-    "name": "Nal Stop (Karve Road)",
-    "lat": 18.5058,
-    "lng": 73.8277,
-    "area": "Erandwane",
-    "category": "Transit Hub"
+    "id": "lm_weikfield_viman",
+    "name": "Weikfield IT Citi Info Park, Viman Nagar",
+    "lat": 18.5585,
+    "lng": 73.9125,
+    "area": "Viman Nagar",
+    "category": "Tech Park",
+    "tags": ["tech park", "weikfield", "viman nagar", "nagar road"],
+    "aliases": ["weikfield", "weikfield it park", "weikfield viman nagar"]
   },
   {
-    "id": "lm_kothrud_stand",
-    "name": "Kothrud (Chandani Chowk)",
+    "id": "lm_icc_tech_park",
+    "name": "ICC Tech Park, Senapati Bapat Road",
+    "lat": 18.5305,
+    "lng": 73.8320,
+    "area": "Senapati Bapat Road",
+    "category": "Tech Park",
+    "tags": ["tech park", "icc", "sb road", "senapati bapat road"],
+    "aliases": ["icc trade tower", "icc tech park", "sb road icc", "jw marriott sb road"]
+  },
+  {
+    "id": "lm_panchshil_business_park",
+    "name": "Panchshil Business Park, Baner-Balewadi",
+    "lat": 18.5695,
+    "lng": 73.7745,
+    "area": "Balewadi",
+    "category": "Tech Park",
+    "tags": ["tech park", "panchshil", "baner", "balewadi", "high street"],
+    "aliases": ["panchshil business park", "balewadi high street offices", "veritas balewadi"]
+  },
+  {
+    "id": "lm_sp_infocity",
+    "name": "SP Infocity, Phursungi / Hadapsar",
+    "lat": 18.4795,
+    "lng": 73.9660,
+    "area": "Phursungi",
+    "category": "Tech Park",
+    "tags": ["tech park", "sp infocity", "phursungi", "hadapsar saswad road"],
+    "aliases": ["sp infocity", "saswad road it park", "accenture phursungi", "ibm phursungi"]
+  },
+  {
+    "id": "lm_viman_nagar",
+    "name": "Viman Nagar (Datta Mandir Chowk)",
+    "lat": 18.5645,
+    "lng": 73.9145,
+    "area": "Viman Nagar",
+    "category": "Commercial & Residential",
+    "tags": ["viman nagar", "residential", "commercial", "datta mandir"],
+    "aliases": ["viman nagar", "vimannagar", "datta mandir chowk", "viman nagar chowk"]
+  },
+  {
+    "id": "lm_phoenix_marketcity",
+    "name": "Phoenix Marketcity, Viman Nagar",
+    "lat": 18.5601,
+    "lng": 73.9168,
+    "area": "Viman Nagar",
+    "category": "Mall & Entertainment",
+    "tags": ["mall", "shopping", "phoenix", "marketcity", "viman nagar"],
+    "aliases": ["phoenix mall", "marketcity", "phoenix marketcity", "phoenix viman nagar"]
+  },
+  {
+    "id": "lm_phoenix_wakad",
+    "name": "Phoenix Mall of the Millennium, Wakad",
+    "lat": 18.6015,
+    "lng": 73.7635,
+    "area": "Wakad",
+    "category": "Mall & Entertainment",
+    "tags": ["mall", "shopping", "phoenix", "wakad", "millennium"],
+    "aliases": ["phoenix wakad", "mall of the millennium", "wakad phoenix mall"]
+  },
+  {
+    "id": "lm_amanora_mall",
+    "name": "Amanora Town Centre & Mall, Hadapsar",
+    "lat": 18.5195,
+    "lng": 73.9355,
+    "area": "Hadapsar",
+    "category": "Mall & Entertainment",
+    "tags": ["mall", "shopping", "amanora", "town centre", "hadapsar"],
+    "aliases": ["amanora", "amanora mall", "amanora town centre", "amanora park town"]
+  },
+  {
+    "id": "lm_seasons_mall",
+    "name": "Seasons Mall, Magarpatta / Hadapsar",
+    "lat": 18.5208,
+    "lng": 73.9328,
+    "area": "Hadapsar",
+    "category": "Mall & Entertainment",
+    "tags": ["mall", "shopping", "seasons", "magarpatta", "multiplex"],
+    "aliases": ["seasons mall", "seasons hadapsar", "cinepolis seasons"]
+  },
+  {
+    "id": "lm_pavilion_mall",
+    "name": "The Pavillion Mall, Senapati Bapat Road",
+    "lat": 18.5332,
+    "lng": 73.8305,
+    "area": "Senapati Bapat Road",
+    "category": "Mall & Entertainment",
+    "tags": ["mall", "shopping", "pavilion", "sb road", "pvr"],
+    "aliases": ["pavilion mall", "the pavillion", "sb road mall", "pune pavilion"]
+  },
+  {
+    "id": "lm_westend_mall",
+    "name": "Westend Mall, Aundh",
+    "lat": 18.5605,
+    "lng": 73.8070,
+    "area": "Aundh",
+    "category": "Mall & Entertainment",
+    "tags": ["mall", "shopping", "westend", "aundh", "cinepolis"],
+    "aliases": ["westend", "westend mall", "aundh mall", "westend aundh"]
+  },
+  {
+    "id": "lm_elpro_mall",
+    "name": "Elpro City Square Mall, Chinchwad",
+    "lat": 18.6360,
+    "lng": 73.7915,
+    "area": "Chinchwad",
+    "category": "Mall & Entertainment",
+    "tags": ["mall", "shopping", "elpro", "chinchwad", "pcmc"],
+    "aliases": ["elpro", "elpro mall", "elpro city square", "chinchwad mall"]
+  },
+  {
+    "id": "lm_baner",
+    "name": "Baner (Balewadi Phata / Pan Card Club Rd)",
+    "lat": 18.5640,
+    "lng": 73.7740,
+    "area": "Baner",
+    "category": "Commercial & Residential",
+    "tags": ["baner", "balewadi phata", "pan card club", "residential"],
+    "aliases": ["baner", "balewadi phata", "baner road", "pan card club road"]
+  },
+  {
+    "id": "lm_balewadi_high_street",
+    "name": "Balewadi High Street (BHS)",
+    "lat": 18.5725,
+    "lng": 73.7742,
+    "area": "Balewadi",
+    "category": "Commercial & Residential",
+    "tags": ["balewadi", "high street", "bhs", "restaurants", "nightlife"],
+    "aliases": ["balewadi high street", "bhs", "balewadi highstreet", "cummin's balewadi"]
+  },
+  {
+    "id": "lm_balewadi_stadium",
+    "name": "Shree Shiv Chhatrapati Sports Complex, Balewadi",
+    "lat": 18.5770,
+    "lng": 73.7660,
+    "area": "Balewadi",
+    "category": "Transit Hub",
+    "tags": ["sports", "stadium", "balewadi", "games", "complex"],
+    "aliases": ["balewadi stadium", "sports complex balewadi", "shiv chhatrapati stadium"]
+  },
+  {
+    "id": "lm_wakad_bhumkar",
+    "name": "Wakad (Bhumkar Chowk & Highway)",
+    "lat": 18.6010,
+    "lng": 73.7540,
+    "area": "Wakad",
+    "category": "Commercial & Residential",
+    "tags": ["wakad", "bhumkar chowk", "mumbai bangalore highway", "pcmc"],
+    "aliases": ["bhumkar chowk", "wakad", "wakad chowk", "datta mandir wakad"]
+  },
+  {
+    "id": "lm_dange_chowk",
+    "name": "Dange Chowk, Thergaon / Tathawade",
+    "lat": 18.6095,
+    "lng": 73.7715,
+    "area": "Thergaon",
+    "category": "Commercial & Residential",
+    "tags": ["dange chowk", "thergaon", "pcmc", "chinchwad link"],
+    "aliases": ["dange chowk", "thergaon chowk", "dange chowk pcmc"]
+  },
+  {
+    "id": "lm_pimple_saudagar",
+    "name": "Pimple Saudagar (Govind Garden Chowk)",
+    "lat": 18.5995,
+    "lng": 73.7930,
+    "area": "Pimple Saudagar",
+    "category": "Commercial & Residential",
+    "tags": ["pimple saudagar", "govind garden", "linear garden", "pcmc"],
+    "aliases": ["pimple saudagar", "govind garden", "saudagar", "linear garden pimple saudagar"]
+  },
+  {
+    "id": "lm_pimple_nilakh",
+    "name": "Pimple Nilakh (Vishal Nagar)",
+    "lat": 18.5835,
+    "lng": 73.7845,
+    "area": "Pimple Nilakh",
+    "category": "Commercial & Residential",
+    "tags": ["pimple nilakh", "vishal nagar", "rakshak chowk link"],
+    "aliases": ["pimple nilakh", "vishal nagar", "nilakh"]
+  },
+  {
+    "id": "lm_aundh",
+    "name": "Aundh (Bremen Chowk & Parihar Chowk)",
+    "lat": 18.5615,
+    "lng": 73.8055,
+    "area": "Aundh",
+    "category": "Commercial & Residential",
+    "tags": ["aundh", "bremen chowk", "parihar chowk", "nagras road"],
+    "aliases": ["aundh", "bremen chowk", "parihar chowk", "spu aundh"]
+  },
+  {
+    "id": "lm_kothrud_chandani",
+    "name": "Kothrud (Chandani Chowk Flyover)",
     "lat": 18.5075,
     "lng": 73.7845,
     "area": "Kothrud",
-    "category": "Commercial & Residential"
+    "category": "Transit Hub",
+    "tags": ["kothrud", "chandani chowk", "bavdhan junction", "highway"],
+    "aliases": ["chandani chowk", "chandni chowk", "kothrud chandani chowk", "paud road flyover"]
   },
   {
-    "id": "lm_shivaji_nagar",
-    "name": "Shivaji Nagar Metro / Bus Station",
-    "lat": 18.5324,
-    "lng": 73.8524,
+    "id": "lm_kothrud_depot",
+    "name": "Kothrud Bus Stand & Karve Statue",
+    "lat": 18.5010,
+    "lng": 73.8040,
+    "area": "Kothrud",
+    "category": "Transit Hub",
+    "tags": ["kothrud", "karve statue", "kothrud stand", "bus depot"],
+    "aliases": ["kothrud depot", "kothrud stand", "karve putala", "karve statue kothrud"]
+  },
+  {
+    "id": "lm_warje_bridge",
+    "name": "Warje Malwadi (Mai Mangeshkar Hospital Chowk)",
+    "lat": 18.4840,
+    "lng": 73.8020,
+    "area": "Warje",
+    "category": "Commercial & Residential",
+    "tags": ["warje", "warje bridge", "mai mangeshkar", "highway bypass"],
+    "aliases": ["warje", "warje malwadi", "warje flyover", "warje chowk"]
+  },
+  {
+    "id": "lm_katraj_depot",
+    "name": "Katraj Bus Depot & Snake Park",
+    "lat": 18.4550,
+    "lng": 73.8585,
+    "area": "Katraj",
+    "category": "Transit Hub",
+    "tags": ["katraj", "zoo", "snake park", "bus depot", "terminal"],
+    "aliases": ["katraj", "katraj depot", "katraj bus stand", "katraj snake park", "katraj dairy"]
+  },
+  {
+    "id": "lm_bharti_vidyapeeth",
+    "name": "Bharati Vidyapeeth Campus, Dhankawadi",
+    "lat": 18.4600,
+    "lng": 73.8540,
+    "area": "Dhankawadi",
+    "category": "College & University",
+    "tags": ["college", "university", "bharati vidyapeeth", "dhankawadi"],
+    "aliases": ["bharati vidyapeeth", "bvp katraj", "bvp pune", "dhankawadi campus"]
+  },
+  {
+    "id": "lm_pict_pune",
+    "name": "PICT (Pune Institute of Computer Tech), Dhankawadi",
+    "lat": 18.4575,
+    "lng": 73.8505,
+    "area": "Dhankawadi",
+    "category": "College & University",
+    "tags": ["college", "engineering", "pict", "dhankawadi"],
+    "aliases": ["pict", "pict college", "pict pune", "pune institute of computer technology"]
+  },
+  {
+    "id": "lm_hadapsar_gadital",
+    "name": "Hadapsar (Gadital Bus Terminal)",
+    "lat": 18.5020,
+    "lng": 73.9280,
+    "area": "Hadapsar",
+    "category": "Transit Hub",
+    "tags": ["hadapsar", "gadital", "bus terminal", "solapur road"],
+    "aliases": ["hadapsar", "gadital", "hadapsar gadital", "hadapsar bus stand", "hadapsar depot"]
+  },
+  {
+    "id": "lm_koregaon_park",
+    "name": "Koregaon Park (North Main Road / Osho Ashram)",
+    "lat": 18.5362,
+    "lng": 73.8940,
+    "area": "Koregaon Park",
+    "category": "Commercial & Residential",
+    "tags": ["koregaon park", "kp", "osho", "north main road", "nightlife"],
+    "aliases": ["koregaon park", "kp", "osho ashram", "north main road kp", "south main road kp"]
+  },
+  {
+    "id": "lm_kalyani_nagar",
+    "name": "Kalyani Nagar (Bishop's School / Jogger's Park)",
+    "lat": 18.5480,
+    "lng": 73.9020,
+    "area": "Kalyani Nagar",
+    "category": "Commercial & Residential",
+    "tags": ["kalyani nagar", "joggers park", "bishops", "residential"],
+    "aliases": ["kalyani nagar", "kalyaninagar", "joggers park kalyani nagar"]
+  },
+  {
+    "id": "lm_fc_road",
+    "name": "FC Road (Fergusson College Campus)",
+    "lat": 18.5204,
+    "lng": 73.8415,
     "area": "Shivajinagar",
-    "category": "Transit Hub"
+    "category": "College & University",
+    "tags": ["fc road", "fergusson college", "shopping", "deccan"],
+    "aliases": ["fc road", "fergusson college", "fergusson", "fc road shopping", "goodluck cafe"]
+  },
+  {
+    "id": "lm_jm_road",
+    "name": "JM Road (Jangali Maharaj Road / Balgandharva)",
+    "lat": 18.5240,
+    "lng": 73.8490,
+    "area": "Shivajinagar",
+    "category": "Commercial & Residential",
+    "tags": ["jm road", "balgandharva", "jangali maharaj", "commercial"],
+    "aliases": ["jm road", "jangali maharaj road", "balgandharva ranga mandir"]
+  },
+  {
+    "id": "lm_deccan_gymkhana",
+    "name": "Deccan Gymkhana (Goodluck Chowk)",
+    "lat": 18.5175,
+    "lng": 73.8425,
+    "area": "Deccan",
+    "category": "Transit Hub",
+    "tags": ["deccan", "goodluck chowk", "pmpml depot", "gymkhana"],
+    "aliases": ["deccan", "deccan gymkhana", "deccan bus stand", "goodluck chowk"]
+  },
+  {
+    "id": "lm_coep_tech",
+    "name": "COEP Technological University, Shivajinagar",
+    "lat": 18.5300,
+    "lng": 73.8560,
+    "area": "Shivajinagar",
+    "category": "College & University",
+    "tags": ["college", "coep", "engineering", "university", "shivajinagar"],
+    "aliases": ["coep", "coep pune", "coep technological university", "college of engineering pune"]
+  },
+  {
+    "id": "lm_sppu_university",
+    "name": "Savitribai Phule Pune University (SPPU Main Gate)",
+    "lat": 18.5525,
+    "lng": 73.8260,
+    "area": "Ganeshkhind",
+    "category": "College & University",
+    "tags": ["university", "sppu", "pune university", "ganeshkhind"],
+    "aliases": ["sppu", "pune university", "university of pune", "sppu main gate", "ganeshkhind road"]
+  },
+  {
+    "id": "lm_symbiosis_viman",
+    "name": "Symbiosis International University, Viman Nagar",
+    "lat": 18.5670,
+    "lng": 73.9120,
+    "area": "Viman Nagar",
+    "category": "College & University",
+    "tags": ["symbiosis", "college", "viman nagar", "symbiosis law"],
+    "aliases": ["symbiosis viman nagar", "sls pune", "scms pune", "symbiosis campus viman nagar"]
+  },
+  {
+    "id": "lm_symbiosis_lavale",
+    "name": "Symbiosis International University, Lavale Hilltop",
+    "lat": 18.5370,
+    "lng": 73.7290,
+    "area": "Lavale",
+    "category": "College & University",
+    "tags": ["symbiosis", "lavale", "sibmpune", "hilltop campus"],
+    "aliases": ["symbiosis lavale", "sibm pune", "lavale campus"]
+  },
+  {
+    "id": "lm_mit_wpu_kothrud",
+    "name": "MIT World Peace University (MIT-WPU), Paud Road",
+    "lat": 18.5180,
+    "lng": 73.8150,
+    "area": "Kothrud",
+    "category": "College & University",
+    "tags": ["college", "mit", "mit wpu", "paud road", "kothrud"],
+    "aliases": ["mit", "mit kothrud", "mit wpu", "mit college", "world peace university"]
+  },
+  {
+    "id": "lm_dy_patil_akurdi",
+    "name": "Dr. D.Y. Patil Educational Complex, Akurdi",
+    "lat": 18.6465,
+    "lng": 73.7595,
+    "area": "Akurdi",
+    "category": "College & University",
+    "tags": ["college", "dy patil", "akurdi", "pcmc"],
+    "aliases": ["dy patil akurdi", "dypiet akurdi", "dy patil college akurdi"]
+  },
+  {
+    "id": "lm_ruby_hall_clinic",
+    "name": "Ruby Hall Clinic, Sassoon Road",
+    "lat": 18.5320,
+    "lng": 73.8765,
+    "area": "Camp / Station",
+    "category": "Hospital",
+    "tags": ["hospital", "ruby hall", "medical", "clinic", "sassoon road"],
+    "aliases": ["ruby hall", "ruby hall clinic", "ruby hospital", "ruby hall sassoon road"]
+  },
+  {
+    "id": "lm_jehangir_hospital",
+    "name": "Jehangir Hospital, Sassoon Road",
+    "lat": 18.5305,
+    "lng": 73.8770,
+    "area": "Camp / Station",
+    "category": "Hospital",
+    "tags": ["hospital", "jehangir", "medical", "central pune"],
+    "aliases": ["jehangir hospital", "jehangir", "jehangir hospital pune"]
+  },
+  {
+    "id": "lm_deenanath_mangeshkar",
+    "name": "Deenanath Mangeshkar Hospital, Erandwane",
+    "lat": 18.5025,
+    "lng": 73.8340,
+    "area": "Erandwane",
+    "category": "Hospital",
+    "tags": ["hospital", "deenanath", "mangeshkar", "erandwane"],
+    "aliases": ["deenanath hospital", "mangeshkar hospital", "dmh pune"]
+  },
+  {
+    "id": "lm_jupiter_hospital_baner",
+    "name": "Jupiter Hospital, Baner",
+    "lat": 18.5580,
+    "lng": 73.7850,
+    "area": "Baner",
+    "category": "Hospital",
+    "tags": ["hospital", "jupiter", "baner", "medical"],
+    "aliases": ["jupiter hospital", "jupiter baner", "jupiter hospital pune"]
+  },
+  {
+    "id": "lm_manipal_kharadi",
+    "name": "Manipal Hospital, Kharadi Bypass",
+    "lat": 18.5520,
+    "lng": 73.9390,
+    "area": "Kharadi",
+    "category": "Hospital",
+    "tags": ["hospital", "manipal", "columbia asia", "kharadi bypass"],
+    "aliases": ["manipal hospital kharadi", "columbia asia kharadi", "manipal kharadi"]
+  },
+  {
+    "id": "lm_aditya_birla_hospital",
+    "name": "Aditya Birla Memorial Hospital, Chinchwad",
+    "lat": 18.6215,
+    "lng": 73.7745,
+    "area": "Thergaon",
+    "category": "Hospital",
+    "tags": ["hospital", "aditya birla", "abmh", "chinchwad", "thergaon"],
+    "aliases": ["aditya birla hospital", "abmh", "aditya birla chinchwad"]
+  },
+  {
+    "id": "lm_shaniwar_wada",
+    "name": "Shaniwar Wada Palace, Kasba Peth",
+    "lat": 18.5195,
+    "lng": 73.8553,
+    "area": "Kasba Peth",
+    "category": "Heritage & Tourist",
+    "tags": ["heritage", "monument", "shaniwar wada", "fort", "peshwa"],
+    "aliases": ["shaniwar wada", "shaniwarwada", "bajirao fort", "kasba peth"]
+  },
+  {
+    "id": "lm_dagdusheth_ganpati",
+    "name": "Shrimant Dagdusheth Halwai Ganpati Temple",
+    "lat": 18.5165,
+    "lng": 73.8560,
+    "area": "Budhwar Peth",
+    "category": "Heritage & Tourist",
+    "tags": ["temple", "dagdusheth", "ganpati", "peth", "mandir"],
+    "aliases": ["dagdusheth", "dagdusheth ganpati", "dagdusheth halwai temple", "budhwar peth ganpati"]
+  },
+  {
+    "id": "lm_aga_khan_palace",
+    "name": "Aga Khan Palace, Nagar Road",
+    "lat": 18.5524,
+    "lng": 73.9015,
+    "area": "Kalyani Nagar / Yerawada",
+    "category": "Heritage & Tourist",
+    "tags": ["heritage", "monument", "aga khan", "gandhi", "nagar road"],
+    "aliases": ["aga khan palace", "aga khan", "gandhi memorial nagar road"]
+  },
+  {
+    "id": "lm_sinhagad_fort",
+    "name": "Sinhagad Fort (Kalyan Darwaza)",
+    "lat": 18.3664,
+    "lng": 73.7558,
+    "area": "Sinhagad",
+    "category": "Heritage & Tourist",
+    "tags": ["fort", "heritage", "sinhagad", "trek", "historical"],
+    "aliases": ["sinhagad", "sinhagad fort", "kondhana", "tanaji malusare memorial"]
+  },
+  {
+    "id": "lm_pimpri_chowk",
+    "name": "Pimpri Chowk & PCMC Municipal HQ",
+    "lat": 18.6285,
+    "lng": 73.8010,
+    "area": "Pimpri",
+    "category": "Transit Hub",
+    "tags": ["pimpri", "pcmc", "deluxe chowk", "metro", "municipal"],
+    "aliases": ["pimpri", "pimpri chowk", "pcmc building", "pcmc metro station", "pimpri station"]
+  },
+  {
+    "id": "lm_chinchwad_station",
+    "name": "Chinchwad Railway Station & Gaon",
+    "lat": 18.6340,
+    "lng": 73.7845,
+    "area": "Chinchwad",
+    "category": "Transit Hub",
+    "tags": ["chinchwad", "railway station", "pcmc", "chinchwadgaon"],
+    "aliases": ["chinchwad", "chinchwad station", "chinchwad railway station", "chinchwad gaon"]
+  },
+  {
+    "id": "lm_nigdi_pradhikaran",
+    "name": "Nigdi (Bhakti Shakti Chowk & Pradhikaran)",
+    "lat": 18.6580,
+    "lng": 73.7680,
+    "area": "Nigdi",
+    "category": "Transit Hub",
+    "tags": ["nigdi", "bhakti shakti", "pradhikaran", "bus depot", "terminal"],
+    "aliases": ["nigdi", "bhakti shakti", "nigdi bus depot", "pradhikaran nigdi"]
+  },
+  {
+    "id": "lm_bhosari_chowk",
+    "name": "Bhosari (MIDC & Nashik Phata Link)",
+    "lat": 18.6250,
+    "lng": 73.8440,
+    "area": "Bhosari",
+    "category": "Transit Hub",
+    "tags": ["bhosari", "midc", "nashik road", "bhosari gaon", "pcmc"],
+    "aliases": ["bhosari", "bhosari midc", "bhosari chowk", "landewadi bhosari"]
+  },
+  {
+    "id": "lm_moshi_toll",
+    "name": "Moshi (International Exhibition Centre)",
+    "lat": 18.6750,
+    "lng": 73.8480,
+    "area": "Moshi",
+    "category": "Commercial & Residential",
+    "tags": ["moshi", "exhibition centre", "alandi road", "pcmc"],
+    "aliases": ["moshi", "moshi toll plaza", "pune international exhibition centre moshi"]
+  },
+  {
+    "id": "lm_ravet_chowk",
+    "name": "Ravet (Punawale & Expressway Bypass)",
+    "lat": 18.6470,
+    "lng": 73.7380,
+    "area": "Ravet",
+    "category": "Commercial & Residential",
+    "tags": ["ravet", "punawale", "expressway", "mumbai expressway start"],
+    "aliases": ["ravet", "ravet chowk", "punawale chowk", "mumbai expressway start"]
+  },
+  {
+    "id": "lm_camp_mg_road",
+    "name": "Pune Camp (MG Road & East Street)",
+    "lat": 18.5145,
+    "lng": 73.8785,
+    "area": "Camp",
+    "category": "Commercial & Residential",
+    "tags": ["camp", "mg road", "east street", "cantonment", "shopping"],
+    "aliases": ["camp", "pune camp", "mg road", "east street camp", "clover centre"]
+  },
+  {
+    "id": "lm_nibm_road",
+    "name": "NIBM Road (Dorabjee Paradise & Mall)",
+    "lat": 18.4790,
+    "lng": 73.8990,
+    "area": "Kondhwa",
+    "category": "Commercial & Residential",
+    "tags": ["nibm", "kondhwa", "dorabjee", "residential"],
+    "aliases": ["nibm", "nibm road", "dorabjee mall", "clover highlands"]
+  },
+  {
+    "id": "lm_undri_chowk",
+    "name": "Undri (Corinthians Club Link)",
+    "lat": 18.4630,
+    "lng": 73.9180,
+    "area": "Undri",
+    "category": "Commercial & Residential",
+    "tags": ["undri", "corinthians", "residential", "south pune"],
+    "aliases": ["undri", "undri chowk", "the corinthians undri", "bellagio undri"]
+  },
+  {
+    "id": "lm_wagholi_chowk",
+    "name": "Wagholi (BAIF Road & Wakeshwar)",
+    "lat": 18.5800,
+    "lng": 73.9840,
+    "area": "Wagholi",
+    "category": "Commercial & Residential",
+    "tags": ["wagholi", "baif road", "nagar road", "lexicon"],
+    "aliases": ["wagholi", "wagholi chowk", "wakeshwar", "baif road wagholi"]
+  },
+  {
+    "id": "lm_khadki_station",
+    "name": "Khadki Railway Station & Cantonment",
+    "lat": 18.5620,
+    "lng": 73.8420,
+    "area": "Khadki",
+    "category": "Transit Hub",
+    "tags": ["khadki", "kirkee", "railway station", "cantonment"],
+    "aliases": ["khadki", "khadki station", "kirkee railway station", "khadki bazaar"]
+  },
+  {
+    "id": "lm_bavdhan_chandani",
+    "name": "Bavdhan (Pashan-NDA Road)",
+    "lat": 18.5130,
+    "lng": 73.7690,
+    "area": "Bavdhan",
+    "category": "Commercial & Residential",
+    "tags": ["bavdhan", "nda road", "pashan road", "west pune"],
+    "aliases": ["bavdhan", "bavdhan khurd", "bavdhan budruk", "maratha mandir bavdhan"]
+  },
+  {
+    "id": "lm_pashan_circle",
+    "name": "Pashan (Pashan Lake / Circle)",
+    "lat": 18.5390,
+    "lng": 73.7910,
+    "area": "Pashan",
+    "category": "Commercial & Residential",
+    "tags": ["pashan", "pashan lake", "circle", "drdo"],
+    "aliases": ["pashan", "pashan circle", "pashan lake", "arame pashan"]
+  },
+  {
+    "id": "lm_ramwadi_metro",
+    "name": "Ramwadi Metro Station (Aqua Line Terminal)",
+    "lat": 18.5524,
+    "lng": 73.9189,
+    "area": "Ramwadi",
+    "category": "Transit Hub",
+    "tags": ["ramwadi", "metro", "terminal", "aqua line", "nagar road"],
+    "aliases": ["ramwadi metro", "ramwadi station", "ramwadi terminus", "ramwadi"]
+  },
+  {
+    "id": "lm_nal_stop",
+    "name": "Nal Stop (Karve Road Flyover & Metro)",
+    "lat": 18.5058,
+    "lng": 73.8277,
+    "area": "Erandwane",
+    "category": "Transit Hub",
+    "tags": ["nal stop", "karve road", "metro", "flyover", "erandwane"],
+    "aliases": ["nal stop", "nal stop metro", "karve road nal stop"]
+  },
+  {
+    "id": "lm_chandannagar_bypass",
+    "name": "Chandan Nagar (Kharadi Bypass Chowk)",
+    "lat": 18.5570,
+    "lng": 73.9310,
+    "area": "Chandan Nagar",
+    "category": "Transit Hub",
+    "tags": ["chandan nagar", "kharadi bypass", "feeder junction", "nagar road"],
+    "aliases": ["chandan nagar", "chandan nagar bypass", "kharadi bypass", "chandan nagar chowk"]
+  },
+  {
+    "id": "lm_yerawada_gunjan",
+    "name": "Yerawada (Gunjan Talkies Chowk)",
+    "lat": 18.5470,
+    "lng": 73.8860,
+    "area": "Yerawada",
+    "category": "Transit Hub",
+    "tags": ["yerawada", "gunjan talkies", "metro station", "nagar road"],
+    "aliases": ["yerawada", "yerawada metro", "gunjan chowk", "yerawada bridge"]
+  },
+  {
+    "id": "lm_bund_garden",
+    "name": "Bund Garden Metro & Bridge",
+    "lat": 18.5365,
+    "lng": 73.8825,
+    "area": "Bund Garden",
+    "category": "Transit Hub",
+    "tags": ["bund garden", "metro", "bridge", "mula mutha river"],
+    "aliases": ["bund garden", "bund garden metro", "fitzgerald bridge"]
+  },
+  {
+    "id": "lm_district_court_metro",
+    "name": "District Court Metro Interchange (Civil Court)",
+    "lat": 18.5283,
+    "lng": 73.8566,
+    "area": "Shivajinagar",
+    "category": "Transit Hub",
+    "tags": ["district court", "civil court", "interchange", "aqua line", "purple line", "central"],
+    "aliases": ["district court metro", "civil court metro", "court interchange", "metro interchange"]
+  },
+  {
+    "id": "lm_ideal_colony_metro",
+    "name": "Ideal Colony Metro Station, Kothrud",
+    "lat": 18.5034,
+    "lng": 73.8161,
+    "area": "Kothrud",
+    "category": "Transit Hub",
+    "tags": ["ideal colony", "metro", "kothrud", "paud road"],
+    "aliases": ["ideal colony", "ideal colony metro", "paud road metro"]
+  },
+  {
+    "id": "lm_vanaz_metro",
+    "name": "Vanaz Metro Station (Aqua Line West Terminal)",
+    "lat": 18.5065,
+    "lng": 73.7997,
+    "area": "Kothrud",
+    "category": "Transit Hub",
+    "tags": ["vanaz", "metro", "terminal", "aqua line", "kothrud"],
+    "aliases": ["vanaz", "vanaz metro", "vanaz terminal", "vanaz depot"]
+  },
+  {
+    "id": "lm_dapodi_station",
+    "name": "Dapodi Metro & Railway Station",
+    "lat": 18.5835,
+    "lng": 73.8285,
+    "area": "Dapodi",
+    "category": "Transit Hub",
+    "tags": ["dapodi", "metro", "purple line", "railway", "cme"],
+    "aliases": ["dapodi", "dapodi metro", "dapodi station"]
+  },
+  {
+    "id": "lm_kasarwadi_metro",
+    "name": "Kasarwadi Metro & Railway Station",
+    "lat": 18.5995,
+    "lng": 73.8210,
+    "area": "Kasarwadi",
+    "category": "Transit Hub",
+    "tags": ["kasarwadi", "metro", "purple line", "railway"],
+    "aliases": ["kasarwadi", "kasarwadi metro", "kasarwadi station"]
+  },
+  {
+    "id": "lm_bhosari_nashik_phata",
+    "name": "Nashik Phata (Bhosari Metro Station)",
+    "lat": 18.6080,
+    "lng": 73.8160,
+    "area": "Kasarwadi",
+    "category": "Transit Hub",
+    "tags": ["nashik phata", "bhosari metro", "purple line", "pcmc"],
+    "aliases": ["nashik phata", "bhosari metro station", "nashik phata flyover"]
+  },
+  {
+    "id": "lm_sant_tukaram_nagar",
+    "name": "Sant Tukaram Nagar Metro Station, Pimpri",
+    "lat": 18.6210,
+    "lng": 73.8110,
+    "area": "Pimpri",
+    "category": "Transit Hub",
+    "tags": ["sant tukaram nagar", "metro", "pimpri", "dy patil hospital"],
+    "aliases": ["sant tukaram nagar", "tukaram nagar metro", "dy patil pimpri metro"]
+  },
+  {
+    "id": "lm_pcntda_pradhikaran",
+    "name": "PCNTDA / Sector 24 Pradhikaran, Nigdi",
+    "lat": 18.6520,
+    "lng": 73.7640,
+    "area": "Nigdi",
+    "category": "Commercial & Residential",
+    "tags": ["pcntda", "pradhikaran", "nigdi", "sector 24"],
+    "aliases": ["pcntda", "pradhikaran", "nigdi pradhikaran"]
+  },
+  {
+    "id": "lm_chakan_chowk",
+    "name": "Chakan MIDC (Manchar Highway Chowk)",
+    "lat": 18.7595,
+    "lng": 73.8590,
+    "area": "Chakan",
+    "category": "Tech Park",
+    "tags": ["chakan", "midc", "automobile hub", "industrial"],
+    "aliases": ["chakan", "chakan midc", "chakan chowk", "auto cluster chakan"]
+  },
+  {
+    "id": "lm_talawade_it_park",
+    "name": "Talawade IT Park, PCMC",
+    "lat": 18.6850,
+    "lng": 73.7850,
+    "area": "Talawade",
+    "category": "Tech Park",
+    "tags": ["tech park", "talawade", "capgemini", "pcmc"],
+    "aliases": ["talawade", "talawade it park", "capgemini talawade"]
+  },
+  {
+    "id": "lm_marunji_hinjewadi",
+    "name": "Marunji (Hinjewadi Phase 2 Link Road)",
+    "lat": 18.6040,
+    "lng": 73.7160,
+    "area": "Marunji",
+    "category": "Commercial & Residential",
+    "tags": ["marunji", "hinjewadi link", "residential"],
+    "aliases": ["marunji", "marunji chowk", "alard college marunji"]
+  },
+  {
+    "id": "lm_alandi_temple",
+    "name": "Alandi (Sant Dnyaneshwar Maharaj Samadhi Mandir)",
+    "lat": 18.6775,
+    "lng": 73.8970,
+    "area": "Alandi",
+    "category": "Heritage & Tourist",
+    "tags": ["alandi", "pilgrimage", "dnyaneshwar mandir", "indrayani"],
+    "aliases": ["alandi", "alandi devachi", "alandi bus stand", "dnyaneshwar samadhi"]
+  },
+  {
+    "id": "lm_dehu_mandir",
+    "name": "Dehu (Sant Tukaram Maharaj Temple)",
+    "lat": 18.7180,
+    "lng": 73.7710,
+    "area": "Dehu",
+    "category": "Heritage & Tourist",
+    "tags": ["dehu", "pilgrimage", "tukaram mandir", "indrayani"],
+    "aliases": ["dehu", "dehu gaon", "dehu temple", "sant tukaram gatha mandir"]
+  },
+  {
+    "id": "lm_khadakwasla_dam",
+    "name": "Khadakwasla Dam (Chowpatty & NDA)",
+    "lat": 18.4320,
+    "lng": 73.7650,
+    "area": "Khadakwasla",
+    "category": "Heritage & Tourist",
+    "tags": ["khadakwasla", "dam", "nda", "lake", "chowpatty"],
+    "aliases": ["khadakwasla", "khadakwasla dam", "khadakwasla lake", "nda khadakwasla"]
+  },
+  {
+    "id": "lm_parvati_hill",
+    "name": "Parvati Hill & Temple Complex",
+    "lat": 18.4975,
+    "lng": 73.8475,
+    "area": "Parvati",
+    "category": "Heritage & Tourist",
+    "tags": ["parvati", "hill", "temple", "peshwa", "heritage"],
+    "aliases": ["parvati", "parvati hill", "parvati temple", "parvati paytha"]
+  },
+  {
+    "id": "lm_sarasbaug",
+    "name": "Sarasbaug & Peshwe Park",
+    "lat": 18.5045,
+    "lng": 73.8540,
+    "area": "Swargate",
+    "category": "Heritage & Tourist",
+    "tags": ["sarasbaug", "garden", "ganpati temple", "swargate link"],
+    "aliases": ["sarasbaug", "saras baug", "peshwe park", "sarasbaug chowk"]
+  },
+  {
+    "id": "lm_tulshibaug",
+    "name": "Tulshibaug Shopping Market, Laxmi Road",
+    "lat": 18.5140,
+    "lng": 73.8545,
+    "area": "Budhwar Peth",
+    "category": "Commercial & Residential",
+    "tags": ["tulshibaug", "laxmi road", "market", "shopping", "peth"],
+    "aliases": ["tulshibaug", "tulsi baug", "laxmi road market", "babu genu chowk"]
+  },
+  {
+    "id": "lm_market_yard",
+    "name": "Gultekdi Market Yard (APMC Wholesale Market)",
+    "lat": 18.4900,
+    "lng": 73.8685,
+    "area": "Gultekdi",
+    "category": "Commercial & Residential",
+    "tags": ["market yard", "gultekdi", "apmc", "wholesale", "bus depot"],
+    "aliases": ["market yard", "gultekdi market yard", "apmc pune", "market yard depot"]
+  },
+  {
+    "id": "lm_upper_indiranagar",
+    "name": "Upper Indira Nagar PMPML Bus Depot, Bibwewadi",
+    "lat": 18.4720,
+    "lng": 73.8640,
+    "area": "Bibwewadi",
+    "category": "Transit Hub",
+    "tags": ["upper depot", "indira nagar", "bibwewadi", "bus terminal"],
+    "aliases": ["upper depot", "upper indira nagar", "bibwewadi depot"]
+  },
+  {
+    "id": "lm_bibwewadi_gangadham",
+    "name": "Gangadham Chowk, Bibwewadi / Market Yard Link",
+    "lat": 18.4820,
+    "lng": 73.8760,
+    "area": "Bibwewadi",
+    "category": "Commercial & Residential",
+    "tags": ["gangadham", "bibwewadi", "shatrunjay temple link"],
+    "aliases": ["gangadham", "gangadham chowk", "bibwewadi"]
+  },
+  {
+    "id": "lm_fatima_nagar",
+    "name": "Fatima Nagar (Wanowrie Junction)",
+    "lat": 18.5020,
+    "lng": 73.8995,
+    "area": "Wanowrie",
+    "category": "Commercial & Residential",
+    "tags": ["fatima nagar", "wanowrie", "solapur road link", "kedari petrol pump"],
+    "aliases": ["fatima nagar", "fatimanagar", "wanowrie chowk"]
+  },
+  {
+    "id": "lm_mundhwa_keshavnagar",
+    "name": "Mundhwa Chowk (Keshav Nagar / Magarpatta Link)",
+    "lat": 18.5350,
+    "lng": 73.9240,
+    "area": "Mundhwa",
+    "category": "Commercial & Residential",
+    "tags": ["mundhwa", "keshav nagar", "bridge to kharadi"],
+    "aliases": ["mundhwa", "mundhwa chowk", "keshav nagar", "passport office mundhwa"]
+  },
+  {
+    "id": "lm_keshavnagar_kharadi",
+    "name": "Keshav Nagar / Zensar Technologies Road",
+    "lat": 18.5390,
+    "lng": 73.9420,
+    "area": "Kharadi",
+    "category": "Tech Park",
+    "tags": ["zensar", "kharadi", "keshav nagar", "it corridor"],
+    "aliases": ["zensar", "zensar kharadi", "keshav nagar kharadi link"]
+  },
+  {
+    "id": "lm_lohegaon_dhanori",
+    "name": "Dhanori (Tingre Nagar / Porwal Road)",
+    "lat": 18.5860,
+    "lng": 73.8960,
+    "area": "Dhanori",
+    "category": "Commercial & Residential",
+    "tags": ["dhanori", "porwal road", "tingre nagar", "vishrantwadi link"],
+    "aliases": ["dhanori", "porwal road", "tingre nagar", "dhanori jakat naka"]
+  },
+  {
+    "id": "lm_vishrantwadi_chowk",
+    "name": "Vishrantwadi (Airport Road Junction)",
+    "lat": 18.5720,
+    "lng": 73.8780,
+    "area": "Vishrantwadi",
+    "category": "Transit Hub",
+    "tags": ["vishrantwadi", "airport road", "tingre nagar link", "alanki phata"],
+    "aliases": ["vishrantwadi", "vishrantwadi chowk", "alanki road junction"]
+  },
+  {
+    "id": "lm_kalewadi_phata",
+    "name": "Kalewadi Phata (BRT Corridor / Rahatani Link)",
+    "lat": 18.6070,
+    "lng": 73.7920,
+    "area": "Kalewadi",
+    "category": "Transit Hub",
+    "tags": ["kalewadi", "kalewadi phata", "rahatani", "brt"],
+    "aliases": ["kalewadi phata", "kalewadi", "rahatani chowk"]
+  },
+  {
+    "id": "lm_sangvi_bridge",
+    "name": "Old Sangvi / PWD Ground & Aundh Bridge",
+    "lat": 18.5740,
+    "lng": 73.8180,
+    "area": "Sangvi",
+    "category": "Commercial & Residential",
+    "tags": ["sangvi", "old sangvi", "aundh link", "pcmc"],
+    "aliases": ["sangvi", "old sangvi", "new sangvi", "sangvi bridge"]
+  },
+  {
+    "id": "lm_bavdhan_pashan",
+    "name": "Mahalunge (Godrej Elements / High Street Link)",
+    "lat": 18.5790,
+    "lng": 73.7540,
+    "area": "Mahalunge",
+    "category": "Commercial & Residential",
+    "tags": ["mahalunge", "baner annexe", "hinjewadi road", "godrej"],
+    "aliases": ["mahalunge", "mahalunge chowk", "baner annexe mahalunge"]
+  },
+  {
+    "id": "lm_sus_road",
+    "name": "Sus Road (Pashan Sus Highway Junction)",
+    "lat": 18.5480,
+    "lng": 73.7660,
+    "area": "Sus",
+    "category": "Commercial & Residential",
+    "tags": ["sus", "sus road", "pashan sus", "highway junction"],
+    "aliases": ["sus", "sus road", "sus gaon", "pashan sus bridge"]
+  },
+  {
+    "id": "lm_dhayari_phata",
+    "name": "Dhayari (Sinhagad Road / Dhayari Phata)",
+    "lat": 18.4590,
+    "lng": 73.8120,
+    "area": "Dhayari",
+    "category": "Commercial & Residential",
+    "tags": ["dhayari", "dhayari phata", "sinhagad road", "benkar vasti"],
+    "aliases": ["dhayari", "dhayari phata", "sinhagad road dhayari"]
+  },
+  {
+    "id": "lm_narhe_chowk",
+    "name": "Narhe (JSPM College / Mumbai Highway)",
+    "lat": 18.4520,
+    "lng": 73.8260,
+    "area": "Narhe",
+    "category": "College & University",
+    "tags": ["narhe", "jspm", "highway bypass", "residential"],
+    "aliases": ["narhe", "narhe chowk", "jspm narhe", "narhe industrial"]
+  },
+  {
+    "id": "lm_karve_nagar",
+    "name": "Karve Nagar (Cummins Engineering College)",
+    "lat": 18.4905,
+    "lng": 73.8175,
+    "area": "Karve Nagar",
+    "category": "College & University",
+    "tags": ["karve nagar", "cummins college", "maharshi karve", "kothrud link"],
+    "aliases": ["karve nagar", "cummins college", "karvenagar chowk"]
+  },
+  {
+    "id": "lm_pataleshwar_cave",
+    "name": "Pataleshwar Rock-Cut Cave Temple, JM Road",
+    "lat": 18.5280,
+    "lng": 73.8505,
+    "area": "Shivajinagar",
+    "category": "Heritage & Tourist",
+    "tags": ["pataleshwar", "cave", "heritage", "shivajinagar", "ancient"],
+    "aliases": ["pataleshwar", "pataleshwar cave", "pataleshwar temple", "jungli maharaj pataleshwar"]
+  },
+  {
+    "id": "lm_chaturshringi_temple",
+    "name": "Chaturshringi Temple, Senapati Bapat Road",
+    "lat": 18.5390,
+    "lng": 73.8290,
+    "area": "Senapati Bapat Road",
+    "category": "Heritage & Tourist",
+    "tags": ["temple", "chaturshringi", "sb road", "heritage", "navratri"],
+    "aliases": ["chaturshringi", "chaturshringi temple", "chattushringi mandir"]
   }
 ]
