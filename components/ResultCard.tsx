@@ -10,6 +10,7 @@ import {
   Footprints,
   ChevronRight,
   ShieldCheck,
+  CheckCircle2,
 } from "lucide-react";
 import { Option } from "@/lib/types";
 
@@ -29,25 +30,30 @@ export default function ResultCard({
   directCabCost,
 }: ResultCardProps) {
   // Normalize category key
-  const categoryKey = option.label === "Cheapest" ? "cheapest" : option.label === "Fastest" ? "fastest" : "convenient";
+  const categoryKey =
+    option.label === "Cheapest"
+      ? "cheapest"
+      : option.label === "Fastest"
+      ? "fastest"
+      : "reliable";
 
   const config = {
     cheapest: {
       title: "Cheapest",
       icon: TrendingDown,
-      desc: "Best on estimated fare (Metro & PMPML bus)",
+      desc: "Lowest estimated fare with Pune Metro & PMPML bus stages",
       tagClass: "category-icon--cheapest",
     },
     fastest: {
       title: "Fastest",
       icon: Zap,
-      desc: "Fewest door-to-door minutes with quick transfers",
+      desc: "Fewest door-to-door minutes with real-time road & transit speed",
       tagClass: "category-icon--fastest",
     },
-    convenient: {
-      title: "Most Convenient",
+    reliable: {
+      title: "Most Reliable",
       icon: ShieldCheck,
-      desc: "Easiest trip with minimal walking and direct connections",
+      desc: "Highest punctuality and lowest delay risk with fixed-rail transit",
       tagClass: "category-icon--convenient",
     },
   }[categoryKey];
@@ -80,7 +86,7 @@ export default function ResultCard({
     <article
       className={
         "recommendation-card recommendation-card--" +
-        categoryKey +
+        (categoryKey === "reliable" ? "convenient" : categoryKey) +
         (isSelected ? " is-selected" : "")
       }
       onClick={onSelect}
@@ -89,9 +95,12 @@ export default function ResultCard({
         <span className={"category-icon " + config.tagClass}>
           <Icon className="h-4 w-4" />
         </span>
-        <strong>{config.title}</strong>
+        <div className="flex items-center gap-2 flex-wrap">
+          <strong>{config.title}</strong>
+          {option.tag && <span className="sample-chip text-[9px] py-0.5">{option.tag}</span>}
+        </div>
         {cabSaving > 0 && (
-          <span className="demo-tag">SAVE ₹{cabSaving} VS CAB</span>
+          <span className="demo-tag ml-auto">SAVE ₹{cabSaving} VS CAB</span>
         )}
       </div>
 
@@ -129,6 +138,18 @@ export default function ResultCard({
           <strong>{option.walkM} m</strong>
         </div>
       </div>
+
+      {option.reliabilityScore !== undefined && (
+        <div className="flex items-center justify-between text-[11px] bg-black/5 dark:bg-white/5 px-2.5 py-1.5 rounded-lg border border-[rgba(198,167,94,0.15)] mb-3">
+          <span className="text-[#1F2A44]/70 dark:text-[#CFC5BC]/70 flex items-center gap-1 font-medium">
+            <CheckCircle2 className="h-3 w-3 text-emerald-600" />
+            Reliability index
+          </span>
+          <strong className="text-emerald-700 dark:text-emerald-400 font-bold">
+            {option.reliabilityScore}% on-time guarantee
+          </strong>
+        </div>
+      )}
 
       <div className="route-card-summary">
         <span>

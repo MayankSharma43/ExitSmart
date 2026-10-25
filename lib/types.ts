@@ -49,7 +49,7 @@ export interface Segment {
 
 export interface Option {
   id: string;
-  label: "Cheapest" | "Fastest" | "Most Convenient";
+  label: "Cheapest" | "Fastest" | "Most Reliable" | "Most Convenient";
   tag: "Next best" | null;
   entryStopId: string;
   entryStopName: string;
@@ -63,10 +63,12 @@ export interface Option {
   transfers: number;
   walkM: number;
   confidence: "High" | "Medium" | "Low";
+  reliabilityScore?: number; // 0 to 100 percentage
   scores?: {
     cheapestScore: number;
     fastestScore: number;
-    convenientScore: number;
+    reliableScore: number;
+    convenientScore?: number;
   };
 }
 

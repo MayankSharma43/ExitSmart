@@ -237,28 +237,35 @@ export async function getRecommendations(
 
     // First mile: Origin -> Entry
     const firstMileDist = haversineDistanceMeters(origin, { lat: entry.lat, lng: entry.lng });
-    const firstMileWalkRouting = await getLegDistanceAndTime(origin, { lat: entry.lat, lng: entry.lng }, "walk");
+    const fmWalk = firstMileDist <= 1200;
+    const firstMileRouting = await getLegDistanceAndTime(
+      origin,
+      { lat: entry.lat, lng: entry.lng },
+      fmWalk ? "walk" : "drive",
+      departureHour
+    );
 
     // Last mile: Exit -> Destination
     const lastMileDist = haversineDistanceMeters({ lat: exit.lat, lng: exit.lng }, destination);
-    const lastMileWalkRouting = await getLegDistanceAndTime({ lat: exit.lat, lng: exit.lng }, destination, "walk");
+    const lmWalk = lastMileDist <= 900;
+    const lastMileRouting = await getLegDistanceAndTime(
+      { lat: exit.lat, lng: exit.lng },
+      destination,
+      lmWalk ? "walk" : "drive",
+      departureHour
+    );
 
-    // Combination 1: Public Transit Focused (Walk + Trunk + Walk or Short Auto)
-    // First mile: Walk if < 1.2km, else auto
-    const fmWalk = firstMileDist <= 1200;
     const firstMileType = fmWalk ? "walk" : "auto";
-    const firstMileAutoFare = calculateAutoFare(firstMileDist / 1000, departureHour);
-    const firstMileMinutes = fmWalk ? firstMileWalkRouting.minutes : Math.ceil(firstMileDist / 333);
-    const firstMileMeters = fmWalk ? firstMileWalkRouting.meters : firstMileDist;
+    const firstMileAutoFare = calculateAutoFare(firstMileRouting.meters / 1000, departureHour);
+    const firstMileMinutes = firstMileRouting.minutes;
+    const firstMileMeters = firstMileRouting.meters;
     const firstMileCostMin = fmWalk ? 0 : firstMileAutoFare.minFare;
     const firstMileCostMax = fmWalk ? 0 : firstMileAutoFare.maxFare;
 
-    // Last mile: Walk if < 900m, else Auto
-    const lmWalk = lastMileDist <= 900;
     const lastMileType = lmWalk ? "walk" : "auto";
-    const lastMileAutoFare = calculateAutoFare(lastMileDist / 1000, departureHour);
-    const lastMileMinutes = lmWalk ? lastMileWalkRouting.minutes : Math.ceil(lastMileDist / 333);
-    const lastMileMeters = lmWalk ? lastMileWalkRouting.meters : lastMileDist;
+    const lastMileAutoFare = calculateAutoFare(lastMileRouting.meters / 1000, departureHour);
+    const lastMileMinutes = lastMileRouting.minutes;
+    const lastMileMeters = lastMileRouting.meters;
     const lastMileCostMin = lmWalk ? 0 : lastMileAutoFare.minFare;
     const lastMileCostMax = lmWalk ? 0 : lastMileAutoFare.maxFare;
 
@@ -274,7 +281,7 @@ export async function getRecommendations(
         inrMax: firstMileCostMax,
         meters: firstMileMeters,
         confidence: fmWalk ? "Real" : "Formula",
-        polyline: firstMileWalkRouting.polyline,
+        polyline: firstMileRouting.polyline,
         details: fmWalk ? "Walk to transit stop" : firstMileAutoFare.breakdown,
       },
       {
@@ -305,7 +312,7 @@ export async function getRecommendations(
         inrMax: lastMileCostMax,
         meters: lastMileMeters,
         confidence: lmWalk ? "Real" : "Formula",
-        polyline: lastMileWalkRouting.polyline,
+        polyline: lastMileRouting.polyline,
         details: lmWalk ? "Walk to destination" : lastMileAutoFare.breakdown,
       },
     ];
@@ -354,7 +361,7 @@ export async function getRecommendations(
           inrMax: sharedFare + 5,
           meters: lastMileMeters,
           confidence: "Estimated",
-          polyline: lastMileWalkRouting.polyline,
+          polyline: lastMileRouting.polyline,
           details: `Shared auto along corridor (₹${sharedFare})`,
         },
       ];

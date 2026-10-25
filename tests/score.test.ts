@@ -74,18 +74,24 @@ describe("score.ts - Weighted Scoring & Distinct Selection", () => {
     },
   ];
 
-  it("selects 3 distinct options with appropriate profile labels", () => {
+  it("selects 3 distinct options with appropriate profile labels (Cheapest, Fastest, Most Reliable)", () => {
     const selected = selectTopThreeOptions(dummyOptions, "balanced");
     expect(selected.length).toBe(3);
 
     const labels = selected.map((s) => s.label);
     expect(labels).toContain("Cheapest");
     expect(labels).toContain("Fastest");
-    expect(labels).toContain("Most Convenient");
+    expect(labels).toContain("Most Reliable");
 
     // Must all be distinct option IDs
     const ids = new Set(selected.map((s) => s.id));
     expect(ids.size).toBe(3);
+
+    // Each option should have a valid reliability score between 0 and 100
+    for (const opt of selected) {
+      expect(opt.reliabilityScore).toBeGreaterThanOrEqual(0);
+      expect(opt.reliabilityScore).toBeLessThanOrEqual(100);
+    }
   });
 
   it("penalizes high-walking options in Rain mode", () => {

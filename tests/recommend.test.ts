@@ -24,7 +24,7 @@ describe("recommend.ts - Full Recommendation Pipeline", () => {
     const labels = res.options.map((o) => o.label);
     expect(labels).toContain("Cheapest");
     expect(labels).toContain("Fastest");
-    expect(labels).toContain("Most Convenient");
+    expect(labels).toContain("Most Reliable");
 
     for (const opt of res.options) {
       expect(opt.totalMin).toBeGreaterThan(0);

@@ -87,8 +87,8 @@ export default function HowItWorksPage() {
                 <span className="text-xs text-[#615247] dark:text-[#A89B8F]">Minimizes total duration including realistic transfer delays.</span>
               </div>
               <div className="p-3.5 rounded-xl bg-white/40 dark:bg-white/5 border border-white/60 dark:border-white/10">
-                <span className="text-xs font-bold text-purple-600 dark:text-purple-400 block mb-1">Most Convenient</span>
-                <span className="text-xs text-[#615247] dark:text-[#A89B8F]">Minimizes walking steps and vehicle transitions.</span>
+                <span className="text-xs font-bold text-purple-600 dark:text-purple-400 block mb-1">Most Reliable</span>
+                <span className="text-xs text-[#615247] dark:text-[#A89B8F]">Fixed-rail Metro punctuality, immune to traffic jams and road delays.</span>
               </div>
             </div>
           </div>

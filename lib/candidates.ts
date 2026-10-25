@@ -26,16 +26,17 @@ export interface TrunkPair {
  */
 export function findNearbyStops(
   coords: LatLng,
-  maxRadiusMeters: number = 4000,
-  limit: number = 6
+  maxRadiusMeters: number = 7500,
+  limit: number = 8
 ): StopCandidate[] {
-  const candidates: StopCandidate[] = [];
+  const metroCandidates: StopCandidate[] = [];
+  const surfaceCandidates: StopCandidate[] = [];
 
   // 1. Check Metro stations
   for (const st of stationsData) {
     const dist = haversineDistanceMeters(coords, { lat: st.lat, lng: st.lng });
     if (dist <= maxRadiusMeters) {
-      candidates.push({
+      metroCandidates.push({
         id: st.id,
         name: `${st.name} Metro`,
         lat: st.lat,
@@ -53,7 +54,7 @@ export function findNearbyStops(
   for (const stop of stopsData) {
     const dist = haversineDistanceMeters(coords, { lat: stop.lat, lng: stop.lng });
     if (dist <= maxRadiusMeters) {
-      candidates.push({
+      surfaceCandidates.push({
         id: stop.id,
         name: stop.name,
         lat: stop.lat,
@@ -64,9 +65,17 @@ export function findNearbyStops(
     }
   }
 
-  // Sort by distance ascending and return top N
-  candidates.sort((a, b) => a.distanceMeters - b.distanceMeters);
-  return candidates.slice(0, limit);
+  metroCandidates.sort((a, b) => a.distanceMeters - b.distanceMeters);
+  surfaceCandidates.sort((a, b) => a.distanceMeters - b.distanceMeters);
+
+  // Preserve top metro stations (up to 4) alongside surface stops (up to 4)
+  const combined = [
+    ...metroCandidates.slice(0, 4),
+    ...surfaceCandidates.slice(0, 5),
+  ];
+
+  combined.sort((a, b) => a.distanceMeters - b.distanceMeters);
+  return combined.slice(0, limit);
 }
 
 /**
