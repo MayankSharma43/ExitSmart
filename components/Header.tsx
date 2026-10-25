@@ -2,43 +2,49 @@
 
 import React from "react";
 import Link from "next/link";
+import { Mark } from "./Footer";
 
 export default function Header() {
-  const handleOpenAssumptions = (e: React.MouseEvent) => {
-    e.preventDefault();
+  const handleOpenAssumptions = () => {
     window.dispatchEvent(new CustomEvent("open-assumptions"));
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-600 text-white font-bold text-lg shadow-sm">
-            ES
-          </span>
-          <div>
-            <span className="font-extrabold text-slate-900 text-lg tracking-tight">
-              Exit<span className="text-blue-600">Smart</span>
-            </span>
-            <span className="ml-1.5 hidden rounded-full bg-blue-50 px-2 py-0.5 text-[10px] font-semibold text-blue-700 sm:inline">
-              Pune Transit
-            </span>
-          </div>
-        </Link>
-        <div className="flex items-center gap-3 text-xs text-slate-600">
-          <span className="hidden items-center gap-1.5 rounded-md bg-emerald-50 px-2.5 py-1 text-emerald-700 font-medium sm:inline-flex">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            Metro + PMPML + Auto
-          </span>
-          <button
-            type="button"
-            onClick={handleOpenAssumptions}
-            className="font-medium text-slate-600 hover:text-blue-600 transition-colors"
-          >
-            How we estimate
-          </button>
+    <header className="floating-header-pill">
+      {/* Brand: ExitSmart / Pune */}
+      <Link className="brand-pill" href="/">
+        <span className="brand-pill-mark">
+          <Mark />
+        </span>
+        <span className="brand-pill-name">
+          Exit<span>Smart</span>
+        </span>
+        <span className="brand-pill-city">Pune</span>
+      </Link>
+
+      {/* Centered Navigation Links */}
+      <nav className="nav-pill-links">
+        <a href="/#how-it-works">How it works</a>
+        <a href="/#popular-routes">Corridors</a>
+        <a href="/#rto-meter">RTO Fare Meter</a>
+        <button type="button" onClick={handleOpenAssumptions}>
+          Assumptions
+        </button>
+      </nav>
+
+      {/* Right Side Pill Badge & Action */}
+      <div className="pill-actions">
+        <div className="status-pill">
+          <span className="status-dot"></span>
+          <span>Offline Ready</span>
+          <span className="status-sep">•</span>
+          <span className="status-sub">Pune</span>
         </div>
+        <a href="/#planner" className="plan-pill-btn">
+          Plan Journey
+        </a>
       </div>
     </header>
   );
 }
+

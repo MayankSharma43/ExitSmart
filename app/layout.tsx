@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "ExitSmart | Pune Smart Last-Mile & Transit Optimizer",
@@ -29,21 +30,14 @@ export default function RootLayout({
           crossOrigin=""
         />
       </head>
-      <body className="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900">
-        <Header />
-
-        <main className="min-h-[calc(100vh-3.5rem)]">{children}</main>
-
-        <footer className="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-500">
-          <div className="mx-auto max-w-5xl px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-            <div>
-              ExitSmart &bull; Door-to-Door Multimodal Transit Optimizer &bull; Whole Pune Coverage
-            </div>
-            <div className="text-[11px] text-slate-400">
-              Verified Maha Metro Slabs &bull; Maharashtra RTO Auto Formula &bull; OSM Stack
-            </div>
-          </div>
-        </footer>
+      <body>
+        <div className="app-shell">
+          <div className="ambient-glow ambient-glow--one" />
+          <div className="ambient-glow ambient-glow--two" />
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

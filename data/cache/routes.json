@@ -430,5 +430,149 @@
     ],
     "confidence": "Estimated",
     "source": "Straight-line with urban detour factor (Offline fallback)"
+  },
+  "drive_18.5548_73.9219_18.5541_73.9283": {
+    "meters": 919,
+    "minutes": 3,
+    "polyline": [
+      [
+        18.554790445792115,
+        73.92189602796269
+      ],
+      [
+        18.554144314320634,
+        73.92832157164638
+      ]
+    ],
+    "confidence": "Estimated",
+    "source": "Straight-line with urban detour factor (Offline fallback)"
+  },
+  "walk_18.5548_73.9219_18.5541_73.9283": {
+    "meters": 851,
+    "minutes": 12,
+    "polyline": [
+      [
+        18.554790445792115,
+        73.92189602796269
+      ],
+      [
+        18.554144314320634,
+        73.92832157164638
+      ]
+    ],
+    "confidence": "Estimated",
+    "source": "Straight-line with urban detour factor (Offline fallback)"
+  },
+  "walk_18.5548_73.9219_18.5526_73.9192": {
+    "meters": 468,
+    "minutes": 7,
+    "polyline": [
+      [
+        18.554790445792115,
+        73.92189602796269
+      ],
+      [
+        18.5526,
+        73.9192
+      ]
+    ],
+    "confidence": "Estimated",
+    "source": "Straight-line with urban detour factor (Offline fallback)"
+  },
+  "walk_18.5540_73.9270_18.5541_73.9283": {
+    "meters": 175,
+    "minutes": 3,
+    "polyline": [
+      [
+        18.554,
+        73.927
+      ],
+      [
+        18.554144314320634,
+        73.92832157164638
+      ]
+    ],
+    "confidence": "Estimated",
+    "source": "Straight-line with urban detour factor (Offline fallback)"
+  },
+  "walk_18.5552_73.9360_18.5541_73.9283": {
+    "meters": 1023,
+    "minutes": 14,
+    "polyline": [
+      [
+        18.5552,
+        73.936
+      ],
+      [
+        18.554144314320634,
+        73.92832157164638
+      ]
+    ],
+    "confidence": "Estimated",
+    "source": "Straight-line with urban detour factor (Offline fallback)"
+  },
+  "walk_18.5548_73.9219_18.5524_73.9189": {
+    "meters": 516,
+    "minutes": 7,
+    "polyline": [
+      [
+        18.554790445792115,
+        73.92189602796269
+      ],
+      [
+        18.5524,
+        73.9189
+      ]
+    ],
+    "confidence": "Estimated",
+    "source": "Straight-line with urban detour factor (Offline fallback)"
+  },
+  "walk_18.5548_73.9219_18.5540_73.9270": {
+    "meters": 681,
+    "minutes": 10,
+    "polyline": [
+      [
+        18.554790445792115,
+        73.92189602796269
+      ],
+      [
+        18.554,
+        73.927
+      ]
+    ],
+    "confidence": "Estimated",
+    "source": "Straight-line with urban detour factor (Offline fallback)"
+  },
+  "drive_18.5105_73.9651_18.5690_73.9123": {
+    "meters": 11560,
+    "minutes": 35,
+    "polyline": [
+      [
+        18.510540145153765,
+        73.965107812549
+      ],
+      [
+        18.56904910837625,
+        73.91230327855668
+      ]
+    ],
+    "confidence": "Estimated",
+    "source": "Straight-line with urban detour factor (Offline fallback)"
+  },
+  "drive_18.6250_73.9096_18.6450_73.7582": {
+    "meters": 21742,
+    "minutes": 66,
+    "polyline": [
+      [
+        18.625008,
+        73.9096069
+      ],
+      [
+        18.6450117,
+        73.7582226
+      ]
+    ],
+    "confidence": "Estimated",
+    "source": "Straight-line with urban detour factor (Offline fallback)"
   }
 }
