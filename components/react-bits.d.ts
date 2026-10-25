@@ -193,6 +193,70 @@ declare module "@/components/react-bits/SplitFlapText.jsx" {
   export default SplitFlapText;
 }
 
+declare module "@/components/react-bits/ScrollExpand.jsx" {
+  export interface ScrollExpandProps {
+    src?: string;
+    mediaType?: "image" | "video";
+    poster?: string;
+    alt?: string;
+    title?: string;
+    scrollHint?: string;
+    startWidth?: number;
+    startHeight?: number;
+    startRadius?: number;
+    endRadius?: number;
+    mediaZoom?: number;
+    scrollDistance?: number;
+    holdDistance?: number;
+    smoothing?: number;
+    overlayScrim?: number;
+    useWindowScroll?: boolean;
+    enabled?: boolean;
+    children?: React.ReactNode;
+    className?: string;
+    style?: React.CSSProperties;
+    [key: string]: any;
+  }
+  const ScrollExpand: React.FC<ScrollExpandProps>;
+  export default ScrollExpand;
+}
+
+declare module "@/components/react-bits/TechText.jsx" {
+  export interface TechTextProps {
+    text?: string;
+    fontFamily?: string;
+    fontWeight?: number;
+    fontSize?: number;
+    letterSpacing?: number;
+    color?: string;
+    accentColor?: string;
+    align?: "left" | "center" | "right";
+    reach?: number;
+    softness?: number;
+    dashLength?: number;
+    dashGap?: number;
+    strokeWidth?: number;
+    lineStyle?: "dashed" | "solid";
+    reveal?: "area" | "letter" | "off";
+    specks?: number;
+    selection?: boolean;
+    labels?: boolean;
+    draggable?: boolean;
+    bounce?: number;
+    sweep?: boolean;
+    speed?: number;
+    clickKick?: boolean;
+    intro?: "none" | "type" | "assemble" | "metrics";
+    introDuration?: number;
+    guides?: boolean;
+    className?: string;
+    style?: React.CSSProperties;
+    [key: string]: any;
+  }
+  const TechText: React.FC<TechTextProps>;
+  export default TechText;
+}
+
 // Relative path declarations
 declare module "./react-bits/CountUp.jsx" {
   const CountUp: any;
@@ -221,4 +285,12 @@ declare module "./react-bits/SpecularButton.jsx" {
 declare module "./react-bits/SplitFlapText.jsx" {
   const SplitFlapText: any;
   export default SplitFlapText;
+}
+declare module "./react-bits/ScrollExpand.jsx" {
+  const ScrollExpand: any;
+  export default ScrollExpand;
+}
+declare module "./react-bits/TechText.jsx" {
+  const TechText: any;
+  export default TechText;
 }

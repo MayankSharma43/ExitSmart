@@ -23,6 +23,8 @@ import MaskedHeading from "@/components/react-bits/MaskedHeading.jsx";
 import GlowCursor from "@/components/react-bits/GlowCursor.jsx";
 import DepthCarousel from "@/components/react-bits/DepthCarousel.jsx";
 import SplitFlapText from "@/components/react-bits/SplitFlapText.jsx";
+import TechText from "@/components/react-bits/TechText.jsx";
+import ScrollExpand from "@/components/react-bits/ScrollExpand.jsx";
 
 const ROUTE_CARDS = [
   {
@@ -235,10 +237,26 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Headline */}
-            <h1 className="font-['Outfit'] font-extrabold text-[42px] sm:text-[54px] leading-[1.08] tracking-tight text-[#1C1A18] dark:text-[#F9F6F0] mb-3">
-              Exit<span className="text-[#D9A441]">Smart</span>
-            </h1>
+            {/* Interactive TechText Wordmark */}
+            <div className="w-full max-w-[460px] h-[72px] sm:h-[86px] mx-auto mb-2 relative">
+              <TechText
+                text="EXITSMART"
+                fontWeight={800}
+                fontSize={64}
+                letterSpacing={-0.03}
+                accentColor="#D9A441"
+                color="currentColor"
+                reveal="letter"
+                dashLength={4}
+                dashGap={2}
+                specks={14}
+                intro="assemble"
+                introDuration={1.8}
+                clickKick
+                draggable
+                bounce={0.4}
+              />
+            </div>
 
             <p className="font-['Plus_Jakarta_Sans'] text-base sm:text-lg text-[#55483F] dark:text-[#CFC5BC] font-medium max-w-[500px] mx-auto leading-relaxed mb-8">
               Enter smarter. Exit smarter. Connect Pune Metro, PMPML feeder buses, and official RTO auto fares to find your optimal door-to-door commute.
@@ -431,6 +449,61 @@ export default function HomePage() {
               Learn Methodology <ArrowRight className="h-3.5 w-3.5" />
             </div>
           </Link>
+        </div>
+      </section>
+
+      {/* React Bits: ScrollExpand Interactive Transit Showcase */}
+      <section className="max-w-[1080px] mx-auto px-4 py-8 mb-6">
+        <div className="text-center max-w-[600px] mx-auto mb-6">
+          <span className="px-3 py-1 rounded-full bg-white/70 dark:bg-white/10 border border-white/80 dark:border-white/15 text-[10px] font-extrabold tracking-widest text-[#D9A441] uppercase shadow-xs inline-block mb-2">
+            RAPID TRANSIT CANVAS
+          </span>
+          <h2 className="font-['Outfit'] font-bold text-2xl sm:text-3xl text-[#1C1A18] dark:text-[#F9F6F0] tracking-tight">
+            Built for Pune’s Commute
+          </h2>
+        </div>
+
+        <div className="h-[480px] sm:h-[540px] rounded-[32px] overflow-hidden border border-white/80 dark:border-white/15 shadow-2xl relative">
+          <ScrollExpand
+            src="/transit-hero.jpg"
+            alt="Pune Rapid Transit Grid"
+            title="BUILT FOR PUNE"
+            scrollHint="Scroll to expand transit stage"
+            startWidth={48}
+            startHeight={60}
+            startRadius={24}
+            endRadius={0}
+            mediaZoom={1.25}
+            scrollDistance={1.0}
+            holdDistance={0.3}
+            overlayScrim={0.55}
+          >
+            <div className="max-w-[580px] text-center text-white backdrop-blur-md bg-black/45 p-6 sm:p-8 rounded-2xl border border-white/20 shadow-2xl">
+              <span className="px-3 py-1 rounded-full bg-[#D9A441]/25 border border-[#D9A441]/60 text-[10px] font-extrabold tracking-widest text-[#D9A441] uppercase inline-block mb-3">
+                MULTIMODAL MOBILITY ENGINE
+              </span>
+              <h2 className="font-['Outfit'] font-bold text-2xl sm:text-3xl tracking-tight mb-2 text-white">
+                Every Exit, Every Feeder, Zero Guesswork
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-200 leading-relaxed mb-5">
+                From PCMC and Hinjewadi to Ramwadi and Swargate, ExitSmart calculates the fastest, cheapest, and most reliable transit route using real road-network data and official government fare meters.
+              </p>
+              <div className="flex items-center justify-center gap-3 flex-wrap">
+                <a
+                  href="#planner"
+                  className="px-5 py-2.5 rounded-xl bg-[#D9A441] text-[#1C1A18] font-bold text-xs hover:bg-[#c99533] transition-colors shadow-lg"
+                >
+                  Plan Route Now &darr;
+                </a>
+                <Link
+                  href="/corridors"
+                  className="px-5 py-2.5 rounded-xl bg-white/20 text-white font-semibold text-xs hover:bg-white/30 transition-colors backdrop-blur-sm border border-white/30"
+                >
+                  Explore Corridors &rarr;
+                </Link>
+              </div>
+            </div>
+          </ScrollExpand>
         </div>
       </section>
 
