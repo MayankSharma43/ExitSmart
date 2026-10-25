@@ -1,36 +1,41 @@
 import React from "react";
 import Link from "next/link";
 
+import { BrandMark } from "./BrandLogo";
+
 export function Mark() {
-  return (
-    <span className="brand-mark">
-      <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M7 25 13 7h6l6 18M12 18h8" />
-        <circle cx="16" cy="16" r="2.2" />
-      </svg>
-    </span>
-  );
+  return <BrandMark size={28} />;
 }
 
 export default function Footer() {
   return (
-    <footer className="max-w-[1080px] mx-auto px-6 py-10 border-t border-white/60 flex flex-col md:flex-row items-center justify-between gap-5 text-xs text-[#7A695C]">
+    <footer className="max-w-[1080px] mx-auto px-6 py-10 border-t border-white/60 dark:border-white/10 flex flex-col md:flex-row items-center justify-between gap-5 text-xs text-[#7A695C] dark:text-[#A89B8F] transition-colors">
       <div className="flex items-center gap-2.5">
-        <Mark />
-        <span className="font-['Outfit'] font-bold text-[#221B16] text-sm">
-          Exit<span className="text-[#C5A059]">Smart</span>
+        <BrandMark size={28} />
+        <span className="font-['Outfit'] font-bold text-[#1C1A18] dark:text-[#F9F6F0] text-sm">
+          Exit<span className="text-[#D9A441]">Smart</span>
         </span>
-        <span className="text-[11px] text-[#8C7A6D] border-l border-[#DECFC0] pl-2 ml-1">Pune Transit Intelligence</span>
+        <span className="text-[11px] text-[#8C7A6D] dark:text-[#A89B8F] border-l border-[#DECFC0] dark:border-white/15 pl-2 ml-1">
+          Pune Transit Intelligence
+        </span>
       </div>
-      <p className="m-0 text-center text-xs text-[#7A695C]">
-        Smarter connections, one journey at a time. Verified Maha Metro &amp; PMPML datasets &bull; RTO Auto Fare Meter.
-      </p>
-      <div className="flex items-center gap-2 text-[11px]">
+
+      <div className="flex items-center gap-4 text-xs font-medium">
+        <Link href="/how-it-works" className="hover:text-[#D9A441] transition-colors">
+          How it works
+        </Link>
+        <Link href="/corridors" className="hover:text-[#D9A441] transition-colors">
+          Corridors
+        </Link>
+        <Link href="/rto-fare-meter" className="hover:text-[#D9A441] transition-colors">
+          RTO Fare Meter
+        </Link>
+      </div>
+
+      <div className="flex items-center gap-2 text-[11px] text-[#8C7A6D] dark:text-[#A89B8F]">
         <span>Whole Pune Coverage</span>
         <span>&bull;</span>
-        <Link href="/#estimate-note" className="text-[#C5A059] font-semibold hover:underline">
-          About estimates
-        </Link>
+        <span>Verified Tariffs</span>
       </div>
     </footer>
   );

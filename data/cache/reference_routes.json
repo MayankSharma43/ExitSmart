@@ -65,7 +65,7 @@
                 "lat": 18.5516,
                 "lng": 73.9515
               },
-              "minutes": 26,
+              "minutes": 20,
               "inrMin": 15,
               "inrMax": 15,
               "meters": 6000,
@@ -116,7 +116,7 @@
               "details": "Walk to destination"
             }
           ],
-          "totalMin": 33,
+          "totalMin": 27,
           "totalInrMin": 15,
           "totalInrMax": 15,
           "waitMin": 6,
@@ -226,7 +226,7 @@
                 "lat": 18.553,
                 "lng": 73.952
               },
-              "minutes": 21,
+              "minutes": 16,
               "inrMin": 15,
               "inrMax": 15,
               "meters": 4800,
@@ -277,7 +277,7 @@
               "details": "Walk to destination"
             }
           ],
-          "totalMin": 30,
+          "totalMin": 25,
           "totalInrMin": 15,
           "totalInrMax": 15,
           "waitMin": 6,
@@ -381,7 +381,7 @@
               "lat": 18.5516,
               "lng": 73.9515
             },
-            "minutes": 26,
+            "minutes": 20,
             "inrMin": 15,
             "inrMax": 15,
             "meters": 6000,
@@ -432,7 +432,7 @@
             "details": "Walk to destination"
           }
         ],
-        "totalMin": 33,
+        "totalMin": 27,
         "totalInrMin": 15,
         "totalInrMax": 15,
         "waitMin": 6,
@@ -495,7 +495,7 @@
                 "lat": 18.5516,
                 "lng": 73.9515
               },
-              "minutes": 26,
+              "minutes": 20,
               "inrMin": 15,
               "inrMax": 15,
               "meters": 6000,
@@ -546,7 +546,7 @@
               "details": "Walk to destination"
             }
           ],
-          "totalMin": 33,
+          "totalMin": 27,
           "totalInrMin": 15,
           "totalInrMax": 15,
           "waitMin": 6,
@@ -656,7 +656,7 @@
                 "lat": 18.553,
                 "lng": 73.952
               },
-              "minutes": 21,
+              "minutes": 16,
               "inrMin": 15,
               "inrMax": 15,
               "meters": 4800,
@@ -707,7 +707,7 @@
               "details": "Walk to destination"
             }
           ],
-          "totalMin": 30,
+          "totalMin": 25,
           "totalInrMin": 15,
           "totalInrMax": 15,
           "waitMin": 6,
@@ -811,7 +811,7 @@
               "lat": 18.5516,
               "lng": 73.9515
             },
-            "minutes": 26,
+            "minutes": 20,
             "inrMin": 15,
             "inrMax": 15,
             "meters": 6000,
@@ -862,7 +862,7 @@
             "details": "Walk to destination"
           }
         ],
-        "totalMin": 33,
+        "totalMin": 27,
         "totalInrMin": 15,
         "totalInrMax": 15,
         "waitMin": 6,
@@ -1038,7 +1038,7 @@
                 "lat": 18.5645,
                 "lng": 73.9145
               },
-              "minutes": 16,
+              "minutes": 12,
               "inrMin": 10,
               "inrMax": 10,
               "meters": 3600,
@@ -1089,7 +1089,7 @@
               "details": "Walk to destination"
             }
           ],
-          "totalMin": 23,
+          "totalMin": 19,
           "totalInrMin": 10,
           "totalInrMax": 10,
           "waitMin": 5,
@@ -1193,7 +1193,7 @@
               "lat": 18.5645,
               "lng": 73.9145
             },
-            "minutes": 16,
+            "minutes": 12,
             "inrMin": 10,
             "inrMax": 10,
             "meters": 3600,
@@ -1244,7 +1244,7 @@
             "details": "Walk to destination"
           }
         ],
-        "totalMin": 23,
+        "totalMin": 19,
         "totalInrMin": 10,
         "totalInrMax": 10,
         "waitMin": 5,
@@ -1407,7 +1407,7 @@
                 "lat": 18.5645,
                 "lng": 73.9145
               },
-              "minutes": 16,
+              "minutes": 12,
               "inrMin": 10,
               "inrMax": 10,
               "meters": 3600,
@@ -1458,7 +1458,7 @@
               "details": "Walk to destination"
             }
           ],
-          "totalMin": 23,
+          "totalMin": 19,
           "totalInrMin": 10,
           "totalInrMax": 10,
           "waitMin": 5,
@@ -1562,7 +1562,7 @@
               "lat": 18.5645,
               "lng": 73.9145
             },
-            "minutes": 16,
+            "minutes": 12,
             "inrMin": 10,
             "inrMax": 10,
             "meters": 3600,
@@ -1613,7 +1613,7 @@
             "details": "Walk to destination"
           }
         ],
-        "totalMin": 23,
+        "totalMin": 19,
         "totalInrMin": 10,
         "totalInrMax": 10,
         "waitMin": 5,

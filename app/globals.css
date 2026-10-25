@@ -184,44 +184,86 @@ body {
   height: 100%;
 }
 
+/* Smooth levitation floating physics for tilted plates */
+@keyframes float-plate-tl {
+  0%, 100% {
+    transform: rotateX(15deg) rotateY(-18deg) rotateZ(-4deg) translateY(0px);
+  }
+  50% {
+    transform: rotateX(13deg) rotateY(-16deg) rotateZ(-3deg) translateY(-10px);
+  }
+}
+@keyframes float-plate-tr {
+  0%, 100% {
+    transform: rotateX(16deg) rotateY(18deg) rotateZ(5deg) translateY(0px);
+  }
+  50% {
+    transform: rotateX(14deg) rotateY(16deg) rotateZ(4deg) translateY(-12px);
+  }
+}
+@keyframes float-plate-bl {
+  0%, 100% {
+    transform: rotateX(-14deg) rotateY(-16deg) rotateZ(4deg) translateY(0px);
+  }
+  50% {
+    transform: rotateX(-12deg) rotateY(-14deg) rotateZ(3deg) translateY(-8px);
+  }
+}
+@keyframes float-plate-br {
+  0%, 100% {
+    transform: rotateX(-15deg) rotateY(20deg) rotateZ(-5deg) translateY(0px);
+  }
+  50% {
+    transform: rotateX(-13deg) rotateY(18deg) rotateZ(-4deg) translateY(-11px);
+  }
+}
+@keyframes float-sphere-subtle {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-8px) scale(1.02); }
+}
+
 /* Top-Left Plate (Metro) */
 .tilted-plate--tl {
   top: 6%;
-  left: 10%;
-  transform: rotateX(15deg) rotateY(-18deg) rotateZ(-4deg);
+  left: 9%;
+  animation: float-plate-tl 6s ease-in-out infinite;
 }
 .tilted-plate--tl:hover {
-  transform: rotateX(8deg) rotateY(-8deg) rotateZ(-2deg) translateY(-8px);
+  transform: rotateX(8deg) rotateY(-8deg) rotateZ(-2deg) translateY(-8px) !important;
+  animation-play-state: paused;
 }
 
 /* Top-Right Plate (Bus) */
 .tilted-plate--tr {
   top: 8%;
-  right: 11%;
-  transform: rotateX(16deg) rotateY(18deg) rotateZ(5deg);
+  right: 10%;
+  animation: float-plate-tr 6.8s ease-in-out infinite;
 }
 .tilted-plate--tr:hover {
-  transform: rotateX(8deg) rotateY(8deg) rotateZ(2deg) translateY(-8px);
+  transform: rotateX(8deg) rotateY(8deg) rotateZ(2deg) translateY(-8px) !important;
+  animation-play-state: paused;
 }
 
 /* Bottom-Left Plate (RTO Auto) */
 .tilted-plate--bl {
   bottom: 8%;
-  left: 13%;
-  transform: rotateX(-14deg) rotateY(-16deg) rotateZ(4deg);
+  left: 11%;
+  animation: float-plate-bl 7.2s ease-in-out infinite;
 }
 .tilted-plate--bl:hover {
-  transform: rotateX(-6deg) rotateY(-6deg) rotateZ(1deg) translateY(-8px);
+  transform: rotateX(-6deg) rotateY(-6deg) rotateZ(1deg) translateY(-8px) !important;
+  animation-play-state: paused;
 }
 
 /* Bottom-Right Plate (Smart Exit) */
 .tilted-plate--br {
   bottom: 6%;
-  right: 12%;
-  transform: rotateX(-15deg) rotateY(20deg) rotateZ(-5deg);
+  right: 11%;
+  animation: float-plate-br 6.4s ease-in-out infinite;
 }
 .tilted-plate--br:hover {
-  transform: rotateX(-6deg) rotateY(8deg) rotateZ(-2deg) translateY(-8px);
+  transform: rotateX(-6deg) rotateY(8deg) rotateZ(-2deg) translateY(-8px) !important;
+  animation-play-state: paused;
 }
 
 /* Floating Frosted Pill Header */
@@ -510,6 +552,260 @@ body {
   background: #241D17;
   color: #FCFAF6;
   border-color: #241D17;
+}
+
+/* --- Complete Dark Mode Theme (Authentic ExitSmart Palette) --- */
+.dark {
+  --studio-bg: #12100E;
+  --studio-surface: rgba(28, 24, 20, 0.68);
+  --studio-border: rgba(255, 255, 255, 0.12);
+  --studio-text: #F9F6F0;
+  --studio-muted: #A89B8F;
+  --studio-gold: #D9A441;
+  --studio-gold-glow: rgba(217, 164, 65, 0.45);
+}
+
+.dark body {
+  background-color: #12100E !important;
+  color: #F9F6F0 !important;
+}
+
+.dark .app-shell {
+  background: radial-gradient(ellipse at 50% 12%, #221D18 0%, #171411 50%, #0E0C0A 100%) !important;
+  color: #F9F6F0 !important;
+}
+
+.dark .ambient-glow--one {
+  background: #B37C22;
+  opacity: 0.12;
+}
+.dark .ambient-glow--two {
+  background: #8C5E1A;
+  opacity: 0.12;
+}
+
+.dark .studio-stage {
+  background: radial-gradient(ellipse at 50% 15%, #221D18 0%, #171411 55%, #0E0C0A 100%) !important;
+}
+
+.dark .studio-grid {
+  background-image: 
+    linear-gradient(to right, rgba(217, 164, 65, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(217, 164, 65, 0.08) 1px, transparent 1px);
+}
+
+.dark .clay-sphere--one {
+  background: radial-gradient(circle at 35% 35%, #523B2A, #322115 70%, #18100A 100%);
+  box-shadow: 0 25px 45px -10px rgba(0, 0, 0, 0.6);
+}
+
+.dark .clay-sphere--two {
+  background: radial-gradient(circle at 35% 35%, #5E432F, #3B281A 70%, #1C120B 100%);
+  box-shadow: 0 25px 45px -10px rgba(0, 0, 0, 0.7);
+}
+
+.dark .clay-sphere--three {
+  background: radial-gradient(circle at 40% 30%, #443224, #261A11 75%, #130C07 100%);
+  opacity: 0.75;
+}
+
+.dark .architectural-ring {
+  border-color: #2D241C;
+  border-top-color: #D9A441;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Central hero card in dark mode */
+.dark .glass-hero-card {
+  background: rgba(26, 22, 18, 0.72) !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 
+    0 35px 70px -15px rgba(0, 0, 0, 0.55),
+    0 15px 30px -10px rgba(0, 0, 0, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Luminous CTA in dark mode */
+.dark .luminous-cta {
+  background: linear-gradient(135deg, #2B231C 0%, #1A1511 100%) !important;
+  color: #F9F6F0 !important;
+  border-color: rgba(217, 164, 65, 0.5) !important;
+  box-shadow: 
+    0 0 35px rgba(217, 164, 65, 0.45),
+    0 8px 20px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15) !important;
+}
+.dark .luminous-cta:hover {
+  box-shadow: 
+    0 0 45px rgba(217, 164, 65, 0.7),
+    0 10px 25px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Tilted 3D cards in dark mode */
+.dark .tilted-plate {
+  background: rgba(28, 24, 20, 0.72) !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 
+    0 25px 50px -10px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.12) !important;
+}
+.dark .plate-badge {
+  background: rgba(38, 32, 27, 0.8) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #F9F6F0 !important;
+}
+.dark .plate-content h4 {
+  color: #F9F6F0 !important;
+}
+.dark .plate-content p {
+  color: #B5A79A !important;
+}
+.dark .plate-stat {
+  color: #F9F6F0 !important;
+}
+
+/* Floating header pill in dark mode */
+.dark .floating-header-pill {
+  background: rgba(24, 21, 18, 0.72) !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 
+    0 18px 40px -10px rgba(0, 0, 0, 0.45),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1) !important;
+}
+.dark .brand-pill {
+  color: #F9F6F0 !important;
+}
+.dark .nav-pill-links {
+  background: rgba(36, 31, 26, 0.6) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.dark .nav-pill-links a,
+.dark .nav-pill-links button {
+  color: #B5A79A !important;
+}
+.dark .nav-pill-links a:hover,
+.dark .nav-pill-links button:hover {
+  color: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+.dark .status-pill {
+  background: rgba(36, 31, 26, 0.7) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #CFC5BC !important;
+}
+.dark .plan-pill-btn {
+  background: #D9A441 !important;
+  color: #1A1511 !important;
+}
+.dark .plan-pill-btn:hover {
+  background: #ECCB8D !important;
+}
+
+/* Frosted Search Card in dark mode */
+.dark .frosted-search-card {
+  background: rgba(26, 22, 18, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 
+    0 35px 70px -15px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1) !important;
+}
+.dark .frosted-search-card .field-row {
+  background: rgba(38, 32, 27, 0.7) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.dark .frosted-search-card .field-row:focus-within {
+  border-color: #D9A441 !important;
+  background: rgba(46, 39, 33, 0.95) !important;
+}
+.dark .field-copy input {
+  color: #F9F6F0 !important;
+}
+.dark .field-label {
+  color: #D9A441 !important;
+}
+.dark .frosted-search-card .departure-control {
+  background: rgba(38, 32, 27, 0.7) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.dark .departure-copy input {
+  color: #F9F6F0 !important;
+}
+.dark .frosted-search-card .mode-chip {
+  background: rgba(38, 32, 27, 0.7) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #CFC5BC !important;
+}
+.dark .frosted-search-card .mode-chip.is-active {
+  background: #D9A441 !important;
+  color: #1A1511 !important;
+  border-color: #D9A441 !important;
+}
+
+/* Results, Panels & Drawer in Dark Mode */
+.dark .recommendation-card {
+  background: rgba(26, 22, 18, 0.72) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #F9F6F0 !important;
+}
+.dark .recommendation-card strong {
+  color: #F9F6F0 !important;
+}
+.dark .recommendation-card.is-selected {
+  border-color: #D9A441 !important;
+  box-shadow: 0 0 0 1px #D9A441, 0 16px 36px rgba(0, 0, 0, 0.4) !important;
+}
+.dark .exit-banner {
+  background: linear-gradient(100deg, rgba(217, 164, 65, 0.15), rgba(35, 29, 24, 0.75)) !important;
+  border-color: rgba(217, 164, 65, 0.3) !important;
+}
+.dark .exit-banner-copy strong {
+  color: #F9F6F0 !important;
+}
+.dark .saving-metrics b {
+  color: #F9F6F0 !important;
+}
+.dark .map-section, .dark .override-panel {
+  background: rgba(26, 22, 18, 0.65) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+.dark .override-field select {
+  background: #1C1814 !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  color: #F9F6F0 !important;
+}
+.dark .detail-summary-card, .dark .timeline-panel, .dark .fare-panel {
+  background: rgba(26, 22, 18, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #F9F6F0 !important;
+}
+.dark .detail-main-metric strong, .dark .detail-metric-row strong, .dark .fare-total, .dark .fare-lines strong {
+  color: #F9F6F0 !important;
+}
+.dark .estimate-drawer {
+  background: #171411 !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  color: #F9F6F0 !important;
+}
+.dark .estimate-drawer h2, .dark .assumption-list strong {
+  color: #F9F6F0 !important;
+}
+.dark .outline-button {
+  background: rgba(38, 32, 27, 0.7) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #F9F6F0 !important;
+}
+.dark .results-intro h1 {
+  color: #F9F6F0 !important;
+}
+
+/* Smooth transition globally across theme toggling */
+html, body, .app-shell, .studio-stage, .glass-hero-card, .floating-header-pill, .tilted-plate, .frosted-search-card {
+  transition: background 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+              background-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+              color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+              border-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 /* Media query responsiveness for 3D stage */

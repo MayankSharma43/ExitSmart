@@ -2,7 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import { Mark } from "./Footer";
+import { BrandMark } from "./BrandLogo";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const handleOpenAssumptions = () => {
@@ -11,38 +12,39 @@ export default function Header() {
 
   return (
     <header className="floating-header-pill">
-      {/* Brand: ExitSmart / Pune */}
-      <Link className="brand-pill" href="/">
-        <span className="brand-pill-mark">
-          <Mark />
-        </span>
+      {/* Brand: ExitSmart / Pune with Authentic BrandMark */}
+      <Link className="brand-pill" href="/" title="ExitSmart - Home">
+        <BrandMark size={32} />
         <span className="brand-pill-name">
           Exit<span>Smart</span>
         </span>
         <span className="brand-pill-city">Pune</span>
       </Link>
 
-      {/* Centered Navigation Links */}
+      {/* Centered Navigation Links pointing to Dedicated Sub-Pages */}
       <nav className="nav-pill-links">
-        <a href="/#how-it-works">How it works</a>
-        <a href="/#popular-routes">Corridors</a>
-        <a href="/#rto-meter">RTO Fare Meter</a>
+        <Link href="/how-it-works">How it works</Link>
+        <Link href="/corridors">Corridors</Link>
+        <Link href="/rto-fare-meter">RTO Fare Meter</Link>
         <button type="button" onClick={handleOpenAssumptions}>
           Assumptions
         </button>
       </nav>
 
-      {/* Right Side Pill Badge & Action */}
+      {/* Right Side Theme Toggle, Pill Badge & Action */}
       <div className="pill-actions">
+        <ThemeToggle />
+
         <div className="status-pill">
           <span className="status-dot"></span>
           <span>Offline Ready</span>
           <span className="status-sep">•</span>
           <span className="status-sub">Pune</span>
         </div>
-        <a href="/#planner" className="plan-pill-btn">
+
+        <Link href="/#planner" className="plan-pill-btn">
           Plan Journey
-        </a>
+        </Link>
       </div>
     </header>
   );

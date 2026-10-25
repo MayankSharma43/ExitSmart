@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import {
   Check,
   ArrowRight,
@@ -13,6 +14,7 @@ import {
   Route,
   Shield,
   Info,
+  Car,
 } from "lucide-react";
 import SearchForm from "@/components/SearchForm";
 import AssumptionsDrawer from "@/components/AssumptionsDrawer";
@@ -138,11 +140,8 @@ export default function HomePage() {
         {/* Tilted Plate 1: Metro (Top-Left) */}
         <div
           className="tilted-plate tilted-plate--tl"
-          onClick={() => {
-            const el = document.getElementById("popular-routes");
-            el?.scrollIntoView({ behavior: "smooth" });
-          }}
-          title="Explore Maha Metro Line 1 & Line 2"
+          onClick={() => router.push("/corridors")}
+          title="Explore Maha Metro Line 1 & Line 2 Corridors"
         >
           <PlateRibbon />
           <div className="plate-header">
@@ -161,12 +160,12 @@ export default function HomePage() {
             <span className="plate-tag">Aqua & Purple</span>
           </div>
           <div className="plate-content">
-            <h4>Aqua & Purple Lines</h4>
+            <h4>Aqua &amp; Purple Lines</h4>
             <p>33 km rapid transit network. Bypasses Pune road gridlock entirely.</p>
           </div>
           <div className="plate-footer">
             <span className="plate-stat">₹10 – ₹35 Slabs</span>
-            <span className="plate-hint">Zero traffic delay →</span>
+            <span className="plate-hint">View Corridors →</span>
           </div>
         </div>
 
@@ -200,7 +199,7 @@ export default function HomePage() {
           </div>
           <div className="plate-footer">
             <span className="plate-stat">₹5 – ₹15 Stages</span>
-            <span className="plate-hint">Low cost transit →</span>
+            <span className="plate-hint">Find Routes ↓</span>
           </div>
         </div>
 
@@ -209,7 +208,7 @@ export default function HomePage() {
           <div className="glass-hero-card">
             {/* Eyebrow & SplitFlap Ticker */}
             <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="px-3 py-1 rounded-full bg-white/70 border border-white/90 text-[10px] font-extrabold tracking-widest text-[#C5A059] uppercase shadow-xs">
+              <span className="px-3 py-1 rounded-full bg-white/70 dark:bg-white/10 border border-white/90 dark:border-white/15 text-[10px] font-extrabold tracking-widest text-[#D9A441] uppercase shadow-xs">
                 DOOR-TO-DOOR TRANSIT INTELLIGENCE
               </span>
               <div className="hidden sm:inline-block">
@@ -223,7 +222,7 @@ export default function HomePage() {
                   align="center"
                   tileStyle="minimal"
                   tileColor="#FFFFFF"
-                  textColor="#C5A059"
+                  textColor="#D9A441"
                   glare={0}
                   depth={0.2}
                   tileRadius={4}
@@ -237,11 +236,11 @@ export default function HomePage() {
             </div>
 
             {/* Headline */}
-            <h1 className="font-['Outfit'] font-extrabold text-[42px] sm:text-[54px] leading-[1.08] tracking-tight text-[#221B16] mb-3">
-              Exit<span className="text-[#C5A059]">Smart</span>
+            <h1 className="font-['Outfit'] font-extrabold text-[42px] sm:text-[54px] leading-[1.08] tracking-tight text-[#1C1A18] dark:text-[#F9F6F0] mb-3">
+              Exit<span className="text-[#D9A441]">Smart</span>
             </h1>
 
-            <p className="font-['Plus_Jakarta_Sans'] text-base sm:text-lg text-[#55483F] font-medium max-w-[500px] mx-auto leading-relaxed mb-8">
+            <p className="font-['Plus_Jakarta_Sans'] text-base sm:text-lg text-[#55483F] dark:text-[#CFC5BC] font-medium max-w-[500px] mx-auto leading-relaxed mb-8">
               Enter smarter. Exit smarter. Connect Pune Metro, PMPML feeder buses, and official RTO auto fares to find your optimal door-to-door commute.
             </p>
 
@@ -249,7 +248,7 @@ export default function HomePage() {
             <div className="mb-8">
               <a
                 href="#planner"
-                className="luminous-cta text-sm sm:text-base font-bold text-[#221B16]"
+                className="luminous-cta text-sm sm:text-base font-bold text-[#1C1A18] dark:text-[#F9F6F0]"
               >
                 <span>Plan My Journey</span>
                 <span className="text-base">↓</span>
@@ -257,7 +256,7 @@ export default function HomePage() {
             </div>
 
             {/* Three Proof Badges */}
-            <div className="flex items-center justify-center gap-4 sm:gap-6 flex-wrap text-xs font-semibold text-[#5A4D42] pt-4 border-t border-white/60">
+            <div className="flex items-center justify-center gap-4 sm:gap-6 flex-wrap text-xs font-semibold text-[#5A4D42] dark:text-[#A89B8F] pt-4 border-t border-white/60 dark:border-white/15">
               <span className="flex items-center gap-1.5">
                 <Check className="h-3.5 w-3.5 text-[#10B981]" />
                 Maha Metro Slabs
@@ -277,11 +276,8 @@ export default function HomePage() {
         {/* Tilted Plate 3: RTO Auto Fare Meter (Bottom-Left) */}
         <div
           className="tilted-plate tilted-plate--bl"
-          onClick={() => {
-            const el = document.getElementById("rto-meter");
-            el?.scrollIntoView({ behavior: "smooth" });
-          }}
-          title="View official Maharashtra RTO Auto Fare Meter"
+          onClick={() => router.push("/rto-fare-meter")}
+          title="Open official Maharashtra RTO Auto Fare Calculator"
         >
           <PlateRibbon />
           <div className="plate-header">
@@ -302,15 +298,15 @@ export default function HomePage() {
           </div>
           <div className="plate-footer">
             <span className="plate-stat">Govt Formula</span>
-            <span className="plate-hint">Inspect meter →</span>
+            <span className="plate-hint">Calculate Fare →</span>
           </div>
         </div>
 
         {/* Tilted Plate 4: Smart Exit Advantage (Bottom-Right) */}
         <div
           className="tilted-plate tilted-plate--br"
-          onClick={() => handleLaunchRoute(ROUTE_CARDS[0])}
-          title="Launch Ramwadi to Kharadi Smart Exit route"
+          onClick={() => router.push("/corridors")}
+          title="Explore Smart Exit benchmark corridors"
         >
           <PlateRibbon />
           <div className="plate-header">
@@ -328,7 +324,7 @@ export default function HomePage() {
           </div>
           <div className="plate-footer">
             <span className="plate-stat">Save 15 min &amp; ₹50+</span>
-            <span className="plate-hint">Try benchmark →</span>
+            <span className="plate-hint">See Corridors →</span>
           </div>
         </div>
       </section>
@@ -336,13 +332,13 @@ export default function HomePage() {
       {/* Transit Search Console Section */}
       <section className="max-w-[1080px] mx-auto px-4 py-12" id="planner">
         <div className="text-center max-w-[620px] mx-auto mb-8">
-          <span className="px-3 py-1 rounded-full bg-white/70 border border-white/80 text-[10px] font-extrabold tracking-widest text-[#C5A059] uppercase shadow-xs inline-block mb-3">
+          <span className="px-3 py-1 rounded-full bg-white/70 dark:bg-white/10 border border-white/80 dark:border-white/15 text-[10px] font-extrabold tracking-widest text-[#D9A441] uppercase shadow-xs inline-block mb-3">
             DOOR-TO-DOOR MULTIMODAL PLANNER
           </span>
-          <h2 className="font-['Outfit'] font-bold text-3xl sm:text-4xl text-[#221B16] tracking-tight mb-2">
+          <h2 className="font-['Outfit'] font-bold text-3xl sm:text-4xl text-[#1C1A18] dark:text-[#F9F6F0] tracking-tight mb-2">
             Where are you headed today?
           </h2>
-          <p className="text-sm sm:text-base text-[#615247]">
+          <p className="text-sm sm:text-base text-[#615247] dark:text-[#A89B8F]">
             Enter any origin and destination across Pune, PCMC, and Hinjawadi to compare metro, bus, auto, and walking options.
           </p>
         </div>
@@ -352,250 +348,116 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How it Works Section */}
-      <section className="max-w-[1080px] mx-auto px-4 py-16" id="how-it-works">
-        <div className="text-center max-w-[620px] mx-auto mb-12">
-          <span className="px-3 py-1 rounded-full bg-white/70 border border-white/80 text-[10px] font-extrabold tracking-widest text-[#C5A059] uppercase shadow-xs inline-block mb-3">
-            A SMARTER CONNECTION
+      {/* Dedicated Sub-Pages Feature Gateways */}
+      <section className="max-w-[1080px] mx-auto px-4 py-14">
+        <div className="text-center max-w-[600px] mx-auto mb-10">
+          <span className="px-3 py-1 rounded-full bg-white/70 dark:bg-white/10 border border-white/80 dark:border-white/15 text-[10px] font-extrabold tracking-widest text-[#D9A441] uppercase shadow-xs inline-block mb-2">
+            EXPLORE THE INTELLIGENCE ENGINE
           </span>
-          <h2 className="font-['Outfit'] font-bold text-3xl sm:text-4xl text-[#221B16] tracking-tight mb-2">
-            More than the nearest station.
+          <h2 className="font-['Outfit'] font-bold text-2xl sm:text-3xl text-[#1C1A18] dark:text-[#F9F6F0] tracking-tight">
+            Specialized Transit Tools
           </h2>
-          <p className="text-sm sm:text-base text-[#615247]">
-            Standard navigation apps blindly direct you to the geographically closest stop. ExitSmart finds adjacent stops with direct feeder buses, active auto stands, or traffic bypasses.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            {
-              num: "01",
-              title: "Start anywhere in Pune",
-              desc: "Add your home, tech park, metro station, or select a precise point with the interactive Leaflet map picker.",
-              icon: MapPin,
-            },
-            {
-              num: "02",
-              title: "Compare entry & exit stops",
-              desc: "Evaluate adjacent metro stations and bus feeder hubs to dodge congested junction bottlenecks.",
-              icon: Route,
-            },
-            {
-              num: "03",
-              title: "Choose your trade-off",
-              desc: "Pick the lowest fare (₹5-15 bus), fewest minutes, or rain-protected walk. Full breakdown with zero booking pressure.",
-              icon: Layers,
-            },
-          ].map((s) => (
-            <article
-              key={s.num}
-              className="relative p-7 rounded-[26px] bg-white/45 backdrop-blur-xl border border-white/80 shadow-[0_15px_35px_-10px_rgba(60,45,30,0.08)] hover:-translate-y-1 transition-all"
-            >
-              <div className="flex items-center justify-between mb-5">
-                <span className="font-['Outfit'] font-extrabold text-2xl text-[#C5A059]">{s.num}</span>
-                <span className="w-10 h-10 rounded-2xl bg-white/70 border border-white/90 flex items-center justify-center text-[#221B16] shadow-xs">
-                  <s.icon className="h-5 w-5 text-[#C5A059]" />
-                </span>
-              </div>
-              <h3 className="font-['Outfit'] font-bold text-lg text-[#221B16] mb-2">{s.title}</h3>
-              <p className="text-xs sm:text-sm text-[#615247] leading-relaxed m-0">{s.desc}</p>
-              <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#C5A059] to-transparent mt-5" />
-            </article>
-          ))}
-        </div>
-      </section>
-
-      {/* One Journey, Three Ways Strip */}
-      <section className="max-w-[1080px] mx-auto px-4 py-6">
-        <div className="p-6 sm:p-8 rounded-[28px] bg-white/50 backdrop-blur-xl border border-white/85 shadow-[0_20px_45px_-10px_rgba(60,45,30,0.08)] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div>
-            <span className="px-3 py-1 rounded-full bg-white/70 border border-white/80 text-[10px] font-extrabold tracking-widest text-[#C5A059] uppercase shadow-xs inline-block mb-2">
-              ONE JOURNEY, THREE WAYS
-            </span>
-            <h2 className="font-['Outfit'] font-bold text-2xl text-[#221B16] tracking-tight">
-              Choose what matters today.
-            </h2>
-          </div>
-          <div className="flex flex-wrap items-center gap-6">
-            <div className="flex items-center gap-3">
-              <span className="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-700 shadow-xs">
-                <TrendingDown className="h-5 w-5" />
-              </span>
-              <div>
-                <strong className="block text-xs font-bold text-[#221B16]">Cheapest</strong>
-                <small className="text-[11px] text-[#7A695C]">Lowest estimated fare</small>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-700 shadow-xs">
-                <Zap className="h-5 w-5" />
-              </span>
-              <div>
-                <strong className="block text-xs font-bold text-[#221B16]">Fastest</strong>
-                <small className="text-[11px] text-[#7A695C]">Fewest total minutes</small>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="w-10 h-10 rounded-xl bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-700 shadow-xs">
-                <ShieldCheck className="h-5 w-5" />
-              </span>
-              <div>
-                <strong className="block text-xs font-bold text-[#221B16]">Most Convenient</strong>
-                <small className="text-[11px] text-[#7A695C]">Fewer steps &amp; less walking</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Popular / Reference Routes 3D Showcase */}
-      <section className="max-w-[1080px] mx-auto px-4 py-16" id="popular-routes">
-        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-8">
-          <div>
-            <span className="px-3 py-1 rounded-full bg-white/70 border border-white/80 text-[10px] font-extrabold tracking-widest text-[#C5A059] uppercase shadow-xs inline-block mb-2">
-              PUNE REFERENCE CORRIDORS
-            </span>
-            <h2 className="font-['Outfit'] font-bold text-3xl sm:text-4xl text-[#221B16] tracking-tight">
-              Start with a verified route.
-            </h2>
-            <p className="text-sm text-[#615247] mt-1">
-              Explore the 4 hackathon benchmark journeys loaded with instant offline data.
-            </p>
-          </div>
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/60 border border-white/90 text-xs font-semibold text-[#5A4E45] shadow-xs">
-            <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse"></span>
-            100% Offline Ready
-          </div>
-        </div>
-
-        <div className="p-8 sm:p-12 rounded-[32px] bg-white/50 backdrop-blur-2xl border border-white/85 shadow-[0_25px_60px_-15px_rgba(60,45,30,0.1)] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="flex items-center justify-center overflow-visible min-h-[360px]">
-            <DepthCarousel
-              items={ROUTE_CARDS.map((r) => ({ image: r.image, alt: r.alt }))}
-              cardWidth={260}
-              cardHeight={320}
-              radius={22}
-              tint="#FCFAF6"
-              depth={165}
-              spread={72}
-              tilt={18}
-              tiltDirection="right"
-              perspective={1300}
-              visibleCards={3}
-              falloff={0.16}
-              blur={4}
-              duration={650}
-              autoplay={false}
-              loop
-              showControls
-              showIndicators
-              onChange={(i: number) => setActiveSlide(i)}
-            />
-          </div>
-
-          <div className="max-w-[440px]">
-            <div className="flex items-center justify-between mb-4">
-              <span className="text-[10px] font-extrabold tracking-widest text-[#C5A059] uppercase">
-                {currentCard.tag}
-              </span>
-              <span className="text-xs font-bold text-[#8C7A6D]">
-                0{activeSlide + 1} / 0{ROUTE_CARDS.length}
-              </span>
-            </div>
-            <h3 className="font-['Outfit'] font-bold text-2xl sm:text-3xl text-[#221B16] mb-3">
-              {currentCard.label}
-            </h3>
-            <p className="text-sm text-[#615247] leading-relaxed mb-6">
-              {currentCard.body}
-            </p>
-            <button
-              type="button"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#221B16] text-[#FCFAF6] font-bold text-xs hover:bg-[#3B3026] hover:scale-[1.02] transition-all shadow-md"
-              onClick={() => handleLaunchRoute(currentCard)}
-            >
-              Launch this route <ArrowRight className="h-4 w-4" />
-            </button>
-            <div className="flex items-center gap-2 mt-6 text-xs text-[#8C7A6D]">
-              <Info className="h-4 w-4 text-[#C5A059] shrink-0" />
-              Precomputed benchmark route from offline cache.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Official RTO Auto Tariff Meter Section */}
-      <section className="max-w-[1080px] mx-auto px-4 py-16" id="rto-meter">
-        <div className="p-8 sm:p-12 rounded-[32px] bg-white/50 backdrop-blur-2xl border border-white/85 shadow-[0_25px_60px_-15px_rgba(60,45,30,0.1)]">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-8 pb-8 border-b border-white/70">
+          {/* Card 1: RTO Fare Meter */}
+          <Link
+            href="/rto-fare-meter"
+            className="group p-7 rounded-[28px] bg-white/45 dark:bg-[#1C1814]/65 backdrop-blur-xl border border-white/80 dark:border-white/15 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all flex flex-col justify-between"
+          >
             <div>
-              <span className="px-3 py-1 rounded-full bg-white/70 border border-white/80 text-[10px] font-extrabold tracking-widest text-[#C5A059] uppercase shadow-xs inline-block mb-2">
-                OFFICIAL MAHARASHTRA GOVERNMENT TARIFF
+              <div className="w-12 h-12 rounded-2xl bg-white/70 dark:bg-white/10 border border-white/90 dark:border-white/15 flex items-center justify-center text-[#D9A441] shadow-xs mb-5 group-hover:scale-110 transition-transform">
+                <Car className="h-6 w-6" />
+              </div>
+              <span className="text-[10px] font-extrabold tracking-widest text-[#D9A441] uppercase block mb-1">
+                OFFICIAL GOVERNMENT TARIFF
               </span>
-              <h2 className="font-['Outfit'] font-bold text-3xl sm:text-4xl text-[#221B16] tracking-tight">
+              <h3 className="font-['Outfit'] font-bold text-xl text-[#1C1A18] dark:text-[#F9F6F0] mb-2">
                 Pune RTO Auto Fare Meter
-              </h2>
-              <p className="text-sm text-[#615247] mt-1 max-w-[560px]">
-                ExitSmart embeds the official Pune Regional Transport Office tariff formula so commuters never get overcharged at metro gates.
+              </h3>
+              <p className="text-xs sm:text-sm text-[#615247] dark:text-[#A89B8F] leading-relaxed mb-6">
+                Interactive legal calculator with ₹25 base, ₹17/km distance tiers, +25% midnight surcharge, and passenger dispute rights.
               </p>
             </div>
-            <div className="px-4 py-2 rounded-2xl bg-white/70 border border-white/90 text-xs font-bold text-[#221B16] shadow-xs">
-              Zero Surge • Zero Dark Patterns
+            <div className="inline-flex items-center gap-2 text-xs font-bold text-[#D9A441] group-hover:translate-x-1 transition-transform">
+              Open Auto Meter <ArrowRight className="h-3.5 w-3.5" />
             </div>
-          </div>
+          </Link>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-5 rounded-2xl bg-white/40 border border-white/75">
-              <span className="text-[10px] font-bold tracking-wider text-[#8C7A6D] uppercase block mb-1">
-                Base Fare (Flag Down)
+          {/* Card 2: Corridors */}
+          <Link
+            href="/corridors"
+            className="group p-7 rounded-[28px] bg-white/45 dark:bg-[#1C1814]/65 backdrop-blur-xl border border-white/80 dark:border-white/15 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all flex flex-col justify-between"
+          >
+            <div>
+              <div className="w-12 h-12 rounded-2xl bg-white/70 dark:bg-white/10 border border-white/90 dark:border-white/15 flex items-center justify-center text-[#D9A441] shadow-xs mb-5 group-hover:scale-110 transition-transform">
+                <Route className="h-6 w-6" />
+              </div>
+              <span className="text-[10px] font-extrabold tracking-widest text-[#D9A441] uppercase block mb-1">
+                3D ROUTE SHOWCASE
               </span>
-              <strong className="text-2xl font-extrabold text-[#221B16] font-['Outfit'] block">₹25.00</strong>
-              <span className="text-xs text-[#615247] mt-1 block">Includes first 1.50 km</span>
+              <h3 className="font-['Outfit'] font-bold text-xl text-[#1C1A18] dark:text-[#F9F6F0] mb-2">
+                Pune Reference Corridors
+              </h3>
+              <p className="text-xs sm:text-sm text-[#615247] dark:text-[#A89B8F] leading-relaxed mb-6">
+                Explore the 4 hackathon benchmark journeys loaded with instant offline data. Side-by-side time and rupee savings.
+              </p>
             </div>
-            <div className="p-5 rounded-2xl bg-white/40 border border-white/75">
-              <span className="text-[10px] font-bold tracking-wider text-[#8C7A6D] uppercase block mb-1">
-                Subsequent Distance
+            <div className="inline-flex items-center gap-2 text-xs font-bold text-[#D9A441] group-hover:translate-x-1 transition-transform">
+              View Corridors <ArrowRight className="h-3.5 w-3.5" />
+            </div>
+          </Link>
+
+          {/* Card 3: How it Works */}
+          <Link
+            href="/how-it-works"
+            className="group p-7 rounded-[28px] bg-white/45 dark:bg-[#1C1814]/65 backdrop-blur-xl border border-white/80 dark:border-white/15 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all flex flex-col justify-between"
+          >
+            <div>
+              <div className="w-12 h-12 rounded-2xl bg-white/70 dark:bg-white/10 border border-white/90 dark:border-white/15 flex items-center justify-center text-[#D9A441] shadow-xs mb-5 group-hover:scale-110 transition-transform">
+                <Layers className="h-6 w-6" />
+              </div>
+              <span className="text-[10px] font-extrabold tracking-widest text-[#D9A441] uppercase block mb-1">
+                METHODOLOGY &amp; RULES
               </span>
-              <strong className="text-2xl font-extrabold text-[#221B16] font-['Outfit'] block">₹17.00</strong>
-              <span className="text-xs text-[#615247] mt-1 block">Per kilometer thereafter</span>
+              <h3 className="font-['Outfit'] font-bold text-xl text-[#1C1A18] dark:text-[#F9F6F0] mb-2">
+                How ExitSmart Works
+              </h3>
+              <p className="text-xs sm:text-sm text-[#615247] dark:text-[#A89B8F] leading-relaxed mb-6">
+                Understand how our engine scans adjacent stops, scores the Pareto frontier, and applies Rain Mode weather weights.
+              </p>
             </div>
-            <div className="p-5 rounded-2xl bg-white/40 border border-white/75">
-              <span className="text-[10px] font-bold tracking-wider text-[#8C7A6D] uppercase block mb-1">
-                Night Surcharge (12 AM - 5 AM)
-              </span>
-              <strong className="text-2xl font-extrabold text-[#221B16] font-['Outfit'] block">+25%</strong>
-              <span className="text-xs text-[#615247] mt-1 block">Government mandated midnight tariff</span>
+            <div className="inline-flex items-center gap-2 text-xs font-bold text-[#D9A441] group-hover:translate-x-1 transition-transform">
+              Learn Methodology <ArrowRight className="h-3.5 w-3.5" />
             </div>
-            <div className="p-5 rounded-2xl bg-white/40 border border-white/75">
-              <span className="text-[10px] font-bold tracking-wider text-[#8C7A6D] uppercase block mb-1">
-                Waiting Charges
-              </span>
-              <strong className="text-2xl font-extrabold text-[#221B16] font-['Outfit'] block">₹1.50</strong>
-              <span className="text-xs text-[#615247] mt-1 block">Per 5 minutes in traffic</span>
-            </div>
-          </div>
+          </Link>
         </div>
       </section>
 
       {/* Honest by Design Section */}
       <section className="max-w-[1080px] mx-auto px-4 py-8 mb-12" id="estimate-note">
-        <div className="p-6 sm:p-8 rounded-[26px] bg-white/50 backdrop-blur-xl border border-white/85 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-5">
-          <div className="w-12 h-12 rounded-2xl bg-[#FCFAF6] border border-white/90 flex items-center justify-center text-[#221B16] shrink-0 shadow-xs">
-            <Shield className="h-6 w-6 text-[#C5A059]" />
+        <div className="p-6 sm:p-8 rounded-[26px] bg-white/50 dark:bg-[#1C1814]/60 backdrop-blur-xl border border-white/85 dark:border-white/15 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-5">
+          <div className="w-12 h-12 rounded-2xl bg-[#FCFAF6] dark:bg-white/10 border border-white/90 dark:border-white/15 flex items-center justify-center text-[#1C1A18] dark:text-[#F9F6F0] shrink-0 shadow-xs">
+            <Shield className="h-6 w-6 text-[#D9A441]" />
           </div>
           <div className="flex-1">
-            <span className="text-[10px] font-extrabold tracking-widest text-[#C5A059] uppercase block mb-1">
+            <span className="text-[10px] font-extrabold tracking-widest text-[#D9A441] uppercase block mb-1">
               HONEST BY DESIGN
             </span>
-            <h2 className="font-['Outfit'] font-bold text-lg text-[#221B16] mb-1">
+            <h2 className="font-['Outfit'] font-bold text-lg text-[#1C1A18] dark:text-[#F9F6F0] mb-1">
               Clear estimates. No commercial pressure.
             </h2>
-            <p className="text-xs sm:text-sm text-[#615247] leading-relaxed m-0 max-w-[650px]">
+            <p className="text-xs sm:text-sm text-[#615247] dark:text-[#A89B8F] leading-relaxed m-0 max-w-[650px]">
               Fares, walking distances, and wait times are modeled directly from verified Maha Metro fare slabs, official Maharashtra RTO auto tariff rules, and PMPML bus stages.
             </p>
           </div>
-          <span className="text-xs font-bold text-[#8C7A6D] tracking-wide uppercase shrink-0">
-            PUNE • OPEN TRANSIT
-          </span>
+          <button
+            type="button"
+            onClick={() => setIsAssumptionsOpen(true)}
+            className="text-xs font-bold text-[#D9A441] hover:underline shrink-0"
+          >
+            Assumptions &rarr;
+          </button>
         </div>
       </section>
 
